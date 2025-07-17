@@ -97,23 +97,24 @@ window.initPageScripts = async function () {
     const tocDynamic = document.getElementById("toc-dynamic");
     const pageToc = document.querySelector(".page-toc");
 
-    if (tocToggle && tocPopup && tocDynamic && pageToc) {
-        tocDynamic.innerHTML = pageToc.innerHTML;
+    if (tocToggle && tocPopup && tocDynamic) {
+        if (pageToc) {
+            tocDynamic.innerHTML = pageToc.innerHTML;
+        } else {
+            tocDynamic.innerHTML = "";
+        }
 
-        tocToggle.replaceWith(tocToggle.cloneNode(true));
-        const newTocToggle = document.getElementById("toc-toggle");
+        tocToggle.onclick = () => {
+            tocPopup.classList.toggle("hidden");
+        };
 
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 200) {
-                newTocToggle.style.display = "block";
+            if (window.scrollY > 200 && tocDynamic.innerHTML.trim()) {
+                tocToggle.style.display = "block";
             } else {
-                newTocToggle.style.display = "none";
+                tocToggle.style.display = "none";
                 tocPopup.classList.add("hidden");
             }
-        });
-
-        newTocToggle.addEventListener("click", () => {
-            tocPopup.classList.toggle("hidden");
         });
     }
 
