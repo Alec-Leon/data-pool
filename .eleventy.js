@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const pkg = require("./package.json")
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
@@ -7,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("data");
     eleventyConfig.addPassthroughCopy("fonts");
+    eleventyConfig.addGlobalData("version", pkg.version)
     eleventyConfig.setLibrary("md", markdownIt({ html: true }).use(markdownItAnchor, {
         slugify: s =>
             s

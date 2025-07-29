@@ -8,6 +8,7 @@
     max-height: 100vh;
     position: sticky;
     top: 0;
+    height: 100vh;
 }
 
 .sidebar h3 {
@@ -78,4 +79,13 @@
 
 .sidebar-group[open] summary::before {
     transform: rotate(-180deg);
+}
+
+.sidebar-version {
+    font-size: 0.75rem;
+    color: #777;
+    text-align: center;
+    margin-top: auto;
+    padding: 0.5rem 0;
+    opacity: 0.6;
 }
