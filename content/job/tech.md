@@ -138,4 +138,19 @@ keywords: [ "техник", "класс", "крафт", "создание" ]
 
 <img src="{{ '/images/content/job/tech/tech-table.png' | url }}" alt="таблица СЛ и времени" class="image-container" />
 
+<div class="image-container image-left">
+
+<img src="{{ '/images/content/job/tech/tech-table2.png' | url }}" alt="таблица цены/доступности" class="image-container" />
+
+<div class="text">
+        <p>
+
+            <br>Примечание: <br>
+            Начиная с Интерфейса-2 с "Биоэкзотики Биотехники" появились товары и услуги у которых категория "цена" и "доступность" могут не совпадать.
+
+        </p>
+    </div>
+
+</div>
+
 <img src="{{ '/images/content/job/tech/tech-footer.png' | url }}" alt="tech Footer" class="footer-image" />
