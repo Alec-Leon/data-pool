@@ -1,4 +1,4 @@
-name: Deploy DATA-POOL to dev
+name: Deploy DATA-POOL
 
 on:
   push:

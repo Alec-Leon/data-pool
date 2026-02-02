@@ -1127,4 +1127,15 @@ keywords: ["правила", "длс", "dlc", "контент", "источни�
 
 </details>
 
+<details class="sidebar-group book-toggle">
+    <summary>Everyday People</summary>
+
+        <b>Дата выхода:</b> Январь 2026<br>
+
+        Набор из 20 прегенов обычных жителей и работяг Найт-Сити.<br><br>
+
+        <a href="https://rtalsoriangames.com/wp-content/uploads/2026/01/RTG-CPR-DLC-EverydayPeoplev1.01.pdf" target="_blank" rel="ner noreferrer" class="version-more-button">Читать</a><br>
+
+</details>
+
 </div>
