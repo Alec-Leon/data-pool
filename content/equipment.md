@@ -30,6 +30,10 @@ layout: base.njk
     <img src="{{ '/images/content/equipment/soft.png' | url }}" alt="Софт для Агента" />
     <span>Софт для Агента</span>
   </a>
+  <a href="{{ '/equipment/acpa/' | url }}" class="tile-button">
+    <img src="{{ '/images/content/chrome/pkt_packs.png' | url }}" alt="Силовая Броня (CHANGE ICON)" />
+    <span>Силовая Броня</span>
+  </a>
 </div>
 
 Добро пожаловать в универсальный каталог товаров для уличных самураев, корпоратов и соло всех мастей.
