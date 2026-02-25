@@ -63,5 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadPage(location.href, false);
     });
 
-    initPageScripts();
+    window.initPageScripts = function () {
+        console.log("[SPA] page scripts init");
+    };
 });

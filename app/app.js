@@ -187,9 +187,7 @@ window.initPageScripts = async function () {
                     gmScreen.classList.remove("active");
                     enemies.classList.remove("active");
                     charlist.classList.add("active");
-                    if (window.DataPool?.initCharacterModule) {
-                        window.DataPool.initCharacterModule();
-                    }
+                    window.DataPool?.initCharacterModule?.();
                     break;
             }
         });

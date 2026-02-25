@@ -1,17 +1,12 @@
 (function () {
-
     window.DataPool = window.DataPool || {};
-
     let initialized = false;
-
-    function initCharacterModule() {
+    window.DataPool.initCharacterModule = function () {
         if (initialized) return;
-
-        console.log("Character sheet initialized");
-        window.DataPool.renderCharacterUI();
+        const root = document.getElementById("charlist");
+        if (!root) return;
+        console.log("[Character] init");
+        window.DataPool.CharacterUI.render(root);
         initialized = true;
-    }
-
-    window.DataPool.initCharacterModule = initCharacterModule;
-
+    };
 })();

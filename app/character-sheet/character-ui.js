@@ -1,6 +1,7 @@
 (function () {
 
     window.DataPool = window.DataPool || {};
+    window.DataPool.CharacterUI = {};
 
     let currentStep = 0;
 
@@ -177,6 +178,5 @@
             });
     }
 
-    window.DataPool.renderCharacterUI = renderCharacterLayout;
-
+    window.DataPool.CharacterUI.render = renderCharacterUI;
 })();
