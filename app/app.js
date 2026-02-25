@@ -3,6 +3,66 @@ window.DataPool = window.DataPool || {};
 let lunrIndex;
 let searchData = [];
 
+// --- Вкладки разделов ---
+function initTabs() {
+    const tabs = document.querySelectorAll(".page-tab-item");
+    const gmScreen = document.getElementById("gm-screen-mode");
+    const enemies = document.getElementById("enemies-mode");
+    const charlist = document.getElementById("charlist");
+    const site = document.getElementById("main-content");
+    const sidebar = document.getElementById("sidebar");
+    let gmInitialized = false;
+    tabs.forEach(tab => {
+        tab.addEventListener("click", async (event) => {
+            const id = event.currentTarget.dataset.open;
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            console.log("clicked:", id);
+            switch (id) {
+
+                case "home":
+                    gmScreen.classList.remove("active");
+                    enemies.classList.remove("active");
+                    charlist.classList.remove("active");
+                    site.style.display = "";
+                    sidebar.style.display = "";
+                    break;
+
+                case "gm-screen":
+                    site.style.display = "none";
+                    sidebar.style.display = "none";
+                    gmScreen.classList.add("active");
+                    enemies.classList.remove("active");
+                    charlist.classList.remove("active");
+                    if (!gmInitialized) {
+                        await loadGMScreen();
+                        gmInitialized = true;
+                    }
+                    break;
+                case "enemies":
+                    site.style.display = "none";
+                    sidebar.style.display = "none";
+                    gmScreen.classList.remove("active");
+                    charlist.classList.remove("active");
+                    enemies.classList.add("active");
+                    await initEnemiesModule();
+                    break;
+
+                case "charlist":
+                    site.style.display = "none";
+                    sidebar.style.display = "none";
+                    gmScreen.classList.remove("active");
+                    enemies.classList.remove("active");
+                    charlist.classList.add("active");
+                    await window.DataPool.initCharacterModule();
+                    break;
+            }
+        });
+    });
+}
+
+window.initTabs = initTabs;
+
 window.initPageScripts = async function () {
     // --- Поиск ---
     try {
@@ -136,64 +196,9 @@ window.initPageScripts = async function () {
             document.head.appendChild(link);
         }
     }
-
-    // --- Вкладки разделов ---
-    const tabs = document.querySelectorAll(".page-tab-item");
-    const gmScreen = document.getElementById("gm-screen-mode");
-    const enemies = document.getElementById("enemies-mode")
-    const charlist = document.getElementById("charlist")
-    const site = document.getElementById("main-content");
-    const sidebar = document.getElementById("sidebar");
-    let gmInitialized = false;
-    let charInitialized = false;
-    tabs.forEach(tab => {
-        tab.addEventListener("click", async (event) => {
-            const id = event.currentTarget.dataset.open;
-            tabs.forEach(t => t.classList.remove("active"));
-            tab.classList.add("active");
-            console.log("clicked: " + id)
-
-            //todo убрать костыли
-            switch (id) {
-                case "home":
-                    gmScreen.classList.remove("active")
-                    enemies.classList.remove("active")
-                    charlist.classList.remove("active")
-                    site.style.display = ""
-                    sidebar.style.display = ""
-                    break;
-                case "gm-screen":
-                    site.style.display = "none";
-                    sidebar.style.display = "none";
-                    gmScreen.classList.add("active");
-                    enemies.classList.remove("active")
-                    charlist.classList.remove("active")
-                    if (!gmInitialized) {
-                        await loadGMScreen();
-                        gmInitialized = true;
-                    }
-                    break;
-                case "enemies":
-                    site.style.display = "none"
-                    sidebar.style.display = "none"
-                    gmScreen.classList.remove("active")
-                    charlist.classList.remove("active")
-                    enemies.classList.add("active")
-                    await initEnemiesModule()
-                    break;
-                case "charlist":
-                    site.style.display = "none";
-                    sidebar.style.display = "none";
-                    gmScreen.classList.remove("active");
-                    enemies.classList.remove("active");
-                    charlist.classList.add("active");
-                    window.DataPool?.initCharacterModule?.();
-                    break;
-            }
-        });
-    });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    initTabs();
     initPageScripts();
 });

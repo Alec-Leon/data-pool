@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     window.initPageScripts = function () {
-        console.log("[SPA] page scripts init");
+        console.log("[SPA] reinit");
+        window.initTabs?.();
     };
 });

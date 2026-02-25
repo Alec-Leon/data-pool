@@ -1,3 +1,11 @@
+#charlist {
+    display: none;
+}
+
+#charlist.active {
+    display: block;
+}
+
 .character-sheet {
     padding: 1rem;
 }

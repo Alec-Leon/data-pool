@@ -178,5 +178,5 @@
             });
     }
 
-    window.DataPool.CharacterUI.render = renderCharacterUI;
+    window.DataPool.CharacterUI.render = renderCharacterLayout;
 })();
