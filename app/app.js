@@ -139,10 +139,11 @@ window.initPageScripts = async function () {
     const tabs = document.querySelectorAll(".page-tab-item");
     const gmScreen = document.getElementById("gm-screen-mode");
     const enemies = document.getElementById("enemies-mode")
-    //const charlist = document.getElementById("charlist")
+    const charlist = document.getElementById("charlist")
     const site = document.getElementById("main-content");
     const sidebar = document.getElementById("sidebar");
     let gmInitialized = false;
+    let charInitialized = false;
     tabs.forEach(tab => {
         tab.addEventListener("click", async (event) => {
             const id = event.currentTarget.dataset.open;
@@ -155,7 +156,7 @@ window.initPageScripts = async function () {
                 case "home":
                     gmScreen.classList.remove("active")
                     enemies.classList.remove("active")
-                    //charlist.classList.remove("active")
+                    charlist.classList.remove("active")
                     site.style.display = ""
                     sidebar.style.display = ""
                     break;
@@ -164,7 +165,7 @@ window.initPageScripts = async function () {
                     sidebar.style.display = "none";
                     gmScreen.classList.add("active");
                     enemies.classList.remove("active")
-                    //charlist.classList.remove("active")
+                    charlist.classList.remove("active")
                     if (!gmInitialized) {
                         await loadGMScreen();
                         gmInitialized = true;
@@ -174,18 +175,22 @@ window.initPageScripts = async function () {
                     site.style.display = "none"
                     sidebar.style.display = "none"
                     gmScreen.classList.remove("active")
-                    //charlist.classList.remove("active")
+                    charlist.classList.remove("active")
                     enemies.classList.add("active")
                     await initEnemiesModule()
                     break;
-                // case "charlist":
-                //     site.style.display = "none"
-                //     sidebar.style.display = "none"
-                //     gmScreen.classList.remove("active")
-                //     enemies.classList.remove("active")
-                //     charlist.classList.add("active")
-                //     //todo initModule
-                //     break;
+                case "charlist":
+                    site.style.display = "none"
+                    sidebar.style.display = "none"
+                    gmScreen.classList.remove("active")
+                    enemies.classList.remove("active")
+                    charlist.classList.add("active")
+
+                    if (!charInitialized) {
+                        await initCharacterModule();
+                        charInitialized = true;
+                    }
+                    break;
             }
         });
     });
