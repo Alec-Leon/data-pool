@@ -1,3 +1,5 @@
+window.DataPool = window.DataPool || {};
+
 let lunrIndex;
 let searchData = [];
 
@@ -180,15 +182,13 @@ window.initPageScripts = async function () {
                     await initEnemiesModule()
                     break;
                 case "charlist":
-                    site.style.display = "none"
-                    sidebar.style.display = "none"
-                    gmScreen.classList.remove("active")
-                    enemies.classList.remove("active")
-                    charlist.classList.add("active")
-
-                    if (!charInitialized) {
-                        await initCharacterModule();
-                        charInitialized = true;
+                    site.style.display = "none";
+                    sidebar.style.display = "none";
+                    gmScreen.classList.remove("active");
+                    enemies.classList.remove("active");
+                    charlist.classList.add("active");
+                    if (window.DataPool?.initCharacterModule) {
+                        window.DataPool.initCharacterModule();
                     }
                     break;
             }

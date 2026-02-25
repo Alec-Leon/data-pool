@@ -51,6 +51,9 @@
             <section id="enemy-details"></section>
         </div>
     </div>
+    <div id="charlist" class="hidden">
+        <div class="character-root"></div>
+    </div>
 </div>
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
@@ -69,11 +72,14 @@
     <div class="toc-popup-inner" id="toc-dynamic"></div>
 </div>
 
-<script src="{{ '/app/app.js' | url }}"></script>
 <script src="{{ '/app/spa.js' | url }}" defer></script>
 <script src="{{ '/app/gm-panel.js' | url }}" defer></script>
 <script src="{{ '/data/enemies/dictionary.js' | url }}" defer></script>
 <script src="{{ '/app/enemies.js' | url }}" defer></script>
+<script src="{{ '/app/character-sheet/character-model.js' | url }}" defer></script>
+<script src="{{ '/app/character-sheet/character-ui.js' | url }}" defer></script>
+<script src="{{ '/app/character-sheet/character-init.js' | url }}" defer></script>
+<script src="{{ '/app/app.js' | url }}" defer></script>
 </body>
 </html>
 

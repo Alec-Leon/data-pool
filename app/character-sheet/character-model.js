@@ -23,3 +23,6 @@ let characterState = {
         cyberware: []
     }
 }
+
+window.DataPool = window.DataPool || {};
+window.DataPool.characterState = characterState;

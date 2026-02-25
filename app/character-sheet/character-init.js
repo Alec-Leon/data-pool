@@ -1,12 +1,17 @@
-import { initCharacterUI } from './character-ui.js';
+(function () {
 
-let characterInitialized = false;
+    window.DataPool = window.DataPool || {};
 
-export async function initCharacterModule() {
-    if (characterInitialized) return;
+    let initialized = false;
 
-    console.log("Initializing Character Sheet module...");
-    initCharacterUI();
+    function initCharacterModule() {
+        if (initialized) return;
 
-    characterInitialized = true;
-}
+        console.log("Character sheet initialized");
+        window.DataPool.renderCharacterUI();
+        initialized = true;
+    }
+
+    window.DataPool.initCharacterModule = initCharacterModule;
+
+})();
