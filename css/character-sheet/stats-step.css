@@ -1,0 +1,46 @@
+/* ===== DERIVED ===== */
+.derived-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 40px;
+}
+
+/* ===== CORE ===== */
+.core-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.core-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+/* ===== FIELD ===== */
+.stat-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-field span {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.stat-field input {
+    width: 100%;
+    background: #050505;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* derived подсветка */
+.derived-grid .stat-field span {
+    color: var(--accent-red);
+}

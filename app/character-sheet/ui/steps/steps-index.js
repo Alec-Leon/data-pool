@@ -1,0 +1,12 @@
+import './01-info/roles-dictionary.js';
+import './01-info/info-renderer.js';
+import './01-info/info-bindings.js';
+import './02-stats/stats-renderer.js';
+import './02-stats/stats-bindings.js';
+import './03-skills/skills-renderer.js';
+import './03-skills/skills-bindings.js';
+import './04-equipment/equipment-renderer.js';
+import './04-equipment/equipment-bindings.js';
+import './05-cyberware/cyberware-renderer.js';
+import './05-cyberware/cyberware-bindings.js';
+import './06-summary/summary-renderer.js';

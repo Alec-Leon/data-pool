@@ -1,0 +1,108 @@
+#charlist-mode {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.character-root {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.character-sheet {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+#charlist-mode.active {
+    display: block;
+}
+
+.char-steps-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.char-step-btn {
+    padding: 6px 10px;
+    border: 1px solid #ff0040;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.char-step-btn.active {
+    background: #ff0040;
+    color: #000;
+}
+
+.char-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-group-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 14px;
+}
+
+.skill-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-field input {
+    width: 60px;
+}
+
+
+/* === remove number arrows === */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.character-root,
+.character-root *,
+.character-root *::before,
+.character-root *::after {
+    box-sizing: border-box;
+}
+
+.character-sheet input,
+.character-sheet select,
+.character-sheet textarea {
+    background: #050505;
+    color: #e6e6e6;
+    border: 1px solid rgba(255,50,50,0.35);
+    outline: none;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.15s ease;
+}
+
+.character-sheet input:focus,
+.character-sheet select:focus,
+.character-sheet textarea:focus {
+    border-color: var(--accent-red);
+    box-shadow: 0 0 6px rgba(255,40,40,0.35);
+}
+
+.character-sheet input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #050505 inset;
+    -webkit-text-fill-color: #e6e6e6;
+}

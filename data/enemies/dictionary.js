@@ -2,6 +2,7 @@ const STAT_LABELS = {
     hp: 'Пункты здоровья',
     wound: 'Порог ранения',
     save: 'Спасбросок',
+    humanity: 'Человечность',
 
     int: 'ИНТ',
     ref: 'РЕА',
@@ -29,10 +30,10 @@ const SKILL_GROUP_LABELS = {
 
 const SKILL_LABELS = {
     // melee
-    'martial-arts': 'Боевые искусства',
-    'melee-weapons': 'Холодное оружие',
-    'brawling': 'Рукопашный бой',
-    'dodge': 'Уклонение',
+    'martial-arts': 'Боевые искусства (РЕА)(х2)',
+    'melee-weapons': 'Холодное оружие (РЕА)',
+    'brawling': 'Рукопашный бой (РЕА)',
+    'dodge': 'Уклонение (ЛВК)',
 
     // perception
     'attentiveness': 'Внимательность',
@@ -111,4 +112,92 @@ const SKILL_LABELS = {
     'stealth': 'Скрытность',
     'resistance': 'Сопротивление пыткам/наркотикам',
     'dance': 'Танец',
+};
+
+const SKILL_GROUPS = {
+    'melee-combat-skills': [
+        'martial-arts',
+        'melee-weapons',
+        'brawling',
+        'dodge'
+    ],
+    'perception-skills': [
+        'attentiveness',
+        'tracking',
+        'concentration',
+        'hide-reveal-object',
+        'lip-reading',
+        'insight'
+    ],
+    'range-combat-skills': [
+        'autofire',
+        'heavy-weapons',
+        'pistols',
+        'bows',
+        'assault-weapons'
+    ],
+    'educational-skills': [
+        'gambling',
+        'business',
+        'accounting',
+        'bureaucracy',
+        'desert-surviving',
+        'deduction',
+        'area-knowledge',
+        'composition',
+        'criminology',
+        'cryptography',
+        'science',
+        'education',
+        'animals-treatment',
+        'info-search',
+        'tactics',
+        'language'
+    ],
+    'social-skills': [
+        'style',
+        'interrogation',
+        'streetwise',
+        'communication',
+        'bribe',
+        'insight',
+        'trading',
+        'persuasion',
+        'self-care'
+    ],
+    'stage-skills': [
+        'acting',
+        'music'
+    ],
+    'tech-skills': [
+        'avia-tech',
+        'car-tech',
+        'lock-picking',
+        'tech-knowledge',
+        'pickpocketing',
+        'cyber-tech',
+        'photo-tech',
+        'sea-tech',
+        'gun-tech',
+        'paramedic',
+        'first-aid',
+        'saboteur',
+        'falsification',
+        'art',
+        'electronic-security'
+    ],
+    'drive-skills': [
+        'horseback-riding',
+        'driving',
+        'piloting',
+        'navigation'
+    ],
+    'physical-skills': [
+        'athletics',
+        'acrobatics',
+        'endurance',
+        'stealth',
+        'resistance',
+        'dance'
+    ]
 };

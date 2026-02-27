@@ -8,6 +8,6 @@
 @import "./other-buttons.css";
 @import "./terminal.css";
 @import "./updates.css";
-@import "gm_screen.css";
-@import "enemies-screen.css";
-@import "character-sheet.css";
+@import "./gm_screen.css";
+@import "./enemies-screen.css";
+@import "./character-sheet/character-sheet-index.css";

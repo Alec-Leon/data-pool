@@ -8,7 +8,7 @@ function initTabs() {
     const tabs = document.querySelectorAll(".page-tab-item");
     const gmScreen = document.getElementById("gm-screen-mode");
     const enemies = document.getElementById("enemies-mode");
-    const charlist = document.getElementById("charlist");
+    const charlistMode = document.getElementById("charlist-mode");
     const site = document.getElementById("main-content");
     const sidebar = document.getElementById("sidebar");
     let gmInitialized = false;
@@ -23,7 +23,7 @@ function initTabs() {
                 case "home":
                     gmScreen.classList.remove("active");
                     enemies.classList.remove("active");
-                    charlist.classList.remove("active");
+                    charlistMode.classList.remove("active");
                     site.style.display = "";
                     sidebar.style.display = "";
                     break;
@@ -33,7 +33,7 @@ function initTabs() {
                     sidebar.style.display = "none";
                     gmScreen.classList.add("active");
                     enemies.classList.remove("active");
-                    charlist.classList.remove("active");
+                    charlistMode.classList.remove("active");
                     if (!gmInitialized) {
                         await loadGMScreen();
                         gmInitialized = true;
@@ -43,7 +43,7 @@ function initTabs() {
                     site.style.display = "none";
                     sidebar.style.display = "none";
                     gmScreen.classList.remove("active");
-                    charlist.classList.remove("active");
+                    charlistMode.classList.remove("active");
                     enemies.classList.add("active");
                     await initEnemiesModule();
                     break;
@@ -53,7 +53,7 @@ function initTabs() {
                     sidebar.style.display = "none";
                     gmScreen.classList.remove("active");
                     enemies.classList.remove("active");
-                    charlist.classList.add("active");
+                    charlistMode.classList.add("active");
                     await window.DataPool.initCharacterModule();
                     break;
             }
@@ -196,6 +196,15 @@ window.initPageScripts = async function () {
             document.head.appendChild(link);
         }
     }
+
+    // --- Переход с вкладок на страницы основного датапула ---
+    window.DataPool.openDataPoolArticle = function (url) {
+        if (!url) return;
+        document
+            .querySelector('.page-tab-item[data-open="home"]')
+            ?.click();
+        window.DataPool.loadPage(window.__BASE_PATH__ + url)
+    };
 };
 
 document.addEventListener("DOMContentLoaded", () => {
