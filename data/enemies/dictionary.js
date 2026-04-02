@@ -1,18 +1,18 @@
 const STAT_LABELS = {
     hp: 'Пункты здоровья',
-    wound: 'Порог ранения',
+    wound: 'Тяжелое ранение',
     save: 'Спасбросок',
     humanity: 'Человечность',
 
     int: 'ИНТ',
-    ref: 'РЕА',
+    ref: 'РЕФ',
     dex: 'ЛВК',
     tech: 'ТЕХ',
-    char: 'ХАР',
+    char: 'КРУТ',
     will: 'ВОЛЯ',
     luck: 'УДЧ',
     spd: 'СКО',
-    body: 'ТЕЛ',
+    body: 'ТЕЛО',
     emp: 'ЭМП',
 };
 
@@ -30,88 +30,88 @@ const SKILL_GROUP_LABELS = {
 
 const SKILL_LABELS = {
     // melee
-    'martial-arts': 'Боевые искусства (РЕА)(х2)',
-    'melee-weapons': 'Холодное оружие (РЕА)',
-    'brawling': 'Рукопашный бой (РЕА)',
+    'martial-arts': 'Боевые искусства (ЛВК)(х2)',
+    'melee-weapons': 'Холодное оружие (ЛВК)',
+    'brawling': 'Драка (ЛВК)',
     'dodge': 'Уклонение (ЛВК)',
 
     // perception
-    'attentiveness': 'Внимательность',
-    'tracking': 'Слежка',
-    'concentration': 'Концентрация',
-    'hide-reveal-object': 'Скрыть/обнаружить',
-    'lip-reading': 'Чтение по губам',
+    'attentiveness': 'Восприятие (ИНТ)',
+    'tracking': 'Выслеживание (ИНТ)',
+    'concentration': 'Концентрация (ВОЛЯ)',
+    'hide-reveal-object': 'Скрытие/обнаружение объекта (ИНТ)',
+    'lip-reading': 'Чтение по губам (ИНТ)',
 
     // range
-    'autofire': 'Автоогонь',
-    'heavy-weapons': 'Тяжёлое оружие',
-    'pistols': 'Пистолеты',
-    'bows': 'Луки',
-    'assault-weapons': 'Штурмовое оружие',
+    'autofire': 'Автоогонь (РЕФ)(х2)',
+    'heavy-weapons': 'Тяжёлое оружие (РЕФ)(х2)',
+    'pistols': 'Короткоствольное оружие (РЕФ)',
+    'bows': 'Луки и арбалеты (РЕФ)',
+    'assault-weapons': 'Длинноствольное оружие (РЕФ)',
 
     // educational
-    'gambling': 'Азартные игры',
-    'business': 'Бизнес',
-    'accounting': 'Бухгалтерия',
-    'bureaucracy': 'Бюрократия',
-    'desert-surviving': 'Выживание в пустыне',
-    'deduction': 'Дедукция',
-    'area-knowledge': 'Знание местности',
-    'composition': 'Композиция',
-    'criminology': 'Криминология',
-    'cryptography': 'Криптография',
-    'science': 'Наука',
-    'education': 'Образование',
-    'animals-treatment': 'Уход за животными',
-    'info-search': 'Поиск информации',
-    'tactics': 'Тактика',
-    'language': 'Язык',
+    'gambling': 'Азартные игры (ИНТ)',
+    'business': 'Бизнес (ИНТ)',
+    'accounting': 'Бухгалтерия (ИНТ)',
+    'bureaucracy': 'Бюрократия (ИНТ)',
+    'desert-surviving': 'Выживание в дикой местности (ИНТ)',
+    'deduction': 'Дедукция (ИНТ)',
+    'area-knowledge': 'Знание района (ИНТ)',
+    'composition': 'Композиция (ИНТ)',
+    'criminology': 'Криминология (ИНТ)',
+    'cryptography': 'Криптография (ИНТ)',
+    'science': 'Наука (ИНТ)',
+    'education': 'Образование (ИНТ)',
+    'animals-treatment': 'Обращение с животными (ИНТ)',
+    'info-search': 'Поиск информации (ИНТ)',
+    'tactics': 'Тактика (ИНТ)',
+    'language': 'Язык (ИНТ)',
 
     // social
-    'style': 'Стиль',
-    'interrogation': 'Допрос',
-    'streetwise': 'Знание улиц',
-    'communication': 'Коммуникация',
-    'bribe': 'Подкуп',
-    'insight': 'Проницательность',
-    'trading': 'Торговля',
-    'persuasion': 'Убеждение',
-    'self-care': 'Самообслуживание',
+    'style': 'Гардероб и стиль (КРУТ)',
+    'interrogation': 'Допрос (КРУТ)',
+    'streetwise': 'Опыт на улицах (КРУТ)',
+    'communication': 'Общение (ЭМП)',
+    'bribe': 'Взяточничество (КРУТ)',
+    'insight': 'Проницательность (ЭМП)',
+    'trading': 'Торговля (КРУТ)',
+    'persuasion': 'Убеждение (КРУТ)',
+    'self-care': 'Уход за собой (КРУТ)',
 
     // stage
-    'acting': 'Актёрское мастерство',
-    'music': 'Музыка',
+    'acting': 'Актёрское мастерство (КРУТ)',
+    'music': 'Игра на инструменте (ТЕХ)',
 
     // tech
-    'avia-tech': 'Авиационная техника',
-    'car-tech': 'Автомеханика',
-    'lock-picking': 'Взлом замков',
-    'tech-knowledge': 'Технические знания',
-    'pickpocketing': 'Карманные кражи',
-    'cyber-tech': 'Кибертехника',
-    'photo-tech': 'Фототехника',
-    'sea-tech': 'Морская техника',
-    'gun-tech': 'Оружейник',
-    'paramedic': 'Парамедик',
-    'first-aid': 'Первая помощь',
-    'saboteur': 'Саботаж',
-    'falsification': 'Подделка',
-    'art': 'Искусство',
-    'electronic-security': 'Электронная безопасность',
+    'avia-tech': 'Авиатехника (ТЕХ)',
+    'car-tech': 'Автомеханика (ТЕХ)',
+    'lock-picking': 'Взлом замков (ТЕХ)',
+    'tech-knowledge': 'Основы техники (ТЕХ)',
+    'pickpocketing': 'Карманная кража (ТЕХ)',
+    'cyber-tech': 'Кибертехника (ТЕХ)',
+    'photo-tech': 'Фотография/видео (ТЕХ)',
+    'sea-tech': 'Судоремонт (ТЕХ)',
+    'gun-tech': 'Оружейная техника (ТЕХ)',
+    'paramedic': 'Парамедицина (ТЕХ)(х2)',
+    'first-aid': 'Первая помощь (ТЕХ)',
+    'saboteur': 'Взрывотехника (ТЕХ)(х2)',
+    'falsification': 'Фальсификация (ТЕХ)',
+    'art': 'Живопись/рисование/скульптура (ТЕХ)',
+    'electronic-security': 'Электроника/Безопасность (ТЕХ)(х2)',
 
     // drive
-    'horseback-riding': 'Верховая езда',
-    'driving': 'Вождение',
-    'piloting': 'Пилотирование',
-    'navigation': 'Навигация',
+    'horseback-riding': 'Верховая езда (РЕФ)',
+    'driving': 'Вождение (РЕФ)',
+    'piloting': 'Пилотирование (РЕФ)(х2)',
+    'navigation': 'Навигация (РЕФ)',
 
     // physical
-    'athletics': 'Атлетика',
-    'acrobatics': 'Акробатика',
-    'endurance': 'Выносливость',
-    'stealth': 'Скрытность',
-    'resistance': 'Сопротивление пыткам/наркотикам',
-    'dance': 'Танец',
+    'athletics': 'Атлетика (ЛВК)',
+    'acrobatics': 'Акробатика (ЛВК)',
+    'endurance': 'Выносливость (ВОЛЯ)',
+    'stealth': 'Скрытность (ЛВК)',
+    'resistance': 'Сопротивление пыткам/наркотикам (ВОЛЯ)',
+    'dance': 'Танец (ЛВК)',
 };
 
 const SKILL_GROUPS = {
@@ -201,3 +201,35 @@ const SKILL_GROUPS = {
         'dance'
     ]
 };
+
+const MULTI_SKILLS = [
+    {
+        "skill-name": "martial-arts",
+        "fields": 0
+    },
+    {
+        "skill-name": "area-knowledge",
+        "fields": 3
+    },
+    {
+        "skill-name": "science",
+        "fields": 2
+    },
+    {
+        "skill-name": "language",
+        "fields": 3
+    },
+    {
+        "skill-name": "music",
+        "fields": 2
+    }
+];
+
+function getMultiSkillFieldCount(skillKey) {
+    const row = MULTI_SKILLS.find(
+        r => r["skill-name"] === skillKey || r.skillName === skillKey
+    );
+    if (!row) return 0;
+    const n = Number(row.fields);
+    return Number.isFinite(n) && n > 0 ? Math.floor(n) : 0;
+}

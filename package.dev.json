@@ -1,6 +1,6 @@
 {
   "name": "data-pool-dev",
-  "version": "1.5.3-dev",
+  "version": "1.7.0-dev",
   "private": true,
   "description": "",
   "main": "index.js",

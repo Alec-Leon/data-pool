@@ -1,6 +1,6 @@
 {
   "name": "data-pool",
-  "version": "1.6.0",
+  "version": "1.7.0-dev",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "gray-matter": "^4.0.3",
     "lunr-languages": "^1.14.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.2.0"
+    "markdown-it-anchor": "^9.2.0",
+    "pdf-lib": "^1.17.1"
   }
 }

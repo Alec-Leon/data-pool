@@ -1,11 +1,18 @@
 window.DataPool = window.DataPool || {};
 window.DataPool.CharSteps = window.DataPool.CharSteps || {};
 
+const CYBERWARE_GROUP_LABELS = {
+    internal: "Внутренние",
+    external: "Внешние",
+    fashion: "Стилевые",
+    borgware: "Боргирование"
+};
+
 function renderCyberwareStep(container) {
     const state = window.DataPool.characterState;
     const cyber = state.equipment.cyberware;
     container.innerHTML = `
-        <div class="char-step">
+        <div class="char-step cyberware-root">
             <h2>Киберимпланты</h2>
             <div class="cyberware-section">
                 <h3>Основные импланты</h3>
@@ -17,10 +24,9 @@ function renderCyberwareStep(container) {
             </div>
             <div class="cyberware-section">
                 <h3>Дополнительные импланты</h3>
-                ${renderCyberGroup("Внутренние", "internal")}
-                ${renderCyberGroup("Внешние", "external")}
-                ${renderCyberGroup("Стилевые", "fashion")}
-                ${renderCyberGroup("Боргирование", "borgware")}
+                ${["internal", "external", "fashion", "borgware"]
+        .map(key => renderCyberGroup(CYBERWARE_GROUP_LABELS[key], key))
+        .join("")}
             </div>
         </div>
     `;
@@ -32,7 +38,8 @@ function renderCyberSlot(label, slot) {
             <label>
                 <input type="checkbox"
                     class="cyber-toggle"
-                    data-single-slot="${label}">
+                    data-single-slot="${label}"
+                    ${slot.installed ? "checked" : ""}>
                 ${label}
             </label>
             ${
@@ -51,7 +58,8 @@ function renderCyberPaired(label, slots) {
                 <input type="checkbox"
                     class="cyber-toggle"
                     data-pair="${label}"
-                    data-index="${i}">
+                    data-index="${i}"
+                    ${slot.installed ? "checked" : ""}>
                 ${label} (${slot.side})
             </label>
             ${
@@ -74,9 +82,14 @@ function renderCyberItems(items) {
                     <input placeholder="Описание"
                         value="${it.desc || ''}"
                         data-item-desc="${i}">
+                    <button type="button"
+                        class="char-equipment-remove"
+                        data-remove-slot-item="${i}"
+                        title="Удалить"
+                        aria-label="Удалить имплант">✕</button>
                 </div>
             `).join("")}
-            <button class="cyber-add-item">
+            <button type="button" class="cyber-add-item char-btn-add">
                 + добавить имплант
             </button>
         </div>
@@ -102,10 +115,16 @@ function renderCyberGroup(title, key) {
                             value="${it.desc || ''}"
                             data-group="${key}"
                             data-group-desc="${i}">
+                        <button type="button"
+                            class="char-equipment-remove"
+                            data-remove-group-item="${key}"
+                            data-remove-group-index="${i}"
+                            title="Удалить"
+                            aria-label="Удалить имплант">✕</button>
                     </div>
                 `).join("")}
             </div>
-            <button class="cyber-add-group"
+            <button type="button" class="cyber-add-group char-btn-add"
                 data-group="${key}">
                 + добавить
             </button>
@@ -121,5 +140,6 @@ window.DataPool.CyberwareUI = {
     renderCyberSlot,
     renderCyberPaired,
     renderCyberItems,
-    renderCyberGroup
+    renderCyberGroup,
+    CYBERWARE_GROUP_LABELS
 };

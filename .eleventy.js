@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("data");
     eleventyConfig.addPassthroughCopy("fonts");
+    eleventyConfig.addPassthroughCopy(
+        "node_modules/pdf-lib/dist/pdf-lib.esm.min.js"
+    );
     eleventyConfig.addGlobalData("version", pkg.version)
     eleventyConfig.setLibrary("md", markdownIt({ html: true }).use(markdownItAnchor, {
         slugify: s =>

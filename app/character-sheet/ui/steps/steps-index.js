@@ -10,3 +10,5 @@ import './04-equipment/equipment-bindings.js';
 import './05-cyberware/cyberware-renderer.js';
 import './05-cyberware/cyberware-bindings.js';
 import './06-summary/summary-renderer.js';
+import './06-summary/summary-bindings.js';
+import './07-export/pdf-export.js';

@@ -12,15 +12,15 @@ function renderEquipmentStep(container) {
             value="${state.equipment.money || ''}">
         <h2>Оружие</h2>
         <div id="char-weapons"></div>
-        <button id="add-weapon">+ Добавить оружие</button>
+        <button type="button" id="add-weapon" class="char-btn-add">+ Добавить оружие</button>
         <h2>Броня</h2>
         ${renderArmorBlock(state)}
         <h2>Боеприпасы</h2>
         <div id="char-ammo"></div>
-        <button id="add-ammo">+ Добавить боеприпасы</button>
+        <button type="button" id="add-ammo" class="char-btn-add">+ Добавить боеприпасы</button>
         <h2>Снаряжение</h2>
         <div id="char-gear"></div>
-        <button id="add-gear">+ Добавить предмет</button>
+        <button type="button" id="add-gear" class="char-btn-add">+ Добавить предмет</button>
     </div>
     `;
     renderWeapons();
@@ -73,7 +73,11 @@ function renderGear() {
                 data-gear="${i}"
                 data-field="note"
                 value="${g.note || ''}">
-            <button data-remove-gear="${i}">✕</button>
+            <button type="button"
+                class="char-equipment-remove"
+                data-remove-gear="${i}"
+                title="Удалить"
+                aria-label="Удалить предмет">✕</button>
         </div>
     `).join("");
 }
@@ -95,7 +99,11 @@ function renderAmmo() {
                 data-ammo="${i}"
                 data-field="note"
                 value="${a.note || ''}">
-            <button data-remove-ammo="${i}">✕</button>
+            <button type="button"
+                class="char-equipment-remove"
+                data-remove-ammo="${i}"
+                title="Удалить"
+                aria-label="Удалить боеприпасы">✕</button>
         </div>
     `).join("");
 }
@@ -121,7 +129,11 @@ function renderWeapons() {
                 data-weapon="${i}"
                 data-field="note"
                 value="${w.note || ''}">
-            <button data-remove-weapon="${i}">✕</button>
+            <button type="button"
+                class="char-equipment-remove"
+                data-remove-weapon="${i}"
+                title="Удалить"
+                aria-label="Удалить оружие">✕</button>
         </div>
     `).join("");
 }

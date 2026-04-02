@@ -64,64 +64,74 @@ function bindArmorInputs() {
 
 function bindGearInputs() {
     const state = window.DataPool.characterState;
-    document.querySelectorAll("[data-gear]")
-        .forEach(input => {
-            input.addEventListener("input", e => {
-                const i = e.target.dataset.gear;
-                const field = e.target.dataset.field;
-                state.equipment.gear[i][field] = e.target.value;
-            });
-        });
-    document.querySelectorAll("[data-remove-gear]")
-        .forEach(btn => {
-            btn.addEventListener("click", e => {
-                const i = e.target.dataset.removeGear;
-                state.equipment.gear.splice(i, 1);
-                window.DataPool.EquipmentUI.renderGear();
-            });
-        });
+    const container = document.getElementById("char-gear");
+    if (!container) return;
+    container.addEventListener("input", e => {
+        const el = e.target;
+        if (!(el instanceof HTMLInputElement) || el.dataset.gear === undefined) return;
+        const i = el.dataset.gear;
+        const field = el.dataset.field;
+        const row = state.equipment.gear[i];
+        if (!field || !row) return;
+        row[field] = el.value;
+    });
+    container.addEventListener("click", e => {
+        const btn = e.target.closest("[data-remove-gear]");
+        if (!btn || !container.contains(btn)) return;
+        e.preventDefault();
+        const i = Number(btn.dataset.removeGear);
+        if (!Number.isInteger(i) || i < 0) return;
+        state.equipment.gear.splice(i, 1);
+        window.DataPool.EquipmentUI.renderGear();
+    });
 }
 
 function bindAmmoInputs() {
     const state = window.DataPool.characterState;
-    document.querySelectorAll("[data-ammo]")
-        .forEach(input => {
-            input.addEventListener("input", e => {
-                const i = e.target.dataset.ammo;
-                const field = e.target.dataset.field;
-                state.equipment.ammo[i][field] = e.target.value;
-            });
-        });
-    document.querySelectorAll("[data-remove-ammo]")
-        .forEach(btn => {
-            btn.addEventListener("click", e => {
-                const i = e.target.dataset.removeAmmo;
-                state.equipment.ammo.splice(i, 1);
-                window.DataPool.EquipmentUI.renderAmmo();
-            });
-        });
+    const container = document.getElementById("char-ammo");
+    if (!container) return;
+    container.addEventListener("input", e => {
+        const el = e.target;
+        if (!(el instanceof HTMLInputElement) || el.dataset.ammo === undefined) return;
+        const i = el.dataset.ammo;
+        const field = el.dataset.field;
+        const row = state.equipment.ammo[i];
+        if (!field || !row) return;
+        row[field] = el.value;
+    });
+    container.addEventListener("click", e => {
+        const btn = e.target.closest("[data-remove-ammo]");
+        if (!btn || !container.contains(btn)) return;
+        e.preventDefault();
+        const i = Number(btn.dataset.removeAmmo);
+        if (!Number.isInteger(i) || i < 0) return;
+        state.equipment.ammo.splice(i, 1);
+        window.DataPool.EquipmentUI.renderAmmo();
+    });
 }
 
 function bindWeaponInputs() {
     const state = window.DataPool.characterState;
-    document.querySelectorAll("[data-weapon]")
-        .forEach(input => {
-            input.addEventListener("input", e => {
-                const i = e.target.dataset.weapon;
-                const field = e.target.dataset.field;
-                state.equipment.weapons[i][field] = e.target.value;
-            });
-        });
-    document.querySelectorAll("[data-remove-weapon]")
-        .forEach(btn => {
-
-            btn.addEventListener("click", e => {
-
-                const i = e.target.dataset.removeWeapon;
-                state.equipment.weapons.splice(i, 1);
-                window.DataPool.EquipmentUI.renderWeapons();
-            });
-        });
+    const container = document.getElementById("char-weapons");
+    if (!container) return;
+    container.addEventListener("input", e => {
+        const el = e.target;
+        if (!(el instanceof HTMLInputElement) || el.dataset.weapon === undefined) return;
+        const i = el.dataset.weapon;
+        const field = el.dataset.field;
+        const row = state.equipment.weapons[i];
+        if (!field || !row) return;
+        row[field] = el.value;
+    });
+    container.addEventListener("click", e => {
+        const btn = e.target.closest("[data-remove-weapon]");
+        if (!btn || !container.contains(btn)) return;
+        e.preventDefault();
+        const i = Number(btn.dataset.removeWeapon);
+        if (!Number.isInteger(i) || i < 0) return;
+        state.equipment.weapons.splice(i, 1);
+        window.DataPool.EquipmentUI.renderWeapons();
+    });
 }
 
 window.DataPool.CharSteps.equipment =
