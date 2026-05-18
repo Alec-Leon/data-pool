@@ -18,4 +18,8 @@ layout: base.njk
     <img src="{{ '/images/content/workshop/drones.png' | url }}" alt="Дроны" />
     <span>Дроны</span>
   </a>
+  <a href="{{ '/workshop/upgrades/' | url }}" class="tile-button">
+    <img src="{{ '/images/content/workshop/big-gear.png' | url }}" alt="Техапгрейды" />
+    <span>Техапгрейды</span>
+  </a>
 </div>
