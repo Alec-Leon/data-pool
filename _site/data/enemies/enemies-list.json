@@ -1,0 +1,82 @@
+{
+  "tiers": [
+    {
+      "id": "mooks",
+      "name": "Шестерки",
+      "types": [
+        {
+          "id": "mook-1",
+          "name": "Телохранитель",
+          "file": "data/enemies/mooks/mook-1.json"
+        },
+        {
+          "id": "mook-2",
+          "name": "Бустер",
+          "file": "data/enemies/mooks/mook-2.json"
+        },
+        {
+          "id": "mook-3",
+          "name": "Дорожный Бандит",
+          "file": "data/enemies/mooks/mook-3.json"
+        },
+        {
+          "id": "mook-4",
+          "name": "Оперативник Службы Безопасности",
+          "file": "data/enemies/mooks/mook-4.json"
+        }
+      ],
+      "description": "Противники, представленные здесь, считаются Шестёрками (противники низкого уровня).\nВ целом, группа эджраннеров вполне может сразиться с равным количеством Шестёрок, имея при этом хорошие шансы победить."
+    },
+    {
+      "id": "lieutenants",
+      "name": "Лейтенанты",
+      "types": [
+        {
+          "id": "lt-1",
+          "name": "Нетраннер",
+          "file": "data/enemies/lieutenants/lt-1.json"
+        },
+        {
+          "id": "lt-2",
+          "name": "Шеф Реставраторов",
+          "file": "data/enemies/lieutenants/lt-2.json"
+        },
+        {
+          "id": "lt-3",
+          "name": "Офицер службы безопасности",
+          "file": "data/enemies/lieutenants/lt-3.json"
+        }
+      ],
+      "description": "Противники, представленные здесь, считаются лейтенантами (противники среднего уровня).\nХорошее правило — выставлять 1 лейтенанта на каждых 2 эджраннеров."
+    },
+    {
+      "id": "mini-bosses",
+      "name": "Мини-Боссы",
+      "types": [
+        {
+          "id": "mb-1",
+          "name": "Патрульный",
+          "file": "data/enemies/mini-bosses/mb-1.json"
+        },
+        {
+          "id": "mb-2",
+          "name": "Пиро",
+          "file": "data/enemies/mini-bosses/mb-2.json"
+        }
+      ],
+      "description": "Противники, представленные здесь, считаются мини-боссами (противниками высокого уровня).\nХорошее правило — выбрасывать 1 мини-босса на каждых 3 эджраннеров в команде."
+    },
+    {
+      "id": "bosses",
+      "name": "Боссы",
+      "types": [
+        {
+          "id": "boss-1",
+          "name": "Киберпсихопат",
+          "file": "data/enemies/bosses/boss-1.json"
+        }
+      ],
+      "description": "Не выставляйте боссов на доску, если не уверены, что ваши Эджраннеры выдержат испытание!"
+    }
+  ]
+}

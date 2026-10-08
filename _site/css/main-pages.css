@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+}
+
+.content {
+    flex: 1;
+    padding: 2em;
+    background-color: #121212;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    background-color: #1e1e1e;
+}
+
+th, td {
+    border: 1px solid #ff0040;
+    padding: 0.5em;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: #ff0040;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #191919;
+}

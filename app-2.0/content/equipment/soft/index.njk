@@ -1,0 +1,19 @@
+---
+title: Софт для Агента
+permalink: /equipment/soft/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Софт для Агента</h1>
+<p class="shop-intro">Приложения для вашего Агента. Карточка — название и цена, внутри — правила.</p>
+
+{{ catalog(collections.softCategories, collections.soft, {
+  searchPlaceholder: "Найти приложение…",
+  filters: ["brand"],
+  cardFields: [
+    { key: "brand", label: "Бренд" }
+  ]
+}) }}

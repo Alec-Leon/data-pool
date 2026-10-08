@@ -1,0 +1,164 @@
+.weapon-modal {
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  padding: 0;
+  background: var(--bg-elevated);
+  color: var(--text);
+  width: min(720px, calc(100vw - 2rem));
+  max-height: calc(100vh - 2rem);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.weapon-modal::backdrop {
+  background: rgba(4, 6, 10, 0.72);
+  backdrop-filter: blur(3px);
+}
+
+.weapon-modal__shell {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 2rem);
+}
+
+.weapon-modal__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem 1.35rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.weapon-modal__eyebrow {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.weapon-modal__header h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+
+.weapon-modal__close {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.weapon-modal__close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.weapon-modal__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+  padding: 1rem 1.35rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  background: var(--bg-card);
+}
+
+.detail-stat--span-2 {
+  grid-column: span 2;
+}
+
+.detail-stat--span-3 {
+  grid-column: span 3;
+}
+
+.detail-stat span {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.detail-stat strong {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.weapon-modal__body {
+  padding: 1.15rem 1.35rem 1.5rem;
+  overflow: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d5dae6;
+}
+
+.weapon-modal__body p {
+  margin: 0 0 0.85rem;
+}
+
+.weapon-modal__body p:last-child {
+  margin-bottom: 0;
+}
+
+.weapon-modal__body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.85rem 0 0.25rem;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.weapon-modal__body th,
+.weapon-modal__body td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.weapon-modal__body th {
+  background: var(--bg-card);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.weapon-modal__body tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+blockquote {
+  border-left: 4px solid #ff0040;
+  padding-left: 1em;
+  color: rgb(52, 159, 0);
+  font-style: italic;
+}
+
+.sidebar-group {
+  border: 1px solid #ff0040;
+  border-radius: 8px;
+  padding: 0.5em;
+  /*background-color: #2a2a2a;*/
+  margin-bottom: 1em;
+}

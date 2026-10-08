@@ -1,4 +1,4 @@
-Оригинал: https://coda.io/@a-leon/data-pool-0-95-coda
+Оригинал: https://coda.io/@a-leon/data-pool-0-95-coda - deprecated
 
 ## Установка и запуск
 1. Установить [Node.js](https://nodejs.org/en) (версия 18+). После установки можно проверить командами в терминале `node -v` и `npm -v` (вывод версии).

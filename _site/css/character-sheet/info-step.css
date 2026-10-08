@@ -1,0 +1,130 @@
+/* === STEP ROOT === */
+.char-step {
+    width: 900px;
+    max-width: 100%;
+    padding: 24px 28px;
+    background: #0b0b0b;
+    border: 1px solid #2a0f12;
+    box-shadow: 0 0 20px rgba(255, 40, 60, 0.08);
+}
+
+@media (max-width: 1000px) {
+    .char-step {
+        width: 100%;
+    }
+}
+
+.char-step h2 {
+    margin-bottom: 22px;
+    font-size: 22px;
+    color: #ff3a4d;
+    letter-spacing: 1px;
+}
+
+.char-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: end;
+}
+
+.char-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    font-size: 13px;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.char-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.char-form input,
+.char-form select {
+    background: #050505;
+    border: 1px solid rgba(255,60,60,0.25);
+    color: #e6e6e6;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.char-form select {
+    background-image:
+            linear-gradient(45deg, transparent 50%, #ff4040 50%),
+            linear-gradient(135deg, #ff4040 50%, transparent 50%);
+    background-position:
+            calc(100% - 18px) calc(50% - 3px),
+            calc(100% - 12px) calc(50% - 3px);
+    background-size: 6px 6px;
+    background-repeat: no-repeat;
+}
+
+.char-form input:focus,
+.char-form select:focus {
+    outline: none;
+    border-color: #ff3a4d;
+    box-shadow: 0 0 6px rgba(255, 60, 80, .4);
+}
+
+.role-info {
+    grid-column: 1 / -1;
+    max-width: 70ch;
+    margin-top: 10px;
+    padding: 18px 20px;
+
+    background: linear-gradient(
+            180deg,
+            #0e0e0e,
+            #070707
+    );
+
+    border-left: 3px solid #ff3a4d;
+    border-radius: 4px;
+}
+
+.role-info strong {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #ff5566;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.role-info p {
+    margin: 0 0 14px 0;
+    line-height: 1.5;
+    color: #cfcfcf;
+}
+
+#role-link {
+    padding: 6px 14px;
+
+    background: transparent;
+    border: 1px solid #ff3a4d;
+    color: #ff3a4d;
+
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: .05em;
+
+    transition: all .15s ease;
+}
+
+#role-link:hover {
+    background: #ff3a4d;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255,60,80,.6);
+}
+
+#char-name {
+    grid-column: span 2;
+}

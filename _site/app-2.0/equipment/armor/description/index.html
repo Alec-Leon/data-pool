@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Силовая броня — правила · Data Pool 2.0</title>
+    <link rel="stylesheet" href="/data-pool/app-2.0/css/main.css">
+    <link rel="icon" href="/data-pool/app-2.0/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__brand">
+        <a href="/data-pool/app-2.0/" class="brand-mark">DATA POOL</a>
+        <span class="brand-version">2.0</span>
+    </div>
+    <p class="site-header__tagline">Каталог · прототип новой структуры</p>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="/data-pool/app-2.0/" class="nav-link">Главная</a>
+            <a href="/data-pool/app-2.0/equipment/" class="nav-link is-active">Снаряжение</a>
+            <div class="nav-sub">
+                <a href="/data-pool/app-2.0/equipment/weapons/" class="nav-link">Оружие</a>
+                <a href="/data-pool/app-2.0/equipment/armor/" class="nav-link is-active">Броня</a>
+                <a href="/data-pool/app-2.0/equipment/items/" class="nav-link">Предметы</a>
+                <a href="/data-pool/app-2.0/equipment/agents/" class="nav-link">Агенты</a>
+                <a href="/data-pool/app-2.0/equipment/soft/" class="nav-link">Софт</a>
+                <a href="/data-pool/app-2.0/equipment/clothes-style/" class="nav-link">Одежда и стиль</a>
+                <a href="/data-pool/app-2.0/equipment/acpa/" class="nav-link">Силовая броня</a>
+            </div>
+        </nav>
+        <p class="sidebar-note">Параллельная сборка v2. Основной сайт не затронут.</p>
+    </aside>
+
+    <main class="content" id="main-content">
+        
+    </main>
+</div>
+
+<dialog id="item-modal" class="weapon-modal" aria-labelledby="item-modal-title">
+    <div class="weapon-modal__shell">
+        <header class="weapon-modal__header">
+            <div>
+                <p class="weapon-modal__eyebrow" id="item-modal-category"></p>
+                <h2 id="item-modal-title"></h2>
+            </div>
+            <button type="button" class="weapon-modal__close" data-close-modal aria-label="Закрыть">×</button>
+        </header>
+        <div class="weapon-modal__stats" id="item-modal-stats"></div>
+        <div class="weapon-modal__body" id="item-modal-body"></div>
+    </div>
+</dialog>
+
+<script>window.__BASE_PATH__ = "/data-pool/app-2.0/";</script>
+<script src="/data-pool/app-2.0/app/shop.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+{
+  "id": "mook-1",
+  "name": "Телохранитель",
+  "stats": {
+    "hp": 35,
+    "wound": 18,
+    "save": 8,
+    "int": 3,
+    "ref": 6,
+    "dex": 5,
+    "tech": 2,
+    "char": 4,
+    "will": 4,
+    "luck": 0,
+    "spd": 4,
+    "body": 6,
+    "emp": 3
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Кевлар®",
+      "value": 7
+    },
+    "armor": {
+      "name": "Кевлар®",
+      "value": 7
+    },
+    "weapons": [
+      {
+        "name": "Дробовик пл.качества",
+        "dmg": "5d6"
+      },
+      {
+        "name": "Оч.Тяжелый Пистолет",
+        "dmg": "4d6"
+      }
+    ],
+    "gear": [
+      {
+        "name": "Боеприпасы для дробовика",
+        "count": 25
+      },
+      {
+        "name": "Боеприпасы для оч.тяжелого пистолета",
+        "count": 25
+      },
+      {
+        "name": "Рация",
+        "count": 1
+      }
+    ],
+    "cyberware": []
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "martial-arts": [
+        {
+          "name": "Каратэ",
+          "level": 0
+        }
+      ],
+      "melee-weapons": 0,
+      "brawling": 0,
+      "dodge": 0
+    },
+    "perception-skills": {
+      "attentiveness": 0,
+      "tracking": 0,
+      "concentration": 0,
+      "hide-reveal-object": 0,
+      "lip-reading": 0
+    },
+    "range-combat-skills": {
+      "autofire": 0,
+      "heavy-weapons": 0,
+      "pistols": 0,
+      "bows": 0,
+      "assault-weapons": 0
+    },
+    "educational-skills": {
+      "gambling": 0,
+      "business": 0,
+      "accounting": 0,
+      "bureaucracy": 0,
+      "desert-surviving": 0,
+      "deduction": 0,
+      "area-knowledge": 0,
+      "composition": 0,
+      "criminology": 0,
+      "cryptography": 0,
+      "science": 0,
+      "education": 0,
+      "animals-treatment": 0,
+      "info-search": 0,
+      "tactics": 0,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 0
+        }
+      ]
+    },
+    "social-skills": {
+      "style": 0,
+      "interrogation": 0,
+      "streetwise": 0,
+      "communication": 0,
+      "bribe": 0,
+      "insight": 0,
+      "trading": 0,
+      "persuasion": 0,
+      "self-care": 0
+    },
+    "stage-skills": {
+      "acting": 0,
+      "music": 0
+    },
+    "tech-skills": {
+      "avia-tech": 0,
+      "car-tech": 0,
+      "lock-picking": 0,
+      "tech-knowledge": 0,
+      "pickpocketing": 0,
+      "cyber-tech": 0,
+      "photo-tech": 0,
+      "sea-tech": 0,
+      "gun-tech": 0,
+      "paramedic": 0,
+      "first-aid": 0,
+      "saboteur": 0,
+      "falsification": 0,
+      "art": 0,
+      "electronic-security": 0
+    },
+    "drive-skills": {
+      "horseback-riding": 0,
+      "driving": 0,
+      "piloting": 0,
+      "navigation": 0
+    },
+    "physical-skills": {
+      "athletics": 0,
+      "acrobatics": 0,
+      "endurance": 0,
+      "stealth": 0,
+      "resistance": 0,
+      "dance": 0
+    }
+  },
+  "description": [
+    "",
+    ""
+  ]
+}

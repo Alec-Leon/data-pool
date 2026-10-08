@@ -1,0 +1,19 @@
+---
+title: Броня
+permalink: /equipment/armor/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Броня</h1>
+<p class="shop-intro">Защита тела, головы, щиты и прочее</p>
+
+{{ catalog(collections.armorCategories, collections.armor, {
+  searchPlaceholder: "Найти броню…",
+  cardFields: [
+    { key: "sp", label: "ОС" },
+    { key: "bodyPart", label: "Часть" }
+  ]
+}) }}

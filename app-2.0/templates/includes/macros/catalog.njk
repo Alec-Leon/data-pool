@@ -1,0 +1,105 @@
+{# Unified catalog: all items first, then optional category + text filters #}
+{% macro catalog(categories, collection, opts) %}
+{% set opts = opts or {} %}
+{% set cardFields = opts.cardFields or [] %}
+{% set filterKeys = opts.filters or [] %}
+
+<div class="catalog" data-catalog>
+  <div class="shop-toolbar">
+    <label class="shop-search">
+      <span class="visually-hidden">Поиск</span>
+      <input type="search" placeholder="{{ opts.searchPlaceholder or 'Найти…' }}" autocomplete="off" data-catalog-filter>
+    </label>
+    {% if filterKeys.length %}
+    <div class="shop-filter">
+      <button type="button" class="shop-filter__toggle" data-catalog-filters-toggle aria-expanded="false">
+        Фильтры
+        <span class="shop-filter__badge" data-catalog-filters-badge hidden>0</span>
+      </button>
+      <div class="shop-filter__panel" data-catalog-filters hidden>
+        {% for key in filterKeys %}
+        {% set values = collection | catalogFilterValues(key) %}
+        {% if values.length %}
+        <fieldset class="shop-filter__group" data-filter-key="{{ key }}">
+          <legend>{{ key | catalogFilterLabel }}</legend>
+          <div class="shop-filter__options">
+            {% for value in values %}
+            <label class="shop-filter__option">
+              <input type="checkbox" value="{{ value }}" data-filter-value>
+              <span>{{ value }}</span>
+            </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+        {% endif %}
+        {% endfor %}
+        <button type="button" class="shop-filter__reset" data-catalog-filters-reset>Сбросить</button>
+      </div>
+    </div>
+    {% endif %}
+    <p class="shop-count"><span data-catalog-count>{{ collection.length }}</span> / {{ collection.length }}</p>
+  </div>
+
+  {% if categories.length >= 1 %}
+  <div class="shop-tabs" role="tablist" aria-label="Категории">
+    <button type="button" class="shop-tab is-active" role="tab" data-category="*" aria-selected="true">Все</button>
+    {% for cat in categories %}
+    <button type="button" class="shop-tab" role="tab" data-category="{{ cat.id }}" aria-selected="false">{{ cat.label }}</button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="weapon-grid" data-catalog-grid>
+  {% for entry in collection %}
+    {% set d = entry.data %}
+    <button
+      type="button"
+      class="weapon-card{% if cardFields.length %} weapon-card--has-stats{% endif %}"
+      data-item-open
+      data-slug="{{ d.slug }}"
+      data-title="{{ d.title }}"
+      data-category="{{ d | itemCategoryIds }}"
+      data-category-label="{{ d | itemCategoryLabels }}"
+      {% for key in filterKeys %}data-f-{{ key }}="{{ d[key] or '' }}" {% endfor %}
+      data-search="{{ d.title | lower }}{% if d.summary %} {{ d.summary | lower }}{% endif %}{% if d.price %} {{ d.price | lower }}{% endif %}{% if d.availability %} {{ d.availability | lower }}{% endif %}{% if d.source %} {{ d.source | lower }}{% endif %}{% if d.skill %} {{ d.skill | lower }}{% endif %}{% if d.brand %} {{ d.brand | lower }}{% endif %}{% if d.type %} {{ d.type | lower }}{% endif %}{% if d.sp %} {{ d.sp | lower }}{% endif %}"
+    >
+      <span class="weapon-card__name">{{ d.title }}</span>
+
+      {% if cardFields.length %}
+      <span class="weapon-card__meta">
+        {% for field in cardFields %}
+          {% if d[field.key] %}
+          <span class="stat"><em>{{ field.label }}</em><span class="stat__value">{{ d[field.key] }}</span></span>
+          {% endif %}
+        {% endfor %}
+      </span>
+      {% endif %}
+
+      <span class="weapon-card__summary">{{ d.summary or "" }}</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">{{ d.source or "—" }}</span>
+        {% if d.price or d.availability %}
+        <span class="weapon-card__price">{% if d.price %}{{ d.price }}{% endif %}{% if d.availability %}{% if d.price %} {% endif %}({{ d.availability }}){% endif %}{% if d.priceNote %} · {{ d.priceNote }}{% endif %}</span>
+        {% endif %}
+      </span>
+    </button>
+  {% endfor %}
+  </div>
+</div>
+
+<div class="item-templates" hidden>
+{% for entry in collection %}
+  {% set d = entry.data %}
+  <template id="item-tpl-{{ d.slug }}">
+    <script type="application/json" class="item-stats">{{ d | catalogStats | dump | safe }}</script>
+    <div class="weapon-detail">
+      {% if d.image %}
+      <p class="weapon-detail__image"><img src="{{ d.image | url }}" alt="{{ d.title }}"></p>
+      {% endif %}
+      {{ entry.templateContent | safe }}
+    </div>
+  </template>
+{% endfor %}
+</div>
+{% endmacro %}

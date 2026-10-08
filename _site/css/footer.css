@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "CyberFont";
+    src: url("/data-pool/fonts/Cyberpunk_RUS_BY_LYAJKA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-footer {
+    color: #ff0040;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 2px solid #ff0040;
+    border-bottom: 2px solid #ff0040;;
+}
+
+.footer-title {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'CyberFont', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+}
+
+.footer-subtitle {
+    font-family: 'CyberFont', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-team {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #ff0040;
+    transition: background 0.2s ease;
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+}
+
+.person-info {
+    text-align: left;
+    margin-top: 0.3em;
+}
+
+.person-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.person-role {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.2em;
+}
+
+.person:hover {
+    background: rgba(255, 0, 64, 0.1);
+    color: #ffffff;
+}
+
+.person img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #ff0040;
+    box-shadow: 0 0 8px #ff0040;
+}
+
+.person span {
+    font-size: 0.95rem;
+    color: #ff0040;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo-left img,
+.footer-logo-right img {
+    max-height: 120px;
+    height: auto;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    color: #fff;
+    text-align: right;
+}

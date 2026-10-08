@@ -1,0 +1,48 @@
+---
+title: Снаряжение
+permalink: /equipment/
+layout: base.njk
+---
+
+<a href="{{ '/' | url }}" class="return-link">← Data Pool 2.0</a>
+
+<h1>Снаряжение</h1>
+<p class="shop-intro">Каталог для уличных самураев, корпоратов и соло. Карточки → подробности в модалке.</p>
+
+<div class="hub-grid">
+  <a href="{{ '/equipment/weapons/range/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/weapons.png' | url }}" alt="">
+    <span class="hub-card__title">Оружейный магазин</span>
+    <span class="hub-card__meta">{{ collections.weapons.length }} позиций</span>
+  </a>
+  <a href="{{ '/equipment/armor/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/armor.png' | url }}" alt="">
+    <span class="hub-card__title">Броня</span>
+    <span class="hub-card__meta">{{ collections.armor.length }} позиций</span>
+  </a>
+  <a href="{{ '/equipment/items/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/items.png' | url }}" alt="">
+    <span class="hub-card__title">Предметы</span>
+    <span class="hub-card__meta">{{ collections.gear.length }} позиций</span>
+  </a>
+  <a href="{{ '/equipment/agents/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/agents_accessories.png' | url }}" alt="">
+    <span class="hub-card__title">Агенты и аксессуары</span>
+    <span class="hub-card__meta">{{ collections.agents.length }} позиций</span>
+  </a>
+  <a href="{{ '/equipment/soft/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/soft.png' | url }}" alt="">
+    <span class="hub-card__title">Софт для Агента</span>
+    <span class="hub-card__meta">{{ collections.soft.length }} позиций</span>
+  </a>
+  <a href="{{ '/equipment/clothes-style/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/equipment/clothes_style.png' | url }}" alt="">
+    <span class="hub-card__title">Одежда и стиль</span>
+    <span class="hub-card__meta">Справочник</span>
+  </a>
+  <a href="{{ '/equipment/acpa/' | url }}" class="hub-card">
+    <img src="{{ '/images/content/chrome/pkt_packs.png' | url }}" alt="">
+    <span class="hub-card__title">Силовая броня</span>
+    <span class="hub-card__meta">{{ collections.acpa.length }} костюмов</span>
+  </a>
+</div>

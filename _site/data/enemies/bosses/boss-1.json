@@ -1,0 +1,140 @@
+{
+  "name": "Киберпсихопат",
+  "stats": {
+    "hp": 55,
+    "wound": 28,
+    "save": 10,
+    "int": 5,
+    "ref": 8,
+    "dex": 8,
+    "tech": 5,
+    "char": 4,
+    "will": 7,
+    "luck": 0,
+    "spd": 8,
+    "body": 10,
+    "emp": 0
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Подкожная броня",
+      "value": 11
+    },
+    "armor": {
+      "name": "Подкожная броня",
+      "value": 11
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/rocket-launcher.png",
+        "name": "Выкидной гранатомёт",
+        "dmg": "6d6"
+      },
+      {
+        "name": "Выкидной тяжёлый ПП",
+        "dmg": "3d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/snake.png",
+        "name": "Киберзмея",
+        "dmg": "4d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/claws.png",
+        "name": "Когти росомахи",
+        "dmg": "3d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/grenade.png",
+        "name": "Бронебойная граната",
+        "count": 2
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы в тяжелый пистолет",
+        "count": 100
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Киберрука x2 (Выкидной гранатомёт x2, Выкидной тяжёлый ПП, Когти росомахи)"
+      },
+      {
+        "name": "Кибернога x2 (Прыжковый ускоритель x2)"
+      },
+      {
+        "name": "Киберзмея"
+      },
+      {
+        "name": "Искусственные мышцы и усиленные кости"
+      },
+      {
+        "name": "Нейролинк (Разъём для щепок, Редактор боли)"
+      },
+      {
+        "name": "Подкожная броня"
+      }
+    ]
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "melee-weapons": 17,
+      "brawling": 15,
+      "dodge": 13
+    },
+    "perception-skills": {
+      "attentiveness": 9,
+      "tracking": 10,
+      "concentration": 6,
+      "insight": 2
+    },
+    "range-combat-skills": {
+      "autofire": 14,
+      "heavy-weapons": 14,
+      "pistols": 12
+    },
+    "educational-skills": {
+      "area-knowledge": [
+        {
+          "name": "Твой дом",
+          "level": 7
+        }
+      ],
+      "education": 7,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 7
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 7
+        }
+      ]
+    },
+    "social-skills": {
+      "interrogation": 13,
+      "communication": 2,
+      "persuasion": 6
+    },
+    "stage-skills": {},
+    "tech-skills": {
+      "tech-knowledge": 11,
+      "first-aid": 6
+    },
+    "drive-skills": {
+      "driving": 10
+    },
+    "physical-skills": {
+      "athletics": 16,
+      "endurance": 10,
+      "stealth": 10,
+      "resistance": 15
+    }
+  },
+  "description": [
+    ""
+  ]
+}

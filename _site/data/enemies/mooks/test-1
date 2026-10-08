@@ -1,0 +1,38 @@
+{
+  "id": "mook-2",
+  "name": "Дорожный Бандит",
+  "stats": {
+    "hp": 28,
+    "wound": 14,
+    "save": 6,
+    "int": 2,
+    "ref": 5,
+    "dex": 5,
+    "tech": 3,
+    "char": 3,
+    "will": 4,
+    "luck": 0,
+    "spd": 4,
+    "body": 5,
+    "emp": 2
+  },
+  "equipment": {
+    "helmet": null,
+    "armor": { "name": "Легкая броня", "value": 4 },
+    "weapons": [
+      { "name": "Пистолет", "dmg": "2d6" },
+      { "name": "Бита", "dmg": "2d6" }
+    ],
+    "gear": [
+      { "name": "Патроны 9мм", "count": 30 }
+    ],
+    "cyberware": []
+  },
+  "skills": {
+    "physical-skills": { "athletics": 2, "stealth": 1 },
+    "range-combat-skills": { "pistols": 3 },
+    "melee-combat-skills": { "brawling": 2 },
+    "social-skills": { "streetwise": 3 }
+  },
+  "description": ["Нападает на автомобили ночью.", "Неустойчив под давлением."]
+}

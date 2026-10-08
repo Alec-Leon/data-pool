@@ -1,0 +1,16 @@
+---
+title: Предметы
+permalink: /equipment/items/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Предметы</h1>
+<p class="shop-intro">Гаджеты, инструменты и расходники. Нажмите карточку для полного описания.</p>
+
+{{ catalog(collections.gearCategories, collections.gear, {
+  searchPlaceholder: "Найти предмет…",
+  cardFields: []
+}) }}

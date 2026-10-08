@@ -1,0 +1,27 @@
+---
+title: Взрывчатка и гранаты
+permalink: /equipment/weapons/explosives/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Оружейный магазин</h1>
+
+<div class="tab-buttons">
+    <a class="tab-button" href="{{ '/equipment/weapons/range/' | url }}">Огнестрельное оружие →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/melee/' | url }}">Холодное оружие →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/ammo/' | url }}">Боеприпасы →</a>
+    <a class="tab-button active" href="{{ '/equipment/weapons/explosives/' | url }}">Взрывчатка и гранаты</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/upgrades/' | url }}">Модификации →</a>
+</div>
+
+<p class="shop-intro">Каталог всего взрывоопасного для киберпанков-пироманьяков.</p>
+
+{{ catalog(collections.weaponsExplosivesCategories, collections.weaponsExplosives, {
+  searchPlaceholder: "Найти взрывчатку…",
+  cardFields: [
+    { key: "damage", label: "Урон" }
+  ]
+}) }}

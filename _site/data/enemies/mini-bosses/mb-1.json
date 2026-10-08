@@ -1,0 +1,137 @@
+{
+  "name": "Патрульный",
+  "stats": {
+    "hp": 40,
+    "wound": 20,
+    "save": 6,
+    "int": 6,
+    "ref": 8,
+    "dex": 8,
+    "tech": 3,
+    "char": 5,
+    "will": 6,
+    "luck": 0,
+    "spd": 6,
+    "body": 6,
+    "emp": 6
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Лёгкий Бронекостюм",
+      "value": 11
+    },
+    "armor": {
+      "name": "Лёгкий Бронекостюм",
+      "value": 11
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/rifle.png",
+        "name": "Штурмовая винтовка",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Очень тяжёлый пистолет",
+        "dmg": "4d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Лёгкое оружие ближнего боя",
+        "dmg": "1d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для штурмовой винтовки",
+        "count": 60
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для очень тяжёлого пистолета",
+        "count": 40
+      },
+      {
+        "icon": "images/content/enemies/item-icons/handcuffs.png",
+        "name": "Наручники",
+        "count": 2
+      },
+      {
+        "icon": "images/content/enemies/item-icons/deck.png",
+        "name": "Трекер маячка",
+        "count": 1
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Комплект Кибераудио (Усиленный слух)"
+      },
+      {
+        "name": "Киберглаз (Тактический прицел, Телеоптика)"
+      },
+      {
+        "name": "Нейролинк (Личный порт)"
+      }
+    ]
+  },
+  "skills": {
+    "range-combat-skills": {
+      "autofire": 12,
+      "pistols": 14
+    },
+    "melee-combat-skills": {
+      "melee-weapons": 12,
+      "brawling": 14,
+      "dodge": 14
+    },
+    "physical-skills": {
+      "athletics": 14,
+      "endurance": 10,
+      "stealth": 12,
+      "resistance": 12
+    },
+    "perception-skills": {
+      "attentiveness": 14,
+      "concentration": 10,
+      "tracking": 10
+    },
+    "educational-skills": {
+      "area-knowledge": [
+        {
+          "name": "Бесплодные земли",
+          "level": 10
+        },
+        {
+          "name": "Дом",
+          "level": 8
+        }
+      ],
+      "education": 8,
+      "criminology": 10,
+      "animals-treatment": 8,
+      "tech-knowledge": 5,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 8
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 8
+        }
+      ]
+    },
+    "social-skills": {
+      "communication": 6,
+      "persuasion": 7
+    },
+    "tech-skills": {
+      "first-aid": 5
+    },
+    "drive-skills": {
+      "driving": 14
+    }
+  },
+  "description": [""]
+}

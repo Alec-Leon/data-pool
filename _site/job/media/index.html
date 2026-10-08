@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Медиа · Data Pool</title>
+    <link rel="stylesheet" href="/data-pool/css/main.css">
+    <link rel="icon" href="/data-pool/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <img src="/data-pool/images/data-pool_header.png" alt="Data Pool Header">
+    <div class="page-tabs">
+        <div class="page-tab-item active" id="home" data-open="home">DataPool</div>
+<!--        <div class="page-tab-item" id="charlist" data-open="charlist">Лист Персонажа</div>-->
+        <div class="page-tab-item" id="gm-screen" data-open="gm-screen">Ширма Мастера</div>
+        <div class="page-tab-item" id="enemies" data-open="enemies">Противники</div>
+    </div>
+</header>
+
+<div class="layout">
+    <div class="search-box">
+        <input
+                type="text"
+                id="search-input"
+                placeholder="Поиск по датапулу..."
+                autocomplete="off"
+        />
+        <ul id="search-results"></ul>
+    </div>
+    <aside class="sidebar" id="sidebar">
+    <nav>
+        <div class="logo">
+            <a href="/data-pool/">
+                <img src="/data-pool/images/logo.png" alt="Data Pool Logo"/>
+            </a>
+        </div>
+
+        <details class="sidebar-group" close>
+            <summary>Справочники</summary>
+            <h3><a href="/data-pool/equipment/">📦 Снаряжение</a></h3>
+            <ul>
+                <li><a href="/data-pool/equipment/clothes_style/">Одежда и Стиль</a></li>
+                <li><a href="/data-pool/equipment/weapons/">Оружейный Магазин</a></li>
+                <li><a href="/data-pool/equipment/armor/">Броня</a></li>
+                <li><a href="/data-pool/equipment/items/">Предметы</a></li>
+                <li><a href="/data-pool/equipment/agents_accessories/">Каталог Агентов и Аксессуаров</a></li>
+                <li><a href="/data-pool/equipment/soft/">Софт для Агента</a></li>
+                <li><a href="/data-pool/equipment/acpa/">Силовая Броня</a></li>
+            </ul>
+            <h3><a href="/data-pool/health/">🩸 Твоё Здоровье</a></h3>
+            <ul>
+                <li><a href="/data-pool/health/wounds/">Травмы</a></li>
+                <li><a href="/data-pool/health/other/">Другие способы пострадать</a></li>
+                <li><a href="/data-pool/health/drugs_medicine/">Наркотики и лекарства</a></li>
+                <li><a href="/data-pool/health/healing_therapy_implants/">Лечение, терапия и установка имплантов</a>
+                </li>
+            </ul>
+            <h3><a href="/data-pool/city/">🏙️ Город</a></h3>
+            <ul>
+                <li><a href="/data-pool/city/ncpd/">NCPD</a></li>
+                <li><a href="/data-pool/city/trauma_team/">Trauma Team</a></li>
+                <li><a href="/data-pool/city/nc_map/">Карта Найт-Сити</a></li>
+                <li><a href="/data-pool/city/corpos/">Корпорации</a></li>
+                <li><a href="/data-pool/city/loot_places/">Места для Сбора</a></li>
+            </ul>
+            <h3><a href="/data-pool/workshop/">🔧 Мастерская</a></h3>
+            <ul>
+                <li><a href="/data-pool/workshop/garage/">Гараж</a></li>
+                <li><a href="/data-pool/workshop/repair/">Обслуживание снаряги</a></li>
+                <li><a href="/data-pool/workshop/drones/">Дроны</a></li>
+                <li><a href="/data-pool/workshop/upgrades/">Техапгрейды</a></li>
+            </ul>
+            <h3><a href="/data-pool/chrome/">🤖 Твой Хром</a></h3>
+            <ul>
+                <li><a href="/data-pool/chrome/implants/">Киберимпланты</a></li>
+                <li><a href="/data-pool/chrome/borgs/">Экзоскелеты/Боргирование</a></li>
+                <li><a href="/data-pool/chrome/pkt_packs/">ПКТ комплекты</a></li>
+                <li><a href="/data-pool/chrome/pkt_implants/">ПКТ импланты</a></li>
+                <li><a href="/data-pool/chrome/psycho/">Киберпсихоз</a></li>
+                <li><a href="/data-pool/chrome/exotic/">Биоэкзотика Биотехники</a></li>
+            </ul>
+            <h3><a href="/data-pool/home/">🏠 Где ты живешь</a></h3>
+            <ul>
+                <li><a href="/data-pool/home/containers/">Грузовые контейнеры и Куб-отели</a></li>
+                <li><a href="/data-pool/home/aparts/">Конапты и Апартаменты</a></li>
+                <li><a href="/data-pool/home/goods/">Товары для дома</a></li>
+                <li><a href="/data-pool/home/base/">Нет места лучше дома</a></li>
+            </ul>
+            <h3><a href="/data-pool/contacts/">📱 Твои контакты</a></h3>
+            <ul>
+                <li><a href="/data-pool/contacts/streetlang/">Уличный сленг</a></li>
+                <li><a href="/data-pool/contacts/reputation/">Репутация</a></li>
+                <li><a href="/data-pool/contacts/night_market/">Ночной рынок</a></li>
+            </ul>
+            <h3><a href="/data-pool/net/">🌐 Сеть</a></h3>
+            <ul>
+                <li><a href="/data-pool/net/netrun/">Нетран.Оборудование.Софт</a></li>
+                <li><a href="/data-pool/net/weather/">Прогноз погоды</a></li>
+                <li><a href="/data-pool/net/quick_hacks/">Быстрый Взлом (EMK)</a></li>
+            </ul>
+            <h3><a href="/data-pool/job/">💼 Твоя работа</a></h3>
+            <ul>
+                <li><a href="/data-pool/job/tech/">Техник</a></li>
+                <li><a href="/data-pool/job/suit/">Корпорат</a></li>
+                <li><a href="/data-pool/job/nomad/">Кочевник</a></li>
+                <li><a href="/data-pool/job/medic/">МедТех</a></li>
+                <li><a href="/data-pool/job/fixer/">Фиксер</a></li>
+                <li><a href="/data-pool/job/netrunner/">Нетраннер</a></li>
+                <li><a href="/data-pool/job/cop/">Законник</a></li>
+                <li><a href="/data-pool/job/rocker/">Рокербой</a></li>
+                <li><a href="/data-pool/job/media/">Медиа</a></li>
+                <li><a href="/data-pool/job/solo/">Соло</a></li>
+            </ul>
+            <h3><a href="/data-pool/other/">📁 Остальное</a></h3>
+            <ul>
+                <li><a href="/data-pool/other/martial_arts/">Боевые Искусства</a></li>
+            </ul>
+        </details>
+        <details class="sidebar-group" close>
+            <summary>GM Place</summary>
+            <ul>
+                <li><a href="/data-pool/gm/combat/">Таблицы боя</a></li>
+                <li><a href="/data-pool/gm/features/">Механики</a></li>
+                <li><a href="/data-pool/gm/economic/">Экономика</a></li>
+                <li><a href="/data-pool/gm/generators/">Генераторы</a></li>
+                <li><a href="/data-pool/gm/traps/">Дроны и ловушки</a></li>
+                <li><a href="/data-pool/gm/ambush/">Засада и раунд неожиданности</a></li>
+                <li><a href="/data-pool/gm/luck/">Вспышка Удачи</a></li>
+            </ul>
+        </details>
+        <h4><a href="/data-pool/faq/">FAQ по CPRed</a></h4>
+        <h4><a href="/data-pool/rules/">Книги Правил</a></h4>
+        <h4><a href="/data-pool/updates/">Последние Новости</a></h4>
+        <h4><a href="/data-pool/support/">Поддержка и Обратная Связь</a></h4>
+        <h4><a href="/data-pool/thanks/">Благодарим за поддержку!</a></h4>
+    </nav>
+    <div class="sidebar-version">
+        Версия: 1.6.4
+    </div>
+</aside>
+
+    <main class="content" id="main-content">
+        <p><a href="/data-pool/job/" class="return-link">Твоя Работа</a></p>
+<h1 id="медиа---ролевая-способность" tabindex="-1">Медиа - Ролевая Способность</h1>
+<div class="image-container image-left">
+    <img src="/data-pool/images/content/job/media/media-art.png" alt="Медиа">
+    <div class="text">
+        <p>
+<blockquote>
+<p>&quot;Раньше работал в Найт-Сити Тудей, можешь в это поверить? Таскал кофе и носил камеру,
+как сраный мул! Первая съемка, которая стала сенсацией? Какая-то пустышка про
+пиар-ход корпорации, раздающей кибл-паки людям, нуждающимся в настоящей еде... Я
+стал репортером, не для того, чтобы улыбаться в камеру и шутить с метеорологом,
+подсевшим на синтококс. Вот почему я уволился. Теперь я в гуще событий: острый сюжет.
+Я управляю собственным магазином, ищу потенциальных клиентов и несу людям
+новости, которые им действительно нужны! Если вы хотите знать, что на самом деле
+происходит в городе, кликните на неморгающие новости.&quot;<br><br>
+— 24/7, Репортёр Неморгающих Новостей<br><br></p>
+</blockquote>
+<p>Ролевая способность Медиа – это Доверие. Медиа могут не только убедить аудиторию в правдивости того, что они публикуют,
+чем больше доверия они вызывают, тем большую аудиторию они получают.
+Медиа также имеют более высокий уровень доступа к источникам и информации, они
+всегда в курсе и держат ухо в остро, чтобы быстро улавливать слухи и информацию.</p>
+<p></p>
+</div></p>
+</div>
+<div class="tab-buttons">
+  <button class="tab-button active" data-tab="skill1">Слухи</button>
+  <button class="tab-button" data-tab="skill2">Публикация Статей или Разоблачений</button>
+</div>
+<div class="tab-content active" id="skill1">
+        <div class="image-container image-left">
+          <img src="/data-pool/images/content/job/media/media-table.png" alt="Таблица Слухов">
+          <div class="text">
+            <p>
+<p>Медиа глубоко интегрированны в информационные сети. Предполагая, что ты не полностью отключен от Сети, по крайней мере,
+два раза в неделю ГМ будет тайно бросать твой ранг Доверия + 1d10.
+Если проверка побьет любой из СЛ в колонке Пассивных слухов таблицы слухов, ГМ расскажет Медиа о слухе с наивысшей СЛ,
+который побила проверка. Это те же слухи, которые Медиа могут найти, попав на Улицы во время игры,
+используя свои соответствующие навыки сбора информации, такие как поиск информации, общение
+или допрос.<br></p>
+<p><strong>Когда Медиа активно ищет такой слух, он бросает соответствующий СТАТ + соответствующий Навык + 1d10
+против СЛ в колонке Активных слухов, которую ГМ установил для слуха, в зависимости от того, насколько он подробен.</strong></p>
+<p></p>
+</div>
+</div></p>
+<p><strong>Слухи, по определению, часто не соответствуют действительности и никогда не являются полной историей.
+Раскопать все детали — твоя работа!</strong><br></p>
+<p><strong>Помни, что за некоторые ниточки опасно дергать.</strong></p>
+</div>
+<div class="tab-content" id="skill2">
+<p><br>🔴 <strong>Доступ/Источники:</strong> Те, с кем можно связаться (в разумных пределах), взять интервью или иным образом получить от них информацию.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Сколько людей узнают про статьи или разоблачения.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> насколько хорошо статья или разоблачение будут приняты аудиторией.<br>
+Чем выше Ранг Доверия, тем больше шансов, что люди поверят рассказам.
+При публикации статьи или в любое другое время, когда ты хочешь узнать, верит ли человек
+(или группа людей) статье, ты кидаешь 1d10, ориентируясь на Достоверность.<br></p>
+<p><strong>Если в твоей статье есть хотя бы одно легко проверяемое доказательство, которое доступно для понимания широким массам,
+шанс того, что твоя аудитория поверит в это, увеличивается на 1.<br>
+Если она содержит более 4 различных неопровержимых доказательства, шанс того, что твоя аудитория поверит в это, увеличивается на 2.<br>
+Эти два бонуса суммируются.</strong><br>
+Удачу (УДЧ) нельзя тратить на проверку “Достоверности”.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> насколько сильно каждая опубликованная статья или разоблачение повлияет на аудиторию. Например,
+статья о незаконной экономической деятельности, на начальном уровне может лишь вынудить парочку местных
+боссов, сменить свою деятельность. Но на более высоких уровнях Доверия, разоблачения могут привести к
+падению целых Мегакорпораций. ГМ должен справляться с этим.<br></p>
+<p><strong>После публикации статьи/разоблачения нельзя публиковать еще одну статью на эту же тему,
+если только у вас нет новой информации, которую можно добавить.</strong></p>
+<hr>
+<h3 id="ранги-доверия" tabindex="-1">Ранги Доверия:</h3>
+<details class="sidebar-group" close>
+    <summary>Ранги 1-2</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Местный босс, главарь банды, лидер местного квартала.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Ближайшие соседи.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 2 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения происходят небольшие, постепенные изменения. Мелкие хулиганы напуганы и могут слегка изменить свои действия.</p>
+</details>
+<details class="sidebar-group" close>
+    <summary>Ранги 3-4</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Босс городской банды, мелкий политик, управляющий менеджер Корпорации, хорошо
+известный человек в местных окрестностях.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Ты известен, как автор статей в местных Скримлистах или в ДатаПуле.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 3 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения происходит конкретный эффект. Местные мелкие хулиганы арестованы или лишены власти, правосудие восторжествовало.</p>
+</details>
+<details class="sidebar-group" close>
+    <summary>Ранги 5-6</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Ключевая фигура в городе, городской чиновник, местная знаменитость.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Твои статьи расходятся по всему городу. У тебя есть рубрики в местных Скримлистах или на ТВ.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 4 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения меняется ситуация в городе. Негодяи более высокого уровня могут быть посажены в тюрьму или лишены власти. Возможно, даже будут приняты местные законы.</p>
+</details>
+<details class="sidebar-group" close>
+    <summary>Ранги 7-8</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Президент местной Корпорации, мэр или городской управляющий, городская знаменитость.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Твои статьи расходятся по всему штату. Ты сам по себе уже, в каком то роде, знаменитость.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 5 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения может поменяться ситуация в нескольких городах.
+Корпорации среднего уровня или “невысокое” правительство могут быть лишены власти.
+Возможно, даже будут приняты законы, в нескольких городах.</p>
+</details>
+<details class="sidebar-group" close>
+    <summary>Ранг 9</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Глава регионального подразделения Корпорации, государственный политик, известная знаменитость.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Ты многим известен по всей стране, но не всем. Если тебя кто-то увидит, скорей всего об этом расскажут в местных новостях.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 6 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения может поменяться ситуация по всей стране.
+Можно свергнуть большие корпорации или местное правительство. Возможно, даже будут приняты законы, по всей стране.</p>
+</details>
+<details class="sidebar-group" close>
+    <summary>Ранг 10</summary>
+<p>🔴 <strong>Доступ / Источники:</strong> Крупный мировой лидер, глава крупной Корпорации, всемирно известная знаменитость.<br><br></p>
+<p>🔴 <strong>Аудитория:</strong> Ты известен на весь мир. Люди просят у тебя автограф, а высокопоставленные лица используют тебя для слива важной информации.<br><br></p>
+<p>🔴 <strong>Достоверность:</strong> Вероятность 7 из 10, что аудитория купится на это.<br><br></p>
+<p>🔴 <strong>Влияние:</strong> В результате статьи/разоблачения может поменяется ситуация во всём мире.
+Мегакорпорации и могущественные правительства могут рухнуть или быть свергнуты.
+Могут быть установлены международные законы. Изменения могут затронуть миллионы людей.</p>
+</details>
+</div>
+
+        
+    </main>
+    <div id="gm-screen-mode"
+         class="gm-screen-mode hidden"
+         data-screen-url="/data-pool/gm-screen/screen/index.html">
+        <div id="gm-screen-content"></div>
+    </div>
+    <div id="enemies-mode"
+         class="enemies-mode hidden"
+         data-enemies-url="/data-pool/data/enemies/enemies-index.json">
+        <div class="enemies-root">
+            <aside class="enemies-sidebar">
+                <div id="enemy-tier-buttons"></div>
+                <div id="enemy-tier-description" class="enemy-tier-description"></div>
+            </aside>
+            <div id="enemy-type-buttons"></div>
+            <section id="enemy-details"></section>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.ru.js"></script>
+<script>window.__BASE_PATH__ = "/data-pool/";</script>
+<button id="scrollToTopBtn" title="Наверх" aria-label="Наверх"
+        style="display: none; position: fixed; bottom: 2em; right: 2em; z-index: 999; background: #ff0040; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; box-shadow: 0 0 10px rgba(255, 0, 64, 0.5);">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#000">
+        <path d="M12 4L4 12H9V20H15V12H20L12 4Z"/>
+    </svg>
+</button>
+<div id="toc-toggle" class="toc-button" title="Оглавление">☰</div>
+<div id="toc-popup" class="toc-popup hidden">
+    <div class="toc-popup-inner" id="toc-dynamic"></div>
+</div>
+
+<script src="/data-pool/app/app.js"></script>
+<script src="/data-pool/app/spa.js" defer></script>
+<script src="/data-pool/app/gm-panel.js" defer></script>
+<script src="/data-pool/data/enemies/dictionary.js" defer></script>
+<script src="/data-pool/app/enemies.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Места для Сбора · Data Pool</title>
+    <link rel="stylesheet" href="/data-pool/css/main.css">
+    <link rel="icon" href="/data-pool/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <img src="/data-pool/images/data-pool_header.png" alt="Data Pool Header">
+    <div class="page-tabs">
+        <div class="page-tab-item active" id="home" data-open="home">DataPool</div>
+<!--        <div class="page-tab-item" id="charlist" data-open="charlist">Лист Персонажа</div>-->
+        <div class="page-tab-item" id="gm-screen" data-open="gm-screen">Ширма Мастера</div>
+        <div class="page-tab-item" id="enemies" data-open="enemies">Противники</div>
+    </div>
+</header>
+
+<div class="layout">
+    <div class="search-box">
+        <input
+                type="text"
+                id="search-input"
+                placeholder="Поиск по датапулу..."
+                autocomplete="off"
+        />
+        <ul id="search-results"></ul>
+    </div>
+    <aside class="sidebar" id="sidebar">
+    <nav>
+        <div class="logo">
+            <a href="/data-pool/">
+                <img src="/data-pool/images/logo.png" alt="Data Pool Logo"/>
+            </a>
+        </div>
+
+        <details class="sidebar-group" close>
+            <summary>Справочники</summary>
+            <h3><a href="/data-pool/equipment/">📦 Снаряжение</a></h3>
+            <ul>
+                <li><a href="/data-pool/equipment/clothes_style/">Одежда и Стиль</a></li>
+                <li><a href="/data-pool/equipment/weapons/">Оружейный Магазин</a></li>
+                <li><a href="/data-pool/equipment/armor/">Броня</a></li>
+                <li><a href="/data-pool/equipment/items/">Предметы</a></li>
+                <li><a href="/data-pool/equipment/agents_accessories/">Каталог Агентов и Аксессуаров</a></li>
+                <li><a href="/data-pool/equipment/soft/">Софт для Агента</a></li>
+                <li><a href="/data-pool/equipment/acpa/">Силовая Броня</a></li>
+            </ul>
+            <h3><a href="/data-pool/health/">🩸 Твоё Здоровье</a></h3>
+            <ul>
+                <li><a href="/data-pool/health/wounds/">Травмы</a></li>
+                <li><a href="/data-pool/health/other/">Другие способы пострадать</a></li>
+                <li><a href="/data-pool/health/drugs_medicine/">Наркотики и лекарства</a></li>
+                <li><a href="/data-pool/health/healing_therapy_implants/">Лечение, терапия и установка имплантов</a>
+                </li>
+            </ul>
+            <h3><a href="/data-pool/city/">🏙️ Город</a></h3>
+            <ul>
+                <li><a href="/data-pool/city/ncpd/">NCPD</a></li>
+                <li><a href="/data-pool/city/trauma_team/">Trauma Team</a></li>
+                <li><a href="/data-pool/city/nc_map/">Карта Найт-Сити</a></li>
+                <li><a href="/data-pool/city/corpos/">Корпорации</a></li>
+                <li><a href="/data-pool/city/loot_places/">Места для Сбора</a></li>
+            </ul>
+            <h3><a href="/data-pool/workshop/">🔧 Мастерская</a></h3>
+            <ul>
+                <li><a href="/data-pool/workshop/garage/">Гараж</a></li>
+                <li><a href="/data-pool/workshop/repair/">Обслуживание снаряги</a></li>
+                <li><a href="/data-pool/workshop/drones/">Дроны</a></li>
+                <li><a href="/data-pool/workshop/upgrades/">Техапгрейды</a></li>
+            </ul>
+            <h3><a href="/data-pool/chrome/">🤖 Твой Хром</a></h3>
+            <ul>
+                <li><a href="/data-pool/chrome/implants/">Киберимпланты</a></li>
+                <li><a href="/data-pool/chrome/borgs/">Экзоскелеты/Боргирование</a></li>
+                <li><a href="/data-pool/chrome/pkt_packs/">ПКТ комплекты</a></li>
+                <li><a href="/data-pool/chrome/pkt_implants/">ПКТ импланты</a></li>
+                <li><a href="/data-pool/chrome/psycho/">Киберпсихоз</a></li>
+                <li><a href="/data-pool/chrome/exotic/">Биоэкзотика Биотехники</a></li>
+            </ul>
+            <h3><a href="/data-pool/home/">🏠 Где ты живешь</a></h3>
+            <ul>
+                <li><a href="/data-pool/home/containers/">Грузовые контейнеры и Куб-отели</a></li>
+                <li><a href="/data-pool/home/aparts/">Конапты и Апартаменты</a></li>
+                <li><a href="/data-pool/home/goods/">Товары для дома</a></li>
+                <li><a href="/data-pool/home/base/">Нет места лучше дома</a></li>
+            </ul>
+            <h3><a href="/data-pool/contacts/">📱 Твои контакты</a></h3>
+            <ul>
+                <li><a href="/data-pool/contacts/streetlang/">Уличный сленг</a></li>
+                <li><a href="/data-pool/contacts/reputation/">Репутация</a></li>
+                <li><a href="/data-pool/contacts/night_market/">Ночной рынок</a></li>
+            </ul>
+            <h3><a href="/data-pool/net/">🌐 Сеть</a></h3>
+            <ul>
+                <li><a href="/data-pool/net/netrun/">Нетран.Оборудование.Софт</a></li>
+                <li><a href="/data-pool/net/weather/">Прогноз погоды</a></li>
+                <li><a href="/data-pool/net/quick_hacks/">Быстрый Взлом (EMK)</a></li>
+            </ul>
+            <h3><a href="/data-pool/job/">💼 Твоя работа</a></h3>
+            <ul>
+                <li><a href="/data-pool/job/tech/">Техник</a></li>
+                <li><a href="/data-pool/job/suit/">Корпорат</a></li>
+                <li><a href="/data-pool/job/nomad/">Кочевник</a></li>
+                <li><a href="/data-pool/job/medic/">МедТех</a></li>
+                <li><a href="/data-pool/job/fixer/">Фиксер</a></li>
+                <li><a href="/data-pool/job/netrunner/">Нетраннер</a></li>
+                <li><a href="/data-pool/job/cop/">Законник</a></li>
+                <li><a href="/data-pool/job/rocker/">Рокербой</a></li>
+                <li><a href="/data-pool/job/media/">Медиа</a></li>
+                <li><a href="/data-pool/job/solo/">Соло</a></li>
+            </ul>
+            <h3><a href="/data-pool/other/">📁 Остальное</a></h3>
+            <ul>
+                <li><a href="/data-pool/other/martial_arts/">Боевые Искусства</a></li>
+            </ul>
+        </details>
+        <details class="sidebar-group" close>
+            <summary>GM Place</summary>
+            <ul>
+                <li><a href="/data-pool/gm/combat/">Таблицы боя</a></li>
+                <li><a href="/data-pool/gm/features/">Механики</a></li>
+                <li><a href="/data-pool/gm/economic/">Экономика</a></li>
+                <li><a href="/data-pool/gm/generators/">Генераторы</a></li>
+                <li><a href="/data-pool/gm/traps/">Дроны и ловушки</a></li>
+                <li><a href="/data-pool/gm/ambush/">Засада и раунд неожиданности</a></li>
+                <li><a href="/data-pool/gm/luck/">Вспышка Удачи</a></li>
+            </ul>
+        </details>
+        <h4><a href="/data-pool/faq/">FAQ по CPRed</a></h4>
+        <h4><a href="/data-pool/rules/">Книги Правил</a></h4>
+        <h4><a href="/data-pool/updates/">Последние Новости</a></h4>
+        <h4><a href="/data-pool/support/">Поддержка и Обратная Связь</a></h4>
+        <h4><a href="/data-pool/thanks/">Благодарим за поддержку!</a></h4>
+    </nav>
+    <div class="sidebar-version">
+        Версия: 1.6.4
+    </div>
+</aside>
+
+    <main class="content" id="main-content">
+        <p><a href="/data-pool/city/" class="return-link">Город</a></p>
+<h1 id="места-для-сбора" tabindex="-1">Места для Сбора</h1>
+<div class="tab-buttons">
+  <button class="tab-button active" data-tab="3p">Суета вместе с 3-Пийс!</button>
+  <button class="tab-button" data-tab="rules">Правила Сбора</button>
+</div>
+<div class="tab-content active" id="3p">
+<p>Если вы живете в Найт-Сити и не продали свою душу корпам,
+скорее всего, вы ищете способы сохранить крышу над головой, еду на тарелке и эти сладкие-сладкие булочки в кармане.
+Что ж, я 3-Пийс (Костюм Тройка), и я здесь, чтобы показать вам нашу современную экономику,
+обеспечить вас жильем, пищей и возможностью не умереть в Красное время.
+Все это часть небольшого предприятия под названием...</p>
+<h4 id="суета-вместе-с-3-пийс" tabindex="-1">Суета вместе с 3-Пийс!</h4>
+<p>И если вы хотите помочь мне с жильем, пищей и жизнью, пожалуйста, подпишитесь на этот канал и посмотрите это видео до конца.
+Алгоритмы Зиккурат требуют полных просмотров, чтобы мой видео получил высокую оценку.
+Сегодня в Суете с 3-Писом я расскажу вам о теме, близкой и дорогой моему сердцу:<br><br>
+<strong>Спасение</strong>
+<br><br>
+Для удобства держите таймкоды, друзья:</p>
+<div class="page-toc">
+<ul>
+<li><a href="#%D1%87%D1%82%D0%BE-%D1%81%D0%BE%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C">Что собирать?</a></li>
+<li><a href="#%D1%8D%D0%BA%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%B0">Экипировка для Сбора</a></li>
+<li><a href="#%D0%BC%D0%B5%D1%81%D1%82%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%B0-1">Места для Сбора</a></li>
+<li><a href="#%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%B1%D0%BE%D1%80%D0%B0">Опасности Сбора</a></li>
+<li><a href="#%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D1%8B">Выводы</a></li>
+</ul>
+</div>
+<h3 id="что-собирать" tabindex="-1">Что собирать?</h3>
+<p>Концепция сбора довольно проста. Вы идете в район, полный разрушений, сортируете мусор и вытаскиваете сокровища,
+чтобы использовать или продать их.
+Иногда эти сокровища - куски и детали, подлежащие переработке, например медная проводка, платы и хлам.
+Либо вы найдете сломанный хабар, который с помощью небольших манипуляций превратится в полностью пригодное для использования снаряжение.
+Кстати, если вы находите, нуждающееся в ремонте, не стесняйтесь тащить его в «Короткое замыкание» в Маленькой Европе.
+Это бар, которым я управляю со своим мужем, Брэйном, и я обещаю вам, что у нас есть все инструменты, которые вам нужны,
+чтобы превратить этот мусор в сокровище. И, если вы упомянете код, который появится на экране в конце этого видео,
+мы даже подарим вам бесплатный напиток!</p>
+<hr>
+<h3 id="экипировка-для-сбора" tabindex="-1">Экипировка для Сбора</h3>
+<p>Чтобы заняться сбром, вам понадобится несколько вещей.<br><br>
+<strong>Во-первых, вам нужны знания.</strong><br>
+Вы должны знать, что стоит забрать, а что следует оставить гнить в канаве.
+Я рекомендую тусоваться в Коротком Замыкании и болтать с завсегдатаями.
+От них вы получите много дельных советов по теме.<br><br></p>
+<p><strong>Во-вторых, вам понадобятся инструменты.</strong><br>
+Ничего особенного. Обычно достаточно стандартного инструментария.
+Ну и вам понадобится как-то перетащить все, что вы соберет со свалки. Мужество и оружие тоже не помешают.
+Имейте в виду. сбор - не самое простое и безопасное занятие. Это может быть чертовски опасно.</p>
+<hr>
+<h3 id="места-для-сбора-1" tabindex="-1">Места для Сбора</h3>
+<details class="sidebar-group" close>
+    <summary>Горячая Зона</summary>
+        Та большая, примерно круглая куча обломков в цетре города. Раньше это был деловой район Корп Плаза.<br> 
+        Теперь это не что иное, как руины.
+        Каждый год городская хунта занимается собирательством все больше на окраинах Горячей зоны, разрушая старое, чтобы построить новое, но глубоко внутри все еще есть много старых,
+        сломанных технологий и спрятанных сокровищ.<br>
+        Просто будьте осторожны с мусорщиками и радиоактивными точками.
+</details>
+<details class="sidebar-group" close>
+    <summary>Зона Боевых Действий</summary>
+        Прямо сейчас есть 4 области Найт Сити, которые люди считают зонами боевых действий:<br>
+        Южный Найт Сити, Старая зона боевых действий, Старый Джапантаун и Маленький Китай.<br>
+        Эти районы, как правило, представляют собой смесь полужилых кварталов и старых, гниющих зданий.
+        Большая часть хороших вещей уже разобрана жителями, торговцами барахлом и бандами, но всё еще можно что-то найти.
+</details>
+<details class="sidebar-group" close>
+    <summary>Свалки</summary>
+        Сегодня Найт-Сити постоянно перстраивается.
+        Старые здания сносят. Новые возваодят. Весь сносимый хлам должен куда-то деваться. И это свалки.<br>
+        Теоретически, всё это перерабатывается и используется повторно, но переработка требует времени, усилий и труда, поэтому она всегда отстает от графика. Другими словами, эти свалки полны сокровищ, достойных разграбления.
+        Просто будте осторожны. Корпы странные. Даже если они не собираются использовать вещь, которая технически принадлежит им, они все равно будут пытаться вас убить, чтобы
+        защитить ее. Пока корпорация владеет чем-то, вы не можете это получить. И любые присутствующие силы охраны сначала выстрелят, а потом скинут ваше тело в яму посреди свалки.
+</details>
+<details class="sidebar-group" close>
+    <summary>Внешний периметр</summary>
+        Отправляйтесь на окраину города или в Бесплодные земли, и вы найдете полные места, полные призраков цивилизации. Маленькие города.
+        Станции обслуживания. Заброшенные мотели. Фабрики. На Бесплодных землях вы найдете ничего, кроме перекати-поле и высохшей, потрескавшейся земли.
+        Однако есть много мест, в которых еще можно что-то найти. Там вы не столкнетесь с бандами. Вместо них вы, вероятно, столкнетесь с кочевниками.
+        Хорошие новости - кочевники избирательно относятся к вещам, которые они собирают. Каждый фунт, в их автомобилях, снижает их затраты на топливо, поэтому они берут только
+        необходимое. Значит вы можете торговаться с ними. Если вы не берете то, что им нужно, они вас не трогают.
+</details>
+<hr>
+<h3 id="опасности-сбора" tabindex="-1">Опасности Сбора</h3>
+<p>О каких опасностях речь?
+Когда вы занимаетесь сбором, вас обычно пытаются убить две разные опасности: окружающая среда и люди.</p>
+<details class="sidebar-group" close>
+    <summary>Окружающая Среда</summary>
+        Обычно вы не занимаетесь сбором в уютных и безопасных зонах, охраняемых законниками. Вы идете в места, полные мусора и развалин. Там достаточно ржавого металла, токсичной плесени и гнили, для заражения всех ран, которые вы получите. Всегда может случиться обвал, поэтому вы не знаете, когда ваш шаг обрушит на вас здание или отправит вас кувыркаться сквозь пол. 
+        Нередки случаи, когда зона радиоактивна, заполнена токсичными и или взрывоопасными газами или затоплена загрязненной СНООН2 и, следовательно, легковоспламеняющейся сточной
+        жидкостью.<br>
+        Другими словами, когда вы на сборе, всё хочет вас убить. Иди подготовленным. Радиационные костюмы. Дыхательные маски. Веревка. Пистолет-кошка. Фонарики. Знайте куда идёте и подготавливайте снаряжение заранее.
+</details>
+<details class="sidebar-group" close>
+    <summary>Люди</summary>
+        Даже в самых враждебных и бесплодных частях Найт-Сити вы не будете одиноки.
+        Куда бы вы ни шли, вы рискуете столкнуться с чем-то или кем-то, вооруженным до зубов и недовольным вашим присутствием. Например, в зонах боевых действий ваше место сбора может находиться на территории какой-то банды.
+        Вы должны либо заключить с ними договор, прокрасться мимо, либо пробиться внутрь и/или выйти. В Горячей зоне вы можете иметь дело с бандитами, которые заблудились, пытаясь добраться до Тотентанца, или мусорщиками.
+        Многие из нас живут на грани, но мусорщики конкретно отбитые. Они живут ПОД краем, сидя на кортах в руинах, лутаясь почти двадцать 24/7 только для того, чтобы выживать из последних сил. С некоторыми вы сможете справиться или договориться.
+        У других территориальный инстинкт преобладает над остальными, они нападают на всё и вся, что попадает на их территорию.<br><br>
+        Наконец, если вы занимаетесь сбором мусора, формально принадлежащем компании, например на свалке, вы можете столкнуться с двумя самыми отвратительными бандами: корпоратами и NCPD.  Нет ничего хуже, чем вооруженный ублюдок, который думает, что у него есть моральное превосходство и юридическая защита, чтобы сделать с вами все, что он захочет.
+</details>
+<hr>
+<h3 id="выводы" tabindex="-1">Выводы</h3>
+<p>Теперь вы знаете, что такое утилизация, что нужно, опасности и места. Всё зависит от вас. Я рекомендую начинать с малого - учиться и развиваться по ходу дела. Сбор - это ремесло, и, как и все ремесла, оно требует практики и опыта. Однако, как только освоитесь, Сбор может стать отличным способом заработать немного дополнительных эдди и получить снаряжение, которое вы не нашли бы на рынке.
+Спасибо, что досмотрели до конца этого видео.
+Хотите знать, что будет дальше в Суете с 3-Пийс?
+Вот подсказка: капуста!
+И помните, что Короткое Замыкание - это то место, где нужно побывать в Маленькой Европе, если вы увлекаетесь технологиями или нетраннингом. Покажите бармену этот код: <strong>3-П-СУЕТА</strong> и вы получите бесплатный напиток при посещении!</p>
+</div>
+<div class="tab-content" id="rules">
+<h3 id="правила-сбора" tabindex="-1">Правила Сбора</h3>
+<h4 id="шаг-1-определите-категорию" tabindex="-1">Шаг 1: Определите Категорию</h4>
+<div class="image-container image-left">
+  <img src="/data-pool/images/content/city/loot-places/loot-places-category.png" alt="Категории лута">
+  <div class="text">
+    <p>
+        Вы собираете, либо ищете что-то конкретное, либо готовы взять все, что сможете унести.
+        Если вы ищете определенную категорию товаров, переходите к шагу 2.
+        Если вы готовы взять все, что сможете найти, сделайте бросок по таблице «Категории утильсырья» ниже,
+        чтобы определить тип товаров, которые вы обнаружите в этом путешествии.
+    </p>
+  </div>
+</div>
+<hr>
+<h4 id="шаг-2-совершите-проверку" tabindex="-1">Шаг 2: Совершите Проверку</h4>
+<div class="image-container image-right">
+  <img src="/data-pool/images/content/city/loot-places/loot-places-prices.png" alt="Цены лута">
+  <div class="text">
+    <p>
+        Пройдите проверку основных технических навыков, чтобы определить ценность найденного вами трофея.
+        Чем выше проверка, тем лучше улов. СЛ меняется в зависимости от того, ищете ли вы определенную категорию товаров или берете все, что нашли.
+        Если вы выбросили Критический провал (1 на 1d10), перейдите к шагу 2а.
+    </p>
+  </div>
+</div>
+<hr>
+<h4 id="шаг-2а-крит-провал" tabindex="-1">Шаг 2а: Крит. провал</h4>
+<div class="image-container image-left">
+  <img src="/data-pool/images/content/city/loot-places/loot-places-fail.png" alt="Крит провал">
+  <div class="text">
+    <p>
+        Если вы выкинули Критический провал в Проверке технических навыков при сборе,<br>
+        вы не только не смогли ничего найти, но и столкнулись с опасностью.<br>
+        Сделайте бросок по «Опасности», чтобы определить, что случилось.
+    </p>
+  </div>
+</div>
+<hr>
+<h4 id="шаг-3-профит" tabindex="-1">Шаг 3: Профит!!!</h4>
+<p>После того, как вы закончили сбор выберите что-то из соответствующей категории, стоимость которых соответствует стоимости трофея.
+Любая «лишняя» стоимость теряется. То варианты, которые вы выбираете, - это настоящие вещи, найденные во время путешествия.
+Предметы считаются уничтоженными и не функционируют, но их можно починить с помощью соответствующего ТЕХ навыка.<br><br></p>
+<p><strong>Пример:</strong><br>
+<em>Торч, техник, решает провести неделю за сбором.</em>
+<em>Торч не ищет ничего конкретного, поэтому игрок делает бросок по таблице Категорий Утильсырья и получает 3.
+Торч найдет Стандартное снаряжение.
+Игрок Торча проходит проверку базовых технических навыков, и в сумме получает 25.
+Это превосходит СЛ 24, необходимый для находки в 500еЬ. Игрок Торча решает, что он нашел:</em></p>
+<ul>
+<li><em>Компьютер (50еЬ)</em></li>
+<li><em>Радио сканер / Музыкальный проигрыватель (50еb)</em></li>
+<li><em>Агент (100еb)</em></li>
+<li><em>Аудиорекордер (100еb)</em></li>
+<li><em>Пистолет-крюк (100еb)</em></li>
+<li><em>Видео камеру (100еb)</em></li>
+</ul>
+</div>
+<img src="/data-pool/images/content/city/loot-places/loot-places-footer.png" alt="Loot Footer" class="footer-image" />
+        
+    </main>
+    <div id="gm-screen-mode"
+         class="gm-screen-mode hidden"
+         data-screen-url="/data-pool/gm-screen/screen/index.html">
+        <div id="gm-screen-content"></div>
+    </div>
+    <div id="enemies-mode"
+         class="enemies-mode hidden"
+         data-enemies-url="/data-pool/data/enemies/enemies-index.json">
+        <div class="enemies-root">
+            <aside class="enemies-sidebar">
+                <div id="enemy-tier-buttons"></div>
+                <div id="enemy-tier-description" class="enemy-tier-description"></div>
+            </aside>
+            <div id="enemy-type-buttons"></div>
+            <section id="enemy-details"></section>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.ru.js"></script>
+<script>window.__BASE_PATH__ = "/data-pool/";</script>
+<button id="scrollToTopBtn" title="Наверх" aria-label="Наверх"
+        style="display: none; position: fixed; bottom: 2em; right: 2em; z-index: 999; background: #ff0040; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; box-shadow: 0 0 10px rgba(255, 0, 64, 0.5);">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#000">
+        <path d="M12 4L4 12H9V20H15V12H20L12 4Z"/>
+    </svg>
+</button>
+<div id="toc-toggle" class="toc-button" title="Оглавление">☰</div>
+<div id="toc-popup" class="toc-popup hidden">
+    <div class="toc-popup-inner" id="toc-dynamic"></div>
+</div>
+
+<script src="/data-pool/app/app.js"></script>
+<script src="/data-pool/app/spa.js" defer></script>
+<script src="/data-pool/app/gm-panel.js" defer></script>
+<script src="/data-pool/data/enemies/dictionary.js" defer></script>
+<script src="/data-pool/app/enemies.js" defer></script>
+</body>
+</html>
+

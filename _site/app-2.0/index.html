@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Pool 2.0 · Data Pool 2.0</title>
+    <link rel="stylesheet" href="/data-pool/app-2.0/css/main.css">
+    <link rel="icon" href="/data-pool/app-2.0/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__brand">
+        <a href="/data-pool/app-2.0/" class="brand-mark">DATA POOL</a>
+        <span class="brand-version">2.0</span>
+    </div>
+    <p class="site-header__tagline">Каталог · прототип новой структуры</p>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="/data-pool/app-2.0/" class="nav-link is-active">Главная</a>
+            <a href="/data-pool/app-2.0/equipment/" class="nav-link">Снаряжение</a>
+            <div class="nav-sub">
+                <a href="/data-pool/app-2.0/equipment/weapons/range/" class="nav-link">Оружие</a>
+                <a href="/data-pool/app-2.0/equipment/armor/" class="nav-link">Броня</a>
+                <a href="/data-pool/app-2.0/equipment/items/" class="nav-link">Предметы</a>
+                <a href="/data-pool/app-2.0/equipment/agents/" class="nav-link">Агенты</a>
+                <a href="/data-pool/app-2.0/equipment/soft/" class="nav-link">Софт</a>
+                <a href="/data-pool/app-2.0/equipment/clothes-style/" class="nav-link">Одежда и стиль</a>
+                <a href="/data-pool/app-2.0/equipment/acpa/" class="nav-link">Силовая броня</a>
+            </div>
+        </nav>
+        <p class="sidebar-note">Параллельная сборка v2. Основной сайт не затронут.</p>
+    </aside>
+
+    <main class="content" id="main-content">
+        <h1 id="data-pool-20" tabindex="-1">Data Pool 2.0</h1>
+<p>Прототип новой структуры каталога. Движок тот же (Eleventy), контент разложен по отдельным markdown-файлам.</p>
+<h2 id="снаряжение" tabindex="-1">Снаряжение</h2>
+<p>Весь раздел <a href="/data-pool/app-2.0/equipment/">Снаряжение</a> перенесён в формат 2.0:</p>
+<ul>
+<li><a href="/data-pool/app-2.0/equipment/weapons/range/">Оружие</a></li>
+<li><a href="/data-pool/app-2.0/equipment/armor/">Броня</a></li>
+<li><a href="/data-pool/app-2.0/equipment/items/">Предметы</a></li>
+<li><a href="/data-pool/app-2.0/equipment/agents/">Агенты</a></li>
+<li><a href="/data-pool/app-2.0/equipment/soft/">Софт</a></li>
+<li><a href="/data-pool/app-2.0/equipment/clothes-style/">Одежда и стиль</a> (справочник)</li>
+<li><a href="/data-pool/app-2.0/equipment/acpa/">Силовая броня</a></li>
+</ul>
+<p>Запуск: <code>npm run serve:v2</code> → <code>/data-pool/app-2.0/equipment/</code></p>
+
+    </main>
+</div>
+
+<dialog id="item-modal" class="weapon-modal" aria-labelledby="item-modal-title">
+    <div class="weapon-modal__shell">
+        <header class="weapon-modal__header">
+            <div>
+                <p class="weapon-modal__eyebrow" id="item-modal-category"></p>
+                <h2 id="item-modal-title"></h2>
+            </div>
+            <button type="button" class="weapon-modal__close" data-close-modal aria-label="Закрыть">×</button>
+        </header>
+        <div class="weapon-modal__stats" id="item-modal-stats"></div>
+        <div class="weapon-modal__body" id="item-modal-body"></div>
+    </div>
+</dialog>
+
+<script>window.__BASE_PATH__ = "/data-pool/app-2.0/";</script>
+<script src="/data-pool/app-2.0/app/shop.js" defer></script>
+</body>
+</html>

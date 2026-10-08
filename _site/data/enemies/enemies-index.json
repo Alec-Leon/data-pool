@@ -1,0 +1,37 @@
+{
+  "tiers": [
+    {
+      "id": "mooks",
+      "name": "Шестерки",
+      "types": [
+        {
+          "id": "example",
+          "name": "Тестовый НИП",
+          "file": "data/enemies/mooks/example.json"
+        },
+        {
+          "id": "bodyguard",
+          "name": "Телохранитель",
+          "file": "data/enemies/mooks/mook-1.json"
+        },
+        {
+          "id": "bandit",
+          "name": "Дорожный Бандит",
+          "file": "data/enemies/mooks/test-1.json"
+        }
+      ],
+      "description": "Телохранители, бустеры , дорожные бандиты и оперативники службы безопасности считаются Шестёрками (противники низкого уровня).\nВ целом, группа эджраннеров вполне может сразиться с равным количеством Шестёрок, имея при этом хорошие шансы победить."
+    },
+    {
+      "id": "lieutenants",
+      "name": "Лейтенанты",
+      "types": [
+        {
+          "id": "netrunner",
+          "name": "Нетраннер",
+          "file": "data/enemies/lieutenants/netrunner.json"
+        }
+      ]
+    }
+  ]
+}

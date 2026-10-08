@@ -1,0 +1,10 @@
+{
+  "cheap": "10eb(Дешевка)",
+  "standard": "20eb(Обычное)",
+  "valuable": "50eb(Ценное)",
+  "premium": "100eb(Премиум)",
+  "expensive": "500eb(Дорогое)",
+  "very_expensive": "1000eb(Очень Дорогое)",
+  "luxury": "50000eb(Роскошь)",
+  "ultra_luxury": "10000eb и выше(Супер Роскошь)"
+}

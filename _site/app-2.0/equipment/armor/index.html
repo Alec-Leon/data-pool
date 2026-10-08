@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Броня · Data Pool 2.0</title>
+    <link rel="stylesheet" href="/data-pool/app-2.0/css/main.css">
+    <link rel="icon" href="/data-pool/app-2.0/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__brand">
+        <a href="/data-pool/app-2.0/" class="brand-mark">DATA POOL</a>
+        <span class="brand-version">2.0</span>
+    </div>
+    <p class="site-header__tagline">Каталог · прототип новой структуры</p>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="/data-pool/app-2.0/" class="nav-link">Главная</a>
+            <a href="/data-pool/app-2.0/equipment/" class="nav-link is-active">Снаряжение</a>
+            <div class="nav-sub">
+                <a href="/data-pool/app-2.0/equipment/weapons/range/" class="nav-link">Оружие</a>
+                <a href="/data-pool/app-2.0/equipment/armor/" class="nav-link is-active">Броня</a>
+                <a href="/data-pool/app-2.0/equipment/items/" class="nav-link">Предметы</a>
+                <a href="/data-pool/app-2.0/equipment/agents/" class="nav-link">Агенты</a>
+                <a href="/data-pool/app-2.0/equipment/soft/" class="nav-link">Софт</a>
+                <a href="/data-pool/app-2.0/equipment/clothes-style/" class="nav-link">Одежда и стиль</a>
+                <a href="/data-pool/app-2.0/equipment/acpa/" class="nav-link">Силовая броня</a>
+            </div>
+        </nav>
+        <p class="sidebar-note">Параллельная сборка v2. Основной сайт не затронут.</p>
+    </aside>
+
+    <main class="content" id="main-content">
+        
+
+<a href="/data-pool/app-2.0/equipment/" class="return-link">← Снаряжение</a>
+
+<h1>Броня</h1>
+<p class="shop-intro">Защита тела, головы, щиты и прочее</p>
+
+
+
+
+
+
+<div class="catalog" data-catalog>
+  <div class="shop-toolbar">
+    <label class="shop-search">
+      <span class="visually-hidden">Поиск</span>
+      <input type="search" placeholder="Найти броню…" autocomplete="off" data-catalog-filter>
+    </label>
+    
+    <p class="shop-count"><span data-catalog-count>32</span> / 32</p>
+  </div>
+
+  
+  <div class="shop-tabs" role="tablist" aria-label="Категории">
+    <button type="button" class="shop-tab is-active" role="tab" data-category="*" aria-selected="true">Все</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="armor" aria-selected="false">Защита без стиля</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="bussinesware" aria-selected="false">В стиле Bussinesware</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="leisureware" aria-selected="false">В стиле Leisureware</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="gangcolors" aria-selected="false">В стиле Gang Colors</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="genericchic" aria-selected="false">В стиле Generic Chic</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="urbanflash" aria-selected="false">В стиле UrbanFlash</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="style" aria-selected="false">Для стиля без защиты</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="shield" aria-selected="false">Щиты</button>
+    
+  </div>
+  
+
+  <div class="weapon-grid" data-catalog-grid>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="кустарная-броня-броня-из-хлама"
+      data-title="Броня Мародера"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="броня мародера самодельная броня 50eb дорогое черный хром + | danger gal dossier 11"
+    >
+      <span class="weapon-card__name">Броня Мародера</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Самодельная броня</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром + | Danger Gal Dossier</span>
+        
+        <span class="weapon-card__price">50eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="бункерное-снаряжение"
+      data-title="Бункерное Снаряжение"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="бункерное снаряжение броня невосприимчивая к повреждениям от огня 1000eb очень дорогое черный хром огненная марка 15 взрывозащита"
+    >
+      <span class="weapon-card__name">Бункерное Снаряжение</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">15 Взрывозащита</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Броня невосприимчивая к повреждениям от огня</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="воздушный-наездник"
+      data-title="Воздушный Наездник"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="воздушный наездник кевларовый бронескостюм с защитой шеи 100eb премиум cyberpunk red техно-одежда масетто 7 кевлар"
+    >
+      <span class="weapon-card__name">Воздушный Наездник</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">7 Кевлар</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Кевларовый Бронескостюм с защитой шеи</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="гибридный-metalgear"
+      data-title="Гибридный Metalgear®"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="гибридный metalgear® metalgear® с повышенной подвижностью 2552eb очень дорогое соло удачи 2045 17 metalgear®"
+    >
+      <span class="weapon-card__name">Гибридный Metalgear®</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">17 Metalgear®</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Metalgear® с повышенной подвижностью</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Соло Удачи 2045</span>
+        
+        <span class="weapon-card__price">2552eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="ездовой-костюм-уличная-гадюка"
+      data-title="Ездовой костюм “Уличная Гадюка”"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="ездовой костюм “уличная гадюка” кевларовая броня для тела с двумя слотами под пушки 100eb премиум черный хром зонда 7 кевлар"
+    >
+      <span class="weapon-card__name">Ездовой костюм “Уличная Гадюка”</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">7 Кевлар</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Кевларовая Броня для тела с двумя слотами под пушки</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="кевлар"
+      data-title="Кевлар"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="кевлар самый популярный вид защиты на протяжении последних 90 лет. 50eb cyberpunk red 7 кевлар"
+    >
+      <span class="weapon-card__name">Кевлар</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">7 Кевлар</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Самый популярный вид защиты на протяжении последних 90 лет.</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">50eb</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="кожа"
+      data-title="Кожа"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="кожа любимый выбор кочевников и других панков на байках. 20eb cyberpunk red 4 кожа"
+    >
+      <span class="weapon-card__name">Кожа</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">4 Кожа</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Любимый выбор Кочевников и других панков на байках.</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">20eb</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="комбенизон-бодивейт"
+      data-title="Комбенизон “Бодивейт”"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="комбенизон “бодивейт” облегающий комбинезон, по типу гидрокостюма c защитой 1000eb очень дорогое cyberpunk red 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Комбенизон “Бодивейт”</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Облегающий комбинезон, по типу гидрокостюма c защитой</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="комплект-мимиковской-одежды"
+      data-title="Комплект Мимиковской Одежды"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="комплект мимиковской одежды превращает любую модную шмотку в защищенную 100eb премиум черный хром 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Комплект Мимиковской Одежды</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Превращает любую модную шмотку в защищенную</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="костюм-рхбз-от-esporma"
+      data-title="Костюм РХБЗ от Esporma"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="костюм рхбз от esporma костюм рхбз 5000eb роскошь 12 дней снаряждества esporma 8"
+    >
+      <span class="weapon-card__name">Костюм РХБЗ от Esporma</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">8</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Костюм РХБЗ</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">12 Дней Снаряждества</span>
+        
+        <span class="weapon-card__price">5000eb (Роскошь)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="легкий-бронекостюм"
+      data-title="Легкий Бронекостюм"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="легкий бронекостюм комбинация кевлара® и нейлоновых сетей с хорошей защитой 100eb премиум cyberpunk red 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Легкий Бронекостюм</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Комбинация Кевлара® и нейлоновых сетей с хорошей защитой</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="легкий-металгир"
+      data-title="Лёгкий Металгир"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="лёгкий металгир лучшее решение для полной боевой защиты 1000eb очень дорогое 12 дней краснождества | соло удачи 2045 16 metalgear®"
+    >
+      <span class="weapon-card__name">Лёгкий Металгир</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">16 Metalgear®</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Лучшее решение для полной боевой защиты</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">12 Дней Краснождества | Соло Удачи 2045</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="металгир"
+      data-title="Металгир"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="металгир помните, как имперские злые штурмовики просто стоят и впитывают урон в себя? 5000eb роскошь cyberpunk red 18 metalgear®"
+    >
+      <span class="weapon-card__name">Металгир</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">18 Metalgear®</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Помните, как Имперские Злые Штурмовики просто стоят и впитывают урон в себя?</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">5000eb (Роскошь)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="мехамэн-мотоциклетный-шлем"
+      data-title="МехаМэн мотоциклетный шлем"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="мехамэн мотоциклетный шлем противоосколочный шлем с умными очками 5000eb роскошь черный хром токио дайнемикс 15 взрывозащита"
+    >
+      <span class="weapon-card__name">МехаМэн мотоциклетный шлем</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">15 Взрывозащита</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Противоосколочный шлем с умными очками</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">5000eb (Роскошь)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="мехамэн-умная-перчатка"
+      data-title="МехаМэн Умная Перчатка"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="мехамэн умная перчатка умная перчатка со смартлинком и слотом киберруки 500eb дорогое черный хром токио дайнемикс"
+    >
+      <span class="weapon-card__name">МехаМэн Умная Перчатка</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+        
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Умная перчатка со Смартлинком и слотом Киберруки</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="взрывозащищенная-броня"
+      data-title="Противоосколочный бронежилет"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="противоосколочный бронежилет проверенная временем взрывозащищённая броня 21 века с металлическими пластинами. 500eb дорогое cyberpunk red 15 взрывозащита"
+    >
+      <span class="weapon-card__name">Противоосколочный бронежилет</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">15 Взрывозащита</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Проверенная временем взрывозащищённая броня 21 века с металлическими пластинами.</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="сетевой-костюм-лотос"
+      data-title="Сетевой Костюм Лотос"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="сетевой костюм лотос улучшенный бодивейт комбинезон 5000eb роскошь черный хром лотос дизайнс 13 комб.бодивейт"
+    >
+      <span class="weapon-card__name">Сетевой Костюм Лотос</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">13 Комб.Бодивейт</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Улучшенный Бодивейт комбинезон</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">5000eb (Роскошь)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="скидроу-тренч"
+      data-title="СкидРоу Тренч"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="скидроу тренч противоосколочная броня для тела с ос 13 вместо 15 100eb премиум черный хром скидроу лимитед 13 взрывозащита"
+    >
+      <span class="weapon-card__name">СкидРоу Тренч</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">13 Взрывозащита</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Противоосколочная Броня для тела с ОС 13 вместо 15</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="средний-бронекостюм"
+      data-title="Средний Бронекостюм"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="средний бронекостюм более прочный бронекостюм с цельным полимерным покрытием 100eb премиум cyberpunk red 12 с.бронекостюм"
+    >
+      <span class="weapon-card__name">Средний Бронекостюм</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">12 С.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Более прочный Бронекостюм с цельным полимерным покрытием</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="тактическая-умная-броня"
+      data-title="Тактическая Умная Броня"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="тактическая умная броня средний бронекостюм со встроенными умными очками 1000eb очень дорогое черный хром гибсон баттлгир 12 с.бронекостюм"
+    >
+      <span class="weapon-card__name">Тактическая Умная Броня</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">12 С.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Средний Бронекостюм со встроенными Умными Очками</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="тяжелый-бронекостюм"
+      data-title="Тяжелый Бронекостюм"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="тяжелый бронекостюм самый прочный бронекостюм 500eb дорогое cyberpunk red 13 взрывозащита"
+    >
+      <span class="weapon-card__name">Тяжелый Бронекостюм</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">13 Взрывозащита</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Самый прочный Бронекостюм</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="тяжелый-metalgear"
+      data-title="Тяжёлый Metalgear®"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="тяжёлый metalgear® еще более тяжелый metalgear® 5000eb роскошь соло удачи 2045 19 metalgear®"
+    >
+      <span class="weapon-card__name">Тяжёлый Metalgear®</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">19 Metalgear®</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Еще более тяжелый Metalgear®</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Соло Удачи 2045</span>
+        
+        <span class="weapon-card__price">5000eb (Роскошь)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="шоковая-броня"
+      data-title="Шоковая Броня"
+      data-category="armor"
+      data-category-label="Защита без стиля"
+      
+      data-search="шоковая броня бронекостюм из кевлара® с встроенным электртошокером 500eb дорогое черный хром гибсон баттлгир 7 кевлар"
+    >
+      <span class="weapon-card__name">Шоковая Броня</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">7 Кевлар</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Бронекостюм из Кевлара® с встроенным электртошокером</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="броня-директора"
+      data-title="Броня Директора"
+      data-category="bussinesware"
+      data-category-label="В стиле Bussinesware"
+      
+      data-search="броня директора легкий бронекостюм для тела в стиле businesswear. 1000eb очень дорогое черный хром торрелл и чанг 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Броня Директора</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Легкий Бронекостюм Для Тела в стиле Businesswear.</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="корпоративный-остров"
+      data-title="Корпоративный Остров"
+      data-category="bussinesware"
+      data-category-label="В стиле Bussinesware"
+      
+      data-search="корпоративный остров легкий бронекостюм для тела в стиле businesswear 500eb дорогое черный хром ню-тек 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Корпоративный Остров</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Легкий Бронекостюм Для Тела в стиле Businesswear</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="боевая-куртка-кортик"
+      data-title="Боевая Куртка Кортик"
+      data-category="leisureware"
+      data-category-label="В стиле Leisureware"
+      
+      data-search="боевая куртка кортик кортик — это легкий бронекостюм для тела в стиле leisurewear. 500eb дорогое черный хром жукова интернешнл 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Боевая Куртка Кортик</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Кортик — это Легкий Бронекостюм Для Тела в стиле Leisurewear.</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="линия-изменяющейся-одежды-монтаж"
+      data-title="Линия Изменяющейся Одежды Монтаж"
+      data-category="genericchic gangcolors"
+      data-category-label="В стиле Generic Chic · В стиле Gang Colors"
+      
+      data-search="линия изменяющейся одежды монтаж лёгкий бронекостюм в стиле generic chic или gang colors 500eb дорогое черный хром монтаж 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Линия Изменяющейся Одежды Монтаж</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Лёгкий Бронекостюм в стиле Generic Chic или Gang Colors</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="голо-одежда"
+      data-title="Голо-Одежда"
+      data-category="style"
+      data-category-label="Для стиля без защиты"
+      
+      data-search="голо-одежда добавляем стиль любой броне 1000eb очень дорогое черный хром техно-одежда массето"
+    >
+      <span class="weapon-card__name">Голо-Одежда</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело/Голова</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Добавляем стиль любой броне</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">1000eb (Очень дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="куртка-супервспышка"
+      data-title="Куртка Супервспышка"
+      data-category="urbanflash style"
+      data-category-label="В стиле UrbanFlash · Для стиля без защиты"
+      
+      data-search="куртка супервспышка куртка в стиле urbanflash с эффектом светошумовой 500eb дорогое микрохром | danger gal dossier+"
+    >
+      <span class="weapon-card__name">Куртка Супервспышка</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Куртка в стиле UrbanFlash с эффектом светошумовой</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Микрохром | Danger Gal Dossier+</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="уличная-куртка-лазерный-свет"
+      data-title="Уличная Куртка Лазерный Свет"
+      data-category="urbanflash"
+      data-category-label="В стиле UrbanFlash"
+      
+      data-search="уличная куртка лазерный свет куртка в стиле urbanflash для истинных модников 500eb дорогое черный хром лазерный свет 11 л.бронекостюм"
+    >
+      <span class="weapon-card__name">Уличная Куртка Лазерный Свет</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">11 Л.Бронекостюм</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Тело</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Куртка в стиле UrbanFlash для истинных модников</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="высокплотный-пуленепробиваемый-щит"
+      data-title="Высокплотный Пуленепробиваемый щит"
+      data-category="shield"
+      data-category-label="Щиты"
+      
+      data-search="высокплотный пуленепробиваемый щит особенно прочный щит 200eb дорогое 12 дней краснождества 15 пз"
+    >
+      <span class="weapon-card__name">Высокплотный Пуленепробиваемый щит</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">15 ПЗ</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Переносное Укрытие</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Особенно прочный щит</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">12 Дней Краснождества</span>
+        
+        <span class="weapon-card__price">200eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="пуленепробиваемый-щит"
+      data-title="Пуленепробиваемый щит"
+      data-category="shield"
+      data-category-label="Щиты"
+      
+      data-search="пуленепробиваемый щит прозрачный поликарбонатный щит, который защитит тебя в перестрелке 100eb премиум cyberpunk red 10 пз"
+    >
+      <span class="weapon-card__name">Пуленепробиваемый щит</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>ОС</em><span class="stat__value">10 ПЗ</span></span>
+          
+        
+          
+          <span class="stat"><em>Часть</em><span class="stat__value">Переносное Укрытие</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Прозрачный поликарбонатный щит, который защитит тебя в перестрелке</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+  </div>
+</div>
+
+<div class="item-templates" hidden>
+
+  
+  <template id="item-tpl-кустарная-броня-броня-из-хлама">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Дорогое","source":"Черный Хром + | Danger Gal Dossier","summary":"Самодельная броня","sp":"11","bodyPart":"Тело"}</script>
+    <div class="weapon-detail">
+      
+      <p>«Джуди изготовила его. Он хорошо справляется со своей задачей и даже имеет застежки и другие удобные штуки. Хорошая броня может стоить дорого. Но этот вариант решает проблему. Стоило  приложить немного усилий и изобретательности. Так держать, Джуди!»<br></p>
+<p>Кустарная броня — это бронежилет с ОС11. После истощения ОС его невозможно восстановить. При 0 ОС он падает с владельца.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-бункерное-снаряжение">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"Черный Хром","summary":"Броня невосприимчивая к повреждениям от огня","sp":"15 Взрывозащита","bodyPart":"Тело/Голова","penalty":"-4 РЕА,ЛВК,СКО","brand":"Огненная Марка"}</script>
+    <div class="weapon-detail">
+      
+      <p>Когда речь идет о надежном снаряжении для пожарных, ничто не обеспечивает
+такой огнестойкости, как Огненная Марка. Основанная в Техасе, компания
+Огненная Марка появилась в 2040 году и явила миру экипировку, гарантирующую огнеупорность и пуленепробиваемость. Созданное из самых современных
+материалов, Бункерное Снаряжение состоит из куртки с капюшоном, который
+задвигается под каску, гамашей, плотно облегающих голенище сапог, и облегающих перчатки рукавов. В дополнение к этому — встроенный противогаз и кисло-
+родный баллон! В следующий раз, когда вам придется отправиться в зону боевых
+действий для борьбы с пожаром с четырьмя очагами возгорания, идите подготовленным. В следующий раз, когда вам придется отправиться в зону боевых действий
+для борьбы с пожаром с четырьмя очагами возгорания, идите подготовленным.
+Идите в Огненной Марке!<br><br></p>
+<p>Бункерное снаряжение Огненной марки — это Взрывозащитная броня. В отличие
+от другой брони, она не покупается раздельно и всегда должна быть надета как на
+тело, так и на голову. При ремонте обе части ремонтируются одновременно. Когда
+броня надета, пользователь невосприимчив к повреждениям от огня (включая
+зажигательные боеприпасы) и не может быть подожжен.<br></p>
+<p>Каска поставляется со встроенным противогазом, который можно сдвинуть вниз
+и активировать без действия. Если противогаз активирован, пользователь
+невосприимчив к воздействию токсичных газов, паров и всем подобным
+опасностям, которые необходимо вдыхать. Кроме того, к противогазу
+подключается кислородный баллон, которого хватает на 30 минут, после чего
+баллон необходимо пополнить из окружающей атмосферы, что занимает 1 час</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-воздушный-наездник">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Cyberpunk RED","summary":"Кевларовый Бронескостюм с защитой шеи","sp":"7 Кевлар","bodyPart":"Тело","penalty":"Нет","brand":"Техно-одежда Масетто"}</script>
+    <div class="weapon-detail">
+      
+      <p>Масетто Воздушный Наездник — это мотоциклетный костюм со встроенной
+системой подушек безопасности. Изготовленный из прорезиненной Кевларовой®
+смеси, Воздушный Наездник надувается в случае аварии с помощью баллончика
+CO2, который удобно размещается рядом с установленной сзади бутылкой с
+водой. Так что в следующий раз, когда вы отправитесь в путь на двухколесном
+транспорте, будьте умнее и подготовьтесь к прыжку с Воздушным Наездником!<br></p>
+<p>Воздушный Наездник — это Кевларовый Бронескостюм. Когда пользователь
+рискует получить критическую травму “Перелом Шеи” в результате аварии,
+Воздушный Наездник надувается, чтобы предотвратить ее. После надувания СКО
+пользователя уменьшается на 5 (минимум 1) до тех пор, пока Воздушный Наездник
+будет сдут с помощью Действия. После однократной накачки баллон СО2
+Воздушного Наездника 20eb (Обычное) необходимо заменить до его следующего
+использования (иначе наездник будет выглядеть как обвисший мешковатый слон).</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-гибридный-metalgear">
+    <script type="application/json" class="item-stats">{"price":"2552eb","availability":"Очень дорогое","source":"Соло Удачи 2045","summary":"Metalgear® с повышенной подвижностью","sp":"17 Metalgear®","bodyPart":"Тело/Голова","penalty":"-3 РЕА, -4 ЛВК, -4 СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Потребности поля боя не знают передышки и требуют идеального баланса атаки и защиты.
+Наша полу-сегментированная модель даёт ту же всестороннюю защиту Metalgear®, к которой ты привык,
+но с подвижностью коленей и локтей, как у лёгкого Metalgear®.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-ездовой-костюм-уличная-гадюка">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Черный Хром","summary":"Кевларовая Броня для тела с двумя слотами под пушки","sp":"7 Кевлар","bodyPart":"Тело","penalty":"Нет","brand":"Зонда"}</script>
+    <div class="weapon-detail">
+      
+      <p>Когда речь заходит о лучших ездовых костюмах, Уличная Гадюка оказывается на
+высоте. Производимый компанией Зонда ездовой костюм &quot;Уличная Гадюка&quot; изготовлен из Кевлара® со специальным слоем покрытия с низким коэффициентом трения,
+встроенным в локтевые пластины, предназначенным для облегчения скольжения.
+Лезвия отвечают за уникальный силуэт Гадюки и они довольно острые. Зонда предлагает свой ездовой костюм в десятках различных дизайнов, наиболее популярными
+из которых являются черный с красными лезвиями и неоновожелтый с черными
+лезвиями. Это больше, чем просто отличный костюм, его функция повысила популярность Уличной Гадюки, сделав его идеальным стильным выбором для любого
+случая, независимо от того, приехали вы на байке или нет. В пятничный вечер в
+Посмертии вы обязательно увидите кого-то одетого в Уличную гадюку.<br></p>
+<p>Костюм Уличная Гадюка представляет собой Кевларовую® Броню для Тела, в конструкцию которой встроены 2 Средних Оружия Ближнего Боя. Оружие всегда считается
+вытащенным, пока надета броня.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-кевлар">
+    <script type="application/json" class="item-stats">{"price":"50eb","source":"Cyberpunk RED","summary":"Самый популярный вид защиты на протяжении последних 90 лет.","sp":"7 Кевлар","bodyPart":"Тело/Голова","penalty":"Нет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Самый популярный вид защиты на протяжении последних 90 лет. Цитируя Дюпóн: Кевлар® представляет собой термостойкое синтетическое лёгкое волокно, обладающее высокой прочностью на разрыв, обеспечивающее повышенную защиту и эффективность для широкого спектра отраслей и имеющее не менее широкий спектр применений. Например, когда кто-то пытается выстрелить в вас или ударить ножом. Из него делают любую одежду,
+рубашки, пиджаки, деловые костюмы и даже купальники.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-кожа">
+    <script type="application/json" class="item-stats">{"price":"20eb","source":"Cyberpunk RED","summary":"Любимый выбор Кочевников и других панков на байках.","sp":"4 Кожа","bodyPart":"Тело/Голова","penalty":"Нет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Тонкая кожа с утолщёнными вставками на плечах, бёдрах и животе. Любимый выбор Кочевников и других панков на байках. Сюда же относятся все эти подражатели дорожных воинов, одетые в шмотки с открытой жопой и случайное спортивное снаряжение.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-комбенизон-бодивейт">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"Cyberpunk RED","summary":"Облегающий комбинезон, по типу гидрокостюма c защитой","sp":"11 Л.Бронекостюм","bodyPart":"Тело/Голова","penalty":"Нет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Облегающий комбинезон, по типу гидрокостюма, наполненный ударопрочным жидким бронегелем.
+На удивление, он достаточно удобен и с дышащими порами.
+Кроме того, что этот комбинезон защищает, в нём также есть место для Кибердеки и кабелей для твоих Интерфейсных Разъёмов, чтобы они не путались под ногами,
+пока ты выжигаешь мозг идиоту, осмелившемуся натравить на тебя Адскую Гончую.
+Многие Нетраннеры поверх Бодивейт надевают другую одежду, но есть и те, кто не делает этого.
+Это дело вкуса.
+В отличие от остальной брони, комбинезон Бодивейт нельзя купить по частям — он всегда должен быть надет на тело и голову.
+У головы и тела своя независимая друг от друга ОС, равная 11. При ремонте обе части ремонтируются одновременно.
+Нельзя надеть более одного Комбинезона Бодивейт.
+Надетый Комбинезон Бодивейт, при подключённой к нему Кибердеке, даёт 1 Дополнительный Слот для Оборудования.
+Если Бодивейт не надет, то у тебя нет доступа к установленному в нём Оборудованию.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-комплект-мимиковской-одежды">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Черный Хром","summary":"Превращает любую модную шмотку в защищенную","sp":"11 Л.Бронекостюм","bodyPart":"Тело","penalty":"Нет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Предназначен для тех, кто хочет сохранить свой индивидуальный стиль, не
+жертвуя защитой. В каждую коробку входит полный набор литых керамических
+пластин и сегментов из баллистического волокна, предназначенных для
+крепления к вашей любимой одежде и подходящих для любого типа
+телосложения. Превратите ваш любимый свитер в ваш любимый бронированный свитер без всяких хлопот с шитьем!<br></p>
+<p>Комплект Мимической Одежды можно соединить с любой модной курткой или
+топом, чтобы превратить ее в Легкий Бронекостюм Для Тела с появлением
+соответствующего Стиля. После соединения снять бронепластины будет невозможно.<br>
+Из каждого комплекта можно изготовить одну Броню для Тела.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-костюм-рхбз-от-esporma">
+    <script type="application/json" class="item-stats">{"price":"5000eb","availability":"Роскошь","source":"12 Дней Снаряждества","summary":"Костюм РХБЗ","sp":"8","bodyPart":"Тело/Голова","penalty":"Нет","brand":"Esporma"}</script>
+    <div class="weapon-detail">
+      
+      <p>Костюм РХБЗ от Esporma необходим в любой ситуации, которая может включать ядовитые газы, биологическое оружие или радиацию. Все швы герметичны и воздухонепроницаемы. Благодаря независимой подаче кислорода владелец может находиться в самых опасных ситуациях, не испытывая вредоносных эффектов, а броня, вплетенная во внешний слой гарантирует, что ее будет нелегко проколоть. И самое главное - Костюм РХБЗ от Esporma самовосстанавливается!
+В отличии от других типов брони Костюм РХБЗ от Esporma приобретается комплектом и всегда одевается одновременно и на голову, и на тело.<br></p>
+<p>Каждая часть костюма имеет ОС 8 При починке восстанавливаются обе части одновременно. Ношение Костюма РХБЗ от Esporma защищает от радиации. В комплект костюма входит баллон кислорода, который предоставляет до 30 минут автономии до того как баллон потребуется наполнить заново из окружающей среды, что занимает один час. В течении каждого часа пока Костюм РХБЗ от Esporma не теряет ОС, наномашины восстанавливают 1 ОС.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-легкий-бронекостюм">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Cyberpunk RED","summary":"Комбинация Кевлара® и нейлоновых сетей с хорошей защитой","sp":"11 Л.Бронекостюм","bodyPart":"Тело/Голова","penalty":"Нет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Комбинация Кевлара® и нейлоновых сетей, вставленных в плетение ткани.
+Лёгкая Бронезащита обеспечивает превосходную защиту, особенно от высокоскоростных пуль.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-легкий-металгир">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"12 Дней Краснождества | Соло Удачи 2045","summary":"Лучшее решение для полной боевой защиты","sp":"16 Metalgear®","bodyPart":"Тело/Голова","penalty":"-3 РЕА,ЛВК,СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Лучшее решение для полной боевой защиты вышло на новый уровень.
+Современные поля боя требуют большей скорости — и мы ответили.
+Наша новая облегчённая модель сохраняет ту же панцирную защиту, к которой ты привык, но теперь в куда более подвижном формате.
+Сегментированность — это новая модульность.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-металгир">
+    <script type="application/json" class="item-stats">{"price":"5000eb","availability":"Роскошь","source":"Cyberpunk RED","summary":"Помните, как Имперские Злые Штурмовики просто стоят и впитывают урон в себя?","sp":"18 Metalgear®","bodyPart":"Тело/Голова","penalty":"-4 РЕА,ЛВК,СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Помните, как Имперские Злые Штурмовики просто стоят и впитывают урон в себя? Металгир® это эквивалент такой брони в версии Темного будущего: сплошные металлические и полимерные пластины на сетчатом корпусе. Металгир® остановит практически все, но и попасть в вас будет легче, чем в одноногого банту на скачках потто.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-мехамэн-мотоциклетный-шлем">
+    <script type="application/json" class="item-stats">{"price":"5000eb","availability":"Роскошь","source":"Черный Хром","summary":"Противоосколочный шлем с умными очками","sp":"15 Взрывозащита","bodyPart":"Голова","penalty":"-4 РЕА,ЛВК,СКО","brand":"Токио Дайнемикс"}</script>
+    <div class="weapon-detail">
+      
+      <p>Хотите выглядеть как машина, летящая по шоссе на своем турбированном мотоцикле? Хотите привлечь внимание вашего следующего потенциального
+Гнезда/Штекера? Тогда берите мотоциклетный шлем МехаМэн от Токио Дайнемикс! Этот стильный футуристический шлем полностью подсвечивается, что позволяет ездить без фар после захода солнца.
+Он даже оснащен встроенным HUD-дисплеем, чтобы создать восприятие робота. В шлем
+встроены динамики для использования как внутри, так и снаружи, и он может
+подключаться к вашему агенту. Каждый МехаМэн изготовлен из керамики и
+металлического каркаса, что делает его очень прочным. Надеть МехаМэн
+очень просто, благодаря функции защелки, которая закрывается после того,
+как голова пользователя оказывается в шлеме.<br></p>
+<p>Мотоциклетный шлем МехаМэн — это Противоосколочная Броня для Головы со
+встроенными Умными очками, которые оснащены Хироном и Киберглазом
+со Слабым освещением/ИК/УФ.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-мехамэн-умная-перчатка">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Умная перчатка со Смартлинком и слотом Киберруки","penalty":"Нет","brand":"Токио Дайнемикс"}</script>
+    <div class="weapon-detail">
+      
+      <p>Вы на открытой дороге, за вами гонится стая гопников из ГоБанд, жаждущих
+вашей крови. Сбавите скорость, и они разберут и вас, и ваш мотоцикл на
+запчасти. Поэтому вы достаете пистолет из кобуры, оглядываетесь на главаря стаи, вытягиваете руку и стреляете.<br></p>
+<p>К счастью, вы носите Умную Перчатку МехаМэн от Токио Дайнемикс. Это
+не просто стильная мотоциклетная перчатка, идеально подходящая для удержания байка в дерьмовую погоду.
+Она также оснащена встроенным Смартлинком. Это означает, что Умная перчатка всегда готова улучшить ваше
+прицеливание и обеспечить вашему врагу нелегкий путь.<br></p>
+<p>Умная Перчатка МехаМэн поставляется со Смартлинком и имеет 1 слот
+опций для вариации Киберруки или Киберконечности. Когда перчатка надета,
+можно получить доступ к опциям, хранящимся в ней. Надеть Умную перчатку
+и снять ее — это действие. Цена покупки и установки опции Киберруки или
+Киберконечности в Умную перчатку такая же, как и в Киберруку. Любые
+опции, хранящиеся в Киберруке или мясной руке, на которую надета Умная
+Перчатка, недоступны, пока она надета. Для использования Смартлинка попрежнему требуется Нейролинк. Перчатку невозможно скрыть.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-взрывозащищенная-броня">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Cyberpunk RED","summary":"Проверенная временем взрывозащищённая броня 21 века с металлическими пластинами.","sp":"15 Взрывозащита","bodyPart":"Тело/Голова","penalty":"-4 РЕА,ЛВК,СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Проверенная временем взрывозащищённая броня 21 века с металлическими пластинами. Спроектирована, чтобы выдержать взрыв от гранаты, противопехотной мины, попадание из дробовика. Современная взрывозащищённая броня  также способна выдержать несколько попаданий из крупнокалиберных автоматических винтовок.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-сетевой-костюм-лотос">
+    <script type="application/json" class="item-stats">{"price":"5000eb","availability":"Роскошь","source":"Черный Хром","summary":"Улучшенный Бодивейт комбинезон","sp":"13 Комб.Бодивейт","bodyPart":"Тело/Голова","penalty":"-2 РЕА,ЛВК,СКО","brand":"Лотос Дизайнс"}</script>
+    <div class="weapon-detail">
+      
+      <p>Когда речь идет о моде и нетраннинге, ничто так не говорит об эффективности,
+скорости и элегантности, как Сетевой Костюм Лотос от инди-дизайнера Лотос.
+Этот Сетевой Костюм позволяет пользователю легко подключаться к Кибердеке
+и управлять ею. Костюм покрыт керамическим и титановым напылением с подложкой из нанотрубок. Это делает Лотос незаменимым помощником для
+Нетраннеров, оказавшихся втянутыми в перестрелки. Лотос шьет эти костюмы
+на заказ для своих клиентов; они не дешевы, но стоят каждого вложенного
+цента.<br></p>
+<p>Ношение Сетевого Костюма Лотос дает вашей Кибердеке 1 дополнительный
+слот (хранится на костюме, а не на Кибердеке), который можно использовать
+только для Оборудования. Когда вы снимаете Сетевой Костюм, Оборудование
+на костюме автоматически удаляется из Кибердеки. В отличие от другой брони,
+Сетевой Костюм Лотос не покупается раздельно, и всегда должен быть надет
+как на тело, так и на голову. Каждая позиция имеет свою ОС13, и при ношении
+снижает РЕА, ЛВК и СКО пользователя на 2. При ремонте обе части ремонтируются одновременно. Вы не можете носить Сетевой Костюм с аналогичной
+броней или стилем, например, Комбинезоном Бодивейт. К каждой покупке прилагается Кибердека Отличного Качества</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-скидроу-тренч">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Черный Хром","summary":"Противоосколочная Броня для тела с ОС 13 вместо 15","sp":"13 Взрывозащита","bodyPart":"Тело","penalty":"-4 РЕА,ЛВК,СКО","brand":"СкидРоу Лимитед"}</script>
+    <div class="weapon-detail">
+      
+      <p>СкидРоу Тренч от СкидРоу Лимитед — это стильный вариант классического
+тренча. Выполненный в различных цветах, от серого нуарного до яркого
+розового, этот бронированный тренч говорит миру о том, что у вас есть и
+стиль, и стержень.<br></p>
+<p>С подкладкой из прочной брони, эта куртка пользуется популярностью
+среди Корпоратов, которые любят добавлять легкую загадочность в своей
+гардероб. Глубокие карманы данного Тренча привлекают даже Фиксеров.<br></p>
+<p>Цена тоже неплохая, что помогает СкидРоу Лимитед оставаться актуальным в индустрии моды.
+Однако он довольно тяжелый.<br></p>
+<p>СкидРоу Тренч — это Взрывозащитная Броня для Тела с ОС 13 вместо 15.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-средний-бронекостюм">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Cyberpunk RED","summary":"Более прочный Бронекостюм с цельным полимерным покрытием","sp":"12 С.Бронекостюм","bodyPart":"Тело/Голова","penalty":"-2 РЕА,ЛВК,СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Более прочный Бронекостюм с цельным полимерным покрытием, укрепленным более прочной Кевларовой® сеткой. Это типичная одежда для улиц, сочетающая в себе достойную защиту и приятную цену.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-тактическая-умная-броня">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"Черный Хром","summary":"Средний Бронекостюм со встроенными Умными Очками","sp":"12 С.Бронекостюм","bodyPart":"Тело/Голова","penalty":"-2 РЕА,ЛВК,СКО","brand":"Гибсон Баттлгир"}</script>
+    <div class="weapon-detail">
+      
+      <p>Гибсон Баттлгир Тактическая Умная Броня — популярная боевая броня, которую
+носили многие Соло после 4-й Корпоративной войны в США. Тактическая
+Умная Броня, напоминающая экипировку спецназа старой школы, предлагает
+инновационные технологии и высокую прочность. Броня включает защиту
+локтей, коленей и голеней, изготовленную из Кевлара® и пуленепробиваемого полимера.<br></p>
+<p>Кроме того, встроенный шлем изготовлен из полимеров высокой плотности
+и оснащен встроенными Умными Очками. Со всей этой броней Соло может
+уверенно ворваться в убежище и выдержать как минимум первый залп
+выстрелов практически невредимым.<br></p>
+<p>Тактическая Умная Броня от Гибсон Баттлгир представляет собой Средний
+Бронекостюм со встроенными Умными Очками. В отличие от другой брони,
+она не покупается раздельно и всегда должна быть надета как на тело, так и
+на голову. При ремонте обе части ремонтируются одновременно.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-тяжелый-бронекостюм">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Cyberpunk RED","summary":"Самый прочный Бронекостюм","sp":"13 Взрывозащита","bodyPart":"Тело/Голова","penalty":"-2 РЕА,ЛВК,СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Самый прочный Бронекостюм, сочетающий в себе плотный Кевлар® и многослойную смесь из полимеров и нейлоновых сетей, сплётенных между собой. Он защитит от многих атак, кроме самых
+мощных, но и стоит довольно дорого.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-тяжелый-metalgear">
+    <script type="application/json" class="item-stats">{"price":"5000eb","availability":"Роскошь","source":"Соло Удачи 2045","summary":"Еще более тяжелый Metalgear®","sp":"19 Metalgear®","bodyPart":"Тело/Голова","penalty":"-4 РЕА, -5 ЛВК, -5 СКО"}</script>
+    <div class="weapon-detail">
+      
+      <p>Жар некоторых полей боя соперничает с адским
+пламенем. Наша модель с максимальными жёсткими
+бронеплитами обеспечивает предельную защиту,
+позволяя выжить в самых ожесточённых перестрелках.<br></p>
+<p>Тяжёлый Metalgear® — это Metalgear® с ОС 19 и штрафом брони: –4 к РЕФ, –5 к ЛВК, –5 к СКО</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-шоковая-броня">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Бронекостюм из Кевлара® с встроенным электртошокером","sp":"7 Кевлар","bodyPart":"Тело","penalty":"Нет","brand":"Гибсон Баттлгир"}</script>
+    <div class="weapon-detail">
+      
+      <p>Гибсон Баттлгир специально разработала свою Шоковую Броню для использования в тюрьмах. Офицер исправительного учреждения, носящий Шоковую
+Броню, имеет не только преимущества Кевларового® костюма, но и формы
+с микрофиламентными конденсаторами, способными нанести мощный удар
+любому, кто к нему прикоснется.<br></p>
+<p>Внутренняя часть брони имеет резиновую подкладку, обеспечивающую
+защиту от внешнего заряда. Шоковая броня широко применяется в частных
+тюрьмах Соединенных Штатов, поскольку эта броня доказала свою способность значительно снизить количество тюремных беспорядков.<br></p>
+<p>Шоковая Броня от Гибсон Баттлгир — это бронекостюм из Кевлара®. Когда
+вы защищаетесь находясь в захвате, вы можете использовать Действие,
+чтобы послать электрический импульс в броню, заставляя схватившего вас
+атакующего сделать проверку СЛ15 на Сопротивление пыткам/наркотикам.
+Если он терпит неудачу, вы немедленно освобождаетесь от захвата.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-броня-директора">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"Черный Хром","summary":"Легкий Бронекостюм Для Тела в стиле Businesswear.","sp":"11 Л.Бронекостюм","bodyPart":"Тело","penalty":"Нет","style":"Bussinesware","brand":"Торрелл и Чанг"}</script>
+    <div class="weapon-detail">
+      
+      <p>Когда речь идет о престиже и классе, имя Торрелл и Чанг стоит выше всех остальных.
+Теперь лучшие дизайнеры одежды Найт-Сити предлагают сшитую на заказ Директорскую Броню.
+Каждый костюм изготовлен из Кевлара® с керамическим покрытием и полностью устойчив к загрязнениям.<br></p>
+<p>Испачкали костюм грязью или маслом? Промойте его, и он будет как
+новый. Получили досадное пулевое отверстие? Просто подождите, и пусть
+наномашины костюма заделают ее за вас. Не довольствуйтесь крестьянской
+одеждой, когда вы можете одеваться как знатный дворянин. Торрелл и Чанг:
+поддержание престижа на современном уровне.<br></p>
+<p>Броня Директора от Торрелл и Чанг — это Легкий Бронекостюм Для Тела в стиле Businesswear.<br></p>
+<p>Каждый день, когда броня от Торрелл и Чанг не теряет ОС, наномашины,
+присутствующие в броне, восстанавливают ее на 1 очко потерянной ОС.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-корпоративный-остров">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Легкий Бронекостюм Для Тела в стиле Businesswear","sp":"11 Л.Бронекостюм","bodyPart":"Тело","penalty":"Нет","style":"Bussinesware","brand":"Ню-Тек"}</script>
+    <div class="weapon-detail">
+      
+      <p>Вы в поисках островного стиля, но вам нужен корпоративный вид? Ню-Тек
+предлагает именно то, что вам нужно!<br></p>
+<p>Линия Корпоративный Остров, изготовленная из антистатического, прочного на разрыв синтетического шелка, надевается прямо поверх киберимплантов и скрытого оружия. Так что, пока другие парни выглядят чопорными,
+вы можете флексить сколько угодно и не беспокоиться о замене своего прекрасного наряда!<br></p>
+<p>Корпоративный остров представлен в двух стилях: деловом и повседневном. Деловой полностью соответствует корпоративному стилю в однотонных
+цветах и не мнется. Повседневный стиль включает пастельные тона и островные принты и так же изготавливается из немнущихся тканей.<br></p>
+<p>Корпоративный остров — это Легкий Бронекостюм Для Тела в стиле Businesswear.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-боевая-куртка-кортик">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Кортик — это Легкий Бронекостюм Для Тела в стиле Leisurewear.","sp":"11 Л.Бронекостюм","bodyPart":"Тело","penalty":"Нет","style":"Leisureware","brand":"Жукова Интернешнл"}</script>
+    <div class="weapon-detail">
+      
+      <p>Ничто так не говорит о стиле, как Боевая Куртка Кортик.<br>
+Эта куртка из тонкой синтетической кожи, усиленная толстым слоем Кевлара®, пользуется
+популярностью у Соло, которые любят вечеринки. Кортик — это не длинное
+пальто, а пуховик, который обеспечивает не только защиту, но и место для
+хранения оружия и обойм.<br></p>
+<p>Говорят, когда Соло выходит на танцпол в Кортике, это значит, что он
+жаждет крови, и кто-то умрет. Конструкция Кортика позволяет быстро
+перемещаться, проникать в окна и ломать случайный стол*.<br>
+Кортик производится Жукова Интернешнл, российской компанией, специализирующейся
+на модной одежде для «хулиганов».</p>
+<p>Два магазина патронов стандартного размера можно спрятать в куртке без проверки навыка.</p>
+<p><br><br><br>
+<em>*от переводчика: сломать стол означает убрать его и пересадить игроков, игравших за ним, за
+другой стол. Столы &quot;ломают&quot; в турнирах в основном для того, чтобы сбалансировать количество
+игроков за ними.</em></p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-линия-изменяющейся-одежды-монтаж">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Лёгкий Бронекостюм в стиле Generic Chic или Gang Colors","sp":"11 Л.Бронекостюм","bodyPart":"Тело/Голова","penalty":"Нет","style":"Gang Colors,Generic Chic","brand":"Монтаж"}</script>
+    <div class="weapon-detail">
+      
+      <p>С новой Линией Изменяющейся Одежды Монтаж координация цвета — это проблема прошлого! Эти умные предметы одежды меняют цвет и рисунок в соответствии
+с желаниями пользователя. Каждая вещь изготовлена из программируемых волокон-микроизображений и подключена к Щепке, хранящей информацию о стиле.
+Используя свой Агент, подключитесь к Щепке и загрузите свой стиль для сегодняшнего дня. В один день вы можете быть в камуфляже, а на следующий — в повседнев-
+ном стиле хаки без лишних хлопот! Каждая вариация поставляется с тремя стандартными запрограммированными стилями. Чтобы купить больше, посетите
+Монтаж в Датапуле! С Монтаж меньше суеты и больше стиля!<br></p>
+<p>Линия Изменяющейся Одежды Монтаж представляет собой Лёгкий Бронекостюм в стиле Generic Chic или Gang Colors, в зависимости от того, какой цвет/рисунок отображается. С помощью Действия пользователь может переключаться между приобретенными цветами/рисунками с помощью сопряженного агента. Щепка поставляется с предварительно запрограммированным цветом/рисунком по выбору покупателя. Дополнительные цвета/рисунки стоят 20eb (Обычное) каждый и могут быть приобретены и загружены из Агента всего за 1 минуту.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-голо-одежда">
+    <script type="application/json" class="item-stats">{"price":"1000eb","availability":"Очень дорогое","source":"Черный Хром","summary":"Добавляем стиль любой броне","bodyPart":"Тело/Голова","penalty":"Нет","brand":"Техно-одежда Массето"}</script>
+    <div class="weapon-detail">
+      
+      <p>Забудьте о стирке! Собираетесь на свидание, но у вас нет подходящего
+наряда? Пусть Голо-Одежда от Технологичной Одежды Масетто позаботится об этом за вас! Просто наденьте устройства на лодыжки, шею, талию
+и запястья, зайдите в агент и загрузите свой наряд. Кому нужно место в
+шкафу, когда можно носить свет, созданный лучшими модельерами в
+отрасли!<br></p>
+<p>Каждый блок содержит компактный голографический проектор, который
+вместе со своими помощниками проецирует наряд на тело клиента. Мгновенный стиль! Масетто советует пользователям носить нижнее белье на случай,
+если сработает ЭМИ.<br></p>
+<p>Масетто Голо-Одежда создает у пользователя видимость ношения одежды
+того типа, который изображен на голограмме. С помощью действия пользователь может переключаться между купленными нарядами с помощью
+сопряженного агента.<br></p>
+<p>Каждая Голо-Одежда поставляется с одним нарядом бесплатно, а дополнительные наряды любого фасона можно приобрести и загрузить из Агента
+всего за 1 минуту по цене 100eb (Премиум) за каждый. Если пользователь
+попадает под действие ЭМИ, импульса Микроволновки или подобного эффекта, его Голо-Одежда автоматически отключается и остается неработо-
+способной в течение 1 минуты. Это происходит в дополнение к любым
+другим воздействиям, наносимым Киберимплантам или носимой электронике.
+Надетая громоздкая одежда или предметы могут прорезать голограмму.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-куртка-супервспышка">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Микрохром | Danger Gal Dossier+","summary":"Куртка в стиле UrbanFlash с эффектом светошумовой","bodyPart":"Тело","penalty":"Нет","style":"UrbanFlash"}</script>
+    <div class="weapon-detail">
+      
+      <p>Куртка в стиле UrbanFlash.
+Носящий эту куртку с помощью действия может разрядить сменную батарею стоимостью 50eb (Ценное), создав вспышку слепящего света силой в 7 мегакандел.<br>
+Батарея при этом уничтожается. Считай эффект аналогичным срабатыванию светошумовой гранаты с центром на куртке, но без критического эффекта повреждения слуха.<br>
+Батарейки продаются отдельно.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-уличная-куртка-лазерный-свет">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Куртка в стиле UrbanFlash для истинных модников","sp":"11 Л.Бронекостюм","bodyPart":"Тело","penalty":"Нет","style":"UrbanFlash","brand":"Лазерный свет"}</script>
+    <div class="weapon-detail">
+      
+      <p>Неважно, слэмитесь ли вы в клубе или бродите по темным переулкам, Уличная Куртка от Лазерного Света — это необходимая вещь для современного
+хастлера на танцполе. Эти прекрасные черные куртки из синтетической кожи
+с подкладкой из Кевлара® и ткани выделяются из толпы благодаря оптоволоконным световым дисплеям.
+Каждая куртка поставляется с внутренней перезаряжаемой батареей.<br></p>
+<p>Оптоволоконные световые дисплеи могут воспроизводить следующие виды
+света: сплошной черный свет, стробоскопический черный свет, сплошной
+красный, стробоскопический красный, сплошной зеленый, стробоскопический зеленый, сплошной белый, стробоскопический белый, потоковый свет
+клубной сцены, стробоскопический свет клубной сцены, огни перестрелки
+(мигает красным при каждом нажатии на курок, если у вас есть пистолет,
+подключенный к Коннектору Смартлинка) и выключенный.<br></p>
+<p><strong>Не попадайтесь на улицах без неё!</strong><br></p>
+<p>Куртка от Лазерного Света — это Легкий Бронекостюм в стиле Urban Flash.
+Кроме того, при ношении она считается за 1 установку Стилевой Светящейся Тату, что делает ее полезной для получения бонуса +2 к Гардеробу и
+Стилю за наличие 3 установленных Светящихся Тату.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-высокплотный-пуленепробиваемый-щит">
+    <script type="application/json" class="item-stats">{"price":"200eb","availability":"Дорогое","source":"12 Дней Краснождества","summary":"Особенно прочный щит","sp":"15 ПЗ","bodyPart":"Переносное Укрытие","penalty":"Занимает 1(одну) руку"}</script>
+    <div class="weapon-detail">
+      
+      <p>Когда копы поняли, что их боссы закупают самое дешёвое барахло, лишь бы сэкономить на щитах для отдела,
+они попытались сколотить что-то своё, на скорую руку…
+но банды быстро просекли, что кислотой можно расплавить изоленту, которой они приматывали несколько щитов друг к другу.
+После почти сотни травм, вызванных &quot;неисправностью щита&quot;, начальство наконец поняло намёк и заказало вариант получше.<br></p>
+<p>Щит с 15 ПЗ. Не может быть встроен в имплант Выдвижной щит.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-пуленепробиваемый-щит">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Cyberpunk RED","summary":"Прозрачный поликарбонатный щит, который защитит тебя в перестрелке","sp":"10 ПЗ","bodyPart":"Переносное Укрытие","penalty":"Занимает 1(одну) руку"}</script>
+    <div class="weapon-detail">
+      
+      <p>Прозрачный поликарбонатный щит, который защитит тебя в перестрелке.</p>
+
+    </div>
+  </template>
+
+</div>
+
+
+    </main>
+</div>
+
+<dialog id="item-modal" class="weapon-modal" aria-labelledby="item-modal-title">
+    <div class="weapon-modal__shell">
+        <header class="weapon-modal__header">
+            <div>
+                <p class="weapon-modal__eyebrow" id="item-modal-category"></p>
+                <h2 id="item-modal-title"></h2>
+            </div>
+            <button type="button" class="weapon-modal__close" data-close-modal aria-label="Закрыть">×</button>
+        </header>
+        <div class="weapon-modal__stats" id="item-modal-stats"></div>
+        <div class="weapon-modal__body" id="item-modal-body"></div>
+    </div>
+</dialog>
+
+<script>window.__BASE_PATH__ = "/data-pool/app-2.0/";</script>
+<script src="/data-pool/app-2.0/app/shop.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.page-tabs {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    display: flex;
+    gap: 8px;
+    z-index: 1500;
+}
+
+.page-tab-item {
+    padding: 6px 14px;
+    border: 2px solid #ff0040;
+    border-bottom: none;
+    background: rgba(0,0,0,0.55);
+    color: #ff0040;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: 0.2s ease;
+}
+
+.page-tab-item:hover {
+    background: rgba(255, 0, 64, 0.2);
+    color: white;
+}
+
+/* Содержимое панели */
+#screen-panel-content {
+    background: #121212;
+    border: 2px solid #ff0040;
+    border-radius: 10px;
+    padding: 1.4rem 1.8rem;
+    box-shadow: 0 0 22px rgba(255, 0, 64, 0.25);
+
+    animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.page-tab-item.active {
+    background: #ff0040;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 12px #ff0040;
+}
+
+#gm-screen-content {
+    background: #121212;
+    border: 2px solid #ff0040;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(255, 0, 64, .4);
+}
+
+.gm-screen-mode:not(.hidden) {
+    display: block;
+}
+
+.gm-screen-mode.hidden {
+    display: none;
+}
+
+#gm-screen-mode {
+    background: #0e0e0e;
+    border-top: 2px solid #ff0040;
+    padding: 1rem;
+    display: none;
+    width: 100%;
+    min-height: calc(100vh - 180px);
+}
+
+#gm-screen-mode.active {
+    display: block;
+}
+
+.gm-screen-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.gm-screen-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gm-screen-nav button {
+    background: none;
+    border: 2px solid #ff0040;
+    padding: 0.4rem 0.8rem;
+    color: #ff0040;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gm-screen-nav button:hover {
+    background: #ff004022;
+    color: white;
+}
+
+#gm-screen-page {
+    width: 100%;
+    max-width: 1200px;
+    border: 2px solid #ff0040;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #ff0040aa;
+}

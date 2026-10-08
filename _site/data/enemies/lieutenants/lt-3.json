@@ -1,0 +1,152 @@
+{
+  "name": "Офицер службы безопасности",
+  "stats": {
+    "hp": 40,
+    "wound": 20,
+    "save": 7,
+    "int": 4,
+    "ref": "8(6)",
+    "dex": "6(4)",
+    "tech": 4,
+    "char": 6,
+    "will": 5,
+    "luck": 0,
+    "spd": "6(4)",
+    "body": 7,
+    "emp": 4
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Средний Бронекостюм",
+      "value": 12
+    },
+    "armor": {
+      "name": "Средний Бронекостюм",
+      "value": 12
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/rifle.png",
+        "name": "Штурмовая винтовка",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Очень тяжелый пистолет",
+        "dmg": "4d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Среднее оружие ближнего боя",
+        "dmg": "2d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для штурмовой винтовки",
+        "count": 50
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для очень тяжелого пистолета",
+        "count": 30
+      },
+      {
+        "icon": "images/content/enemies/item-icons/shield.png",
+        "name": "Пуленепробиваемый щит",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/binoculars.png",
+        "name": "Бинокль",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/phone.png",
+        "name": "Одноразовый телефон",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/flashlight.png",
+        "name": "Фонарь",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/handcuffs.png",
+        "name": "Наручники",
+        "count": 2
+      },
+      {
+        "icon": "images/content/enemies/item-icons/walkie-talkie.png",
+        "name": "Рация",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/radio.png",
+        "name": "Радиосканер / Музыкальный проигрыватель",
+        "count": 1
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Нейролинк (Керензиков)"
+      }
+    ]
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "melee-weapons": "10(8)",
+      "brawling": "10(8)",
+      "dodge": "10(8)"
+    },
+    "perception-skills": {
+      "attentiveness": 6,
+      "concentration": 7,
+      "insight": 6
+    },
+    "range-combat-skills": {
+      "autofire": "12(10)",
+      "pistols": "10(8)",
+      "assault-weapons": "10(8)"
+    },
+    "educational-skills": {
+      "deduction": 6,
+      "area-knowledge": [
+        {
+          "name": "Твой дом",
+          "level": 6
+        }
+      ],
+      "education": 6
+    },
+    "social-skills": {
+      "interrogation": 8,
+      "communication": 6,
+      "persuasion": 7,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 6
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 6
+        }
+      ]
+    },
+    "tech-skills": {
+      "first-aid": 10,
+      "tactics": 6
+    },
+    "drive-skills": {
+      "driving": "12(10)"
+    },
+    "physical-skills": {
+      "athletics": "10(8)",
+      "stealth": "8(6)",
+      "resistance": 10
+    }
+  },
+  "description": [""]
+}

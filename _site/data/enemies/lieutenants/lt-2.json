@@ -1,0 +1,193 @@
+{
+  "name": "Шеф Реставраторов",
+  "stats": {
+    "hp": 40,
+    "wound": 20,
+    "save": 6,
+    "int": 3,
+    "ref": 6,
+    "dex": 6,
+    "tech": 5,
+    "char": 4,
+    "will": 5,
+    "luck": 0,
+    "spd": 4,
+    "body": 6,
+    "emp": 4
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Легкий Бронекостюм",
+      "value": 11
+    },
+    "armor": {
+      "name": "Легкий Бронекостюм",
+      "value": 11
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/shotgun.png",
+        "name": "Дробовик",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Тяжелый Пистолет",
+        "dmg": "3d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Тяжелое ОББ",
+        "dmg": "3d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Легкое ОББ",
+        "dmg": "1d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/shotgun-ammo.png",
+        "name": "Боеприпасы для дробовика",
+        "count": 25
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для тяжелого пистолета",
+        "count": 25
+      },
+      {
+        "icon": "images/content/enemies/item-icons/phone.png",
+        "name": "Агент",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Пистолет-крюк",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/walkie-talkie.png",
+        "name": "Рация",
+        "count": 1
+      },
+      {
+        "name": "Палатка и оборудование для кемпинга",
+        "count": 1
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Назальные фильтры"
+      },
+      {
+        "name": "Нейролинк (Разъем для щепок, Щепка тактильного усиления)"
+      }
+    ]
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "martial-arts": [],
+      "melee-weapons": 10,
+      "brawling": 8,
+      "dodge": 8
+    },
+    "perception-skills": {
+      "attentiveness": 8,
+      "tracking": 0,
+      "concentration": 7,
+      "hide-reveal-object": 4,
+      "lip-reading": 0
+    },
+    "range-combat-skills": {
+      "autofire": 10,
+      "heavy-weapons": 10,
+      "pistols": 10,
+      "bows": 0,
+      "assault-weapons": 10
+    },
+    "educational-skills": {
+      "gambling": 0,
+      "business": 0,
+      "accounting": 0,
+      "bureaucracy": 0,
+      "desert-surviving": 7,
+      "deduction": 7,
+      "area-knowledge": [
+        {
+          "name": "Твой дом",
+          "level": 5
+        }
+      ],
+      "composition": 0,
+      "criminology": 0,
+      "cryptography": 0,
+      "science": 0,
+      "education": 5,
+      "animals-treatment": 0,
+      "info-search": 0,
+      "tactics": 10,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 5
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 5
+        }
+      ]
+    },
+    "social-skills": {
+      "style": 0,
+      "interrogation": 0,
+      "streetwise": 0,
+      "communication": 6,
+      "bribe": 0,
+      "insight": 6,
+      "trading": 0,
+      "persuasion": 6,
+      "self-care": 0
+    },
+    "stage-skills": {
+      "acting": 0,
+      "music": 0
+    },
+    "tech-skills": {
+      "avia-tech": 0,
+      "car-tech": 7,
+      "lock-picking": 7,
+      "tech-knowledge": 9,
+      "pickpocketing": 0,
+      "cyber-tech": 0,
+      "photo-tech": 0,
+      "sea-tech": 0,
+      "gun-tech": 9,
+      "paramedic": 7,
+      "first-aid": 7,
+      "saboteur": 0,
+      "falsification": 0,
+      "art": 0,
+      "electronic-security": 9
+    },
+    "drive-skills": {
+      "horseback-riding": 0,
+      "driving": 10,
+      "piloting": 0,
+      "navigation": 0
+    },
+    "physical-skills": {
+      "athletics": 12,
+      "acrobatics": 0,
+      "endurance": 11,
+      "stealth": 10,
+      "resistance": 10,
+      "dance": 0
+    }
+  },
+  "description": [
+    "",
+    ""
+  ]
+}

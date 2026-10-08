@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "build:v2": "eleventy --config=.eleventy.app-2.0.js",
+    "serve:v2": "eleventy --serve --config=.eleventy.app-2.0.js",
+    "migrate:weapons-v2": "node scripts/migrate-weapons-v2.js",
+    "migrate:equipment-v2": "node scripts/migrate-equipment-v2.js",
+    "migrate:v2": "npm run migrate:weapons-v2 && npm run migrate:equipment-v2",
+    "sync:categories-v2": "node scripts/sync-categories-v2.js"
   },
   "keywords": [],
   "author": "",

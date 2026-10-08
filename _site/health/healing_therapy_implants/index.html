@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лечение, терапия и установка имплантов · Data Pool</title>
+    <link rel="stylesheet" href="/data-pool/css/main.css">
+    <link rel="icon" href="/data-pool/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <img src="/data-pool/images/data-pool_header.png" alt="Data Pool Header">
+    <div class="page-tabs">
+        <div class="page-tab-item active" id="home" data-open="home">DataPool</div>
+<!--        <div class="page-tab-item" id="charlist" data-open="charlist">Лист Персонажа</div>-->
+        <div class="page-tab-item" id="gm-screen" data-open="gm-screen">Ширма Мастера</div>
+        <div class="page-tab-item" id="enemies" data-open="enemies">Противники</div>
+    </div>
+</header>
+
+<div class="layout">
+    <div class="search-box">
+        <input
+                type="text"
+                id="search-input"
+                placeholder="Поиск по датапулу..."
+                autocomplete="off"
+        />
+        <ul id="search-results"></ul>
+    </div>
+    <aside class="sidebar" id="sidebar">
+    <nav>
+        <div class="logo">
+            <a href="/data-pool/">
+                <img src="/data-pool/images/logo.png" alt="Data Pool Logo"/>
+            </a>
+        </div>
+
+        <details class="sidebar-group" close>
+            <summary>Справочники</summary>
+            <h3><a href="/data-pool/equipment/">📦 Снаряжение</a></h3>
+            <ul>
+                <li><a href="/data-pool/equipment/clothes_style/">Одежда и Стиль</a></li>
+                <li><a href="/data-pool/equipment/weapons/">Оружейный Магазин</a></li>
+                <li><a href="/data-pool/equipment/armor/">Броня</a></li>
+                <li><a href="/data-pool/equipment/items/">Предметы</a></li>
+                <li><a href="/data-pool/equipment/agents_accessories/">Каталог Агентов и Аксессуаров</a></li>
+                <li><a href="/data-pool/equipment/soft/">Софт для Агента</a></li>
+                <li><a href="/data-pool/equipment/acpa/">Силовая Броня</a></li>
+            </ul>
+            <h3><a href="/data-pool/health/">🩸 Твоё Здоровье</a></h3>
+            <ul>
+                <li><a href="/data-pool/health/wounds/">Травмы</a></li>
+                <li><a href="/data-pool/health/other/">Другие способы пострадать</a></li>
+                <li><a href="/data-pool/health/drugs_medicine/">Наркотики и лекарства</a></li>
+                <li><a href="/data-pool/health/healing_therapy_implants/">Лечение, терапия и установка имплантов</a>
+                </li>
+            </ul>
+            <h3><a href="/data-pool/city/">🏙️ Город</a></h3>
+            <ul>
+                <li><a href="/data-pool/city/ncpd/">NCPD</a></li>
+                <li><a href="/data-pool/city/trauma_team/">Trauma Team</a></li>
+                <li><a href="/data-pool/city/nc_map/">Карта Найт-Сити</a></li>
+                <li><a href="/data-pool/city/corpos/">Корпорации</a></li>
+                <li><a href="/data-pool/city/loot_places/">Места для Сбора</a></li>
+            </ul>
+            <h3><a href="/data-pool/workshop/">🔧 Мастерская</a></h3>
+            <ul>
+                <li><a href="/data-pool/workshop/garage/">Гараж</a></li>
+                <li><a href="/data-pool/workshop/repair/">Обслуживание снаряги</a></li>
+                <li><a href="/data-pool/workshop/drones/">Дроны</a></li>
+                <li><a href="/data-pool/workshop/upgrades/">Техапгрейды</a></li>
+            </ul>
+            <h3><a href="/data-pool/chrome/">🤖 Твой Хром</a></h3>
+            <ul>
+                <li><a href="/data-pool/chrome/implants/">Киберимпланты</a></li>
+                <li><a href="/data-pool/chrome/borgs/">Экзоскелеты/Боргирование</a></li>
+                <li><a href="/data-pool/chrome/pkt_packs/">ПКТ комплекты</a></li>
+                <li><a href="/data-pool/chrome/pkt_implants/">ПКТ импланты</a></li>
+                <li><a href="/data-pool/chrome/psycho/">Киберпсихоз</a></li>
+                <li><a href="/data-pool/chrome/exotic/">Биоэкзотика Биотехники</a></li>
+            </ul>
+            <h3><a href="/data-pool/home/">🏠 Где ты живешь</a></h3>
+            <ul>
+                <li><a href="/data-pool/home/containers/">Грузовые контейнеры и Куб-отели</a></li>
+                <li><a href="/data-pool/home/aparts/">Конапты и Апартаменты</a></li>
+                <li><a href="/data-pool/home/goods/">Товары для дома</a></li>
+                <li><a href="/data-pool/home/base/">Нет места лучше дома</a></li>
+            </ul>
+            <h3><a href="/data-pool/contacts/">📱 Твои контакты</a></h3>
+            <ul>
+                <li><a href="/data-pool/contacts/streetlang/">Уличный сленг</a></li>
+                <li><a href="/data-pool/contacts/reputation/">Репутация</a></li>
+                <li><a href="/data-pool/contacts/night_market/">Ночной рынок</a></li>
+            </ul>
+            <h3><a href="/data-pool/net/">🌐 Сеть</a></h3>
+            <ul>
+                <li><a href="/data-pool/net/netrun/">Нетран.Оборудование.Софт</a></li>
+                <li><a href="/data-pool/net/weather/">Прогноз погоды</a></li>
+                <li><a href="/data-pool/net/quick_hacks/">Быстрый Взлом (EMK)</a></li>
+            </ul>
+            <h3><a href="/data-pool/job/">💼 Твоя работа</a></h3>
+            <ul>
+                <li><a href="/data-pool/job/tech/">Техник</a></li>
+                <li><a href="/data-pool/job/suit/">Корпорат</a></li>
+                <li><a href="/data-pool/job/nomad/">Кочевник</a></li>
+                <li><a href="/data-pool/job/medic/">МедТех</a></li>
+                <li><a href="/data-pool/job/fixer/">Фиксер</a></li>
+                <li><a href="/data-pool/job/netrunner/">Нетраннер</a></li>
+                <li><a href="/data-pool/job/cop/">Законник</a></li>
+                <li><a href="/data-pool/job/rocker/">Рокербой</a></li>
+                <li><a href="/data-pool/job/media/">Медиа</a></li>
+                <li><a href="/data-pool/job/solo/">Соло</a></li>
+            </ul>
+            <h3><a href="/data-pool/other/">📁 Остальное</a></h3>
+            <ul>
+                <li><a href="/data-pool/other/martial_arts/">Боевые Искусства</a></li>
+            </ul>
+        </details>
+        <details class="sidebar-group" close>
+            <summary>GM Place</summary>
+            <ul>
+                <li><a href="/data-pool/gm/combat/">Таблицы боя</a></li>
+                <li><a href="/data-pool/gm/features/">Механики</a></li>
+                <li><a href="/data-pool/gm/economic/">Экономика</a></li>
+                <li><a href="/data-pool/gm/generators/">Генераторы</a></li>
+                <li><a href="/data-pool/gm/traps/">Дроны и ловушки</a></li>
+                <li><a href="/data-pool/gm/ambush/">Засада и раунд неожиданности</a></li>
+                <li><a href="/data-pool/gm/luck/">Вспышка Удачи</a></li>
+            </ul>
+        </details>
+        <h4><a href="/data-pool/faq/">FAQ по CPRed</a></h4>
+        <h4><a href="/data-pool/rules/">Книги Правил</a></h4>
+        <h4><a href="/data-pool/updates/">Последние Новости</a></h4>
+        <h4><a href="/data-pool/support/">Поддержка и Обратная Связь</a></h4>
+        <h4><a href="/data-pool/thanks/">Благодарим за поддержку!</a></h4>
+    </nav>
+    <div class="sidebar-version">
+        Версия: 1.6.4
+    </div>
+</aside>
+
+    <main class="content" id="main-content">
+        <p><a href="/data-pool/health/" class="return-link">Твоё Здоровье</a></p>
+<h1 id="лечение-терапия-и-установка-имплантов" tabindex="-1">Лечение, Терапия и Установка имплантов</h1>
+<p>Добро пожаловать в будущее, где боль — временное неудобство, а повреждения — лишь повод для апгрейда.
+Мы предлагаем передовые методы лечения и установки имплантов с минимальным временем восстановления.<br><br></p>
+<p>Наши сертифицированные специалисты обладают <a href="/data-pool/job/medic/">всеми навыками</a>
+— от экстренной стабилизации до сложнейших хирургических процедур!</p>
+<p>Хочешь большего? Биоэкзотика от Biotechnica — это индивидуальный подход к совершенству:</p>
+<ul>
+<li>изменение внешности</li>
+<li>установка эстетических модов</li>
+<li>корректировка телосложения</li>
+<li>и многое другое!<br>
+<a href="/data-pool/chrome/exotic/">Узнать больше!</a></li>
+</ul>
+<div class="tab-buttons">
+  <button class="tab-button active" data-tab="healing">Лечение</button>
+  <button class="tab-button" data-tab="implants">Установка Имплантов</button>
+  <button class="tab-button" data-tab="therapy">Терапия</button>
+</div>
+<div class="tab-content" id="implants">
+<h4 id="установка-имплантов" tabindex="-1">Установка Имплантов:</h4>
+<table>
+<thead>
+<tr>
+<th>Типичное место установки</th>
+<th>СЛ хирургии (только Медтех)</th>
+<th>Стоимость установки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Молл</td>
+<td>СЛ 13</td>
+<td>100ed (премиум)</td>
+</tr>
+<tr>
+<td>Клиника</td>
+<td>СЛ 15</td>
+<td>500ed (дорогое)</td>
+</tr>
+<tr>
+<td>Госпиталь</td>
+<td>СЛ 17</td>
+<td>1000ed (Оч.дорогое)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="бодискульптинг" tabindex="-1">Бодискульптинг:</h4>
+<table>
+<thead>
+<tr>
+<th>Бодискульптинг</th>
+<th>Описание</th>
+<th>Установка</th>
+<th>Цена</th>
+<th>ПТ</th>
+<th>СЛ хирургии</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Стандартный</td>
+<td>Внешнее изменение не слишком вульгарные.</td>
+<td>Клиника</td>
+<td>500ed (дорогое)</td>
+<td>НЕТ</td>
+<td>СЛ15<br> + материалы на 100ed (Премиум)</td>
+</tr>
+<tr>
+<td>Экзотический</td>
+<td>Действительно фантастическая работа, подчёркивающая инопланетные или нечеловеческие черты, такие как усы, морды, грифы, кожа рептилий, мех, хвост, копыта, антенны, когти, плавники и лапы.</td>
+<td>Госпиталь</td>
+<td>1000ed (Очень дорого)</td>
+<td>4d6</td>
+<td>СЛ17<br> + материалы на 500ed (Дорогое)</td>
+</tr>
+<tr>
+<td>Экстримальный БИОскульптинг</td>
+<td>Зачем выглядеть как антропоморфное животное, когда можно сделать следующий шаг и выглядеть как настоящее животное! Пройдите весь путь и примите зов дикой природы!<br>Экстремальный биоскульпт преображает пациента в максимально приближенное к выбранному животному подобие. Мало кто из медиков готов проводить эту процедуру,<br>так как она лишает пациента большей части его способности взаимодействовать с миром как человек, включая способность хватать предметы. На усмотрение GM, персонажи с Экстремальным биоскульптом могут страдать от штрафа к задачам, требующим человекоподобной анатомии, или вообще неспособными выполнять эти задачи. <br>Пациенты, подвергающиеся Экстремальному биоскульпту, часто идут до конца и также постоянно устанавливают <br>Поведенческий Чип: Животное.</td>
+<td>Госпиталь</td>
+<td>5,000еЬ (Роскошь)</td>
+<td>8d6</td>
+<td>СЛ21<br> + материалы на 1000eb (Очень дорого).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-content active" id="healing">
+<table>
+<thead>
+<tr>
+<th>Самая высокая СЛ стабилизации или лечения травмы во время посещения</th>
+<th>Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>СЛ 17 и выше</td>
+<td>1000ed (Оч.дорогое)</td>
+</tr>
+<tr>
+<td>СЛ 15</td>
+<td>500ed (дорогое)</td>
+</tr>
+<tr>
+<td>СЛ 13</td>
+<td>100ed (премиум)</td>
+</tr>
+<tr>
+<td>СЛ 10</td>
+<td>50ed (ценное)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Способ лечения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Лечение Крит. Травм</td>
+<td>Первая помощь снимает эффект травмы до конца дня. Попытка занимает минуту. Вы можете оказать помощь себе.<br>Лечение снимет эффект травмы навсегда. Каждая попытка занимает 4 часа. Вы не можете лечить себя.<br></td>
+</tr>
+<tr>
+<td>Крит. Травмы Имплантов</td>
+<td>Происходит как и обычная травма, но во время лечения можно заменить проверку первой помощи, парамедика или хирургии на кибертехнологии.</td>
+</tr>
+<tr>
+<td>Подписка Trauma Team:</td>
+<td><strong>Серебряная:</strong> участник оплачивает лечение требующее хирургического вмешательства, по стоимости как в больнице. Если участник не доплачивает, Trauma Team сделает всё возможное, используя навыки парамедика, прежде чем доставить его в ближайшую больницу.<br><strong>Корпоративная:</strong> Страховка включает лечение хирургического вмешательства без доплаты.<br>Любую страховку можно передать по принципу 1-1.</td>
+</tr>
+<tr>
+<td>При вызове Trauma Team</td>
+<td>Вы бросаете d6, результат значит через сколько они прилетят.<br>Trauma Team рассматривается как подкрепление у законника. Состоит из 5 человек: Врач, Ассистент, пилот, 2 сотрудника службы безопасности. <br><strong>Члены Trauma Team не могут уклонять от пуль.</strong> Они прибывают с воздуха на AV-4, оснащённого крепление для тяжёлого оружия с установленным Tsunami Arms Helix (См. CP:R СТР. 347). AV-4 также оснащён мед. техникой, 4 криокамерами и самым современным операционным столом.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-content" id="therapy">
+<table>
+<thead>
+<tr>
+<th>Терапии</th>
+<th>Описание</th>
+<th>Цена</th>
+<th>Эффект</th>
+<th>СЛ Мед. Тех.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Зависимость</td>
+<td>Неделя психотерапевтической терапии в сочетании с анти наркотическими препаратами в безопасном помещении</td>
+<td>1000eb (О.Дорогое)</td>
+<td>У вас проходит 1 зависимость. НО, когда вы стараетесь избавиться от вторичного эффекта источника этой же зависимости в течении 1 года после терапии, вы автоматически проваливаете проверку.</td>
+<td>СЛ15 Материалов на 500eb (дорогое)</td>
+</tr>
+<tr>
+<td>Стандартная Потеря Человечность</td>
+<td>Неделя интенсивной терапии, сочетающей в себе консультации по управлению гневом, гипноз и незначительное прямое перепрограммирование мозга с помощью препаратов в безопасном месте с помощью брейнданса.</td>
+<td>500eb (Дорогое)</td>
+<td>Восстанавливаете 2d6 утраченной человечности. <br>Человечность не может быть полностью восстановлена без удаления кибероборудования. Каждая установленная часть кибероборудования снижает вашу максимальную человечность на 2, каждая часть боргирования уменьшает человечность на 4. Импланты с 0 воздействием не уменьшают вашу человечность<br></td>
+<td>СЛ15 Материалов на 100eb (премиум)</td>
+</tr>
+<tr>
+<td>Экстремальная Потеря Человечности</td>
+<td>Одна неделя интенсивной терапии и сеансов, направленных на прямое экстремальное перепрограммирование мозга стали возможными благодаря современным фармацевтическим препаратам и безопасной средой терапевтического брейнданса.</td>
+<td>1000eb (О.Дорогое)</td>
+<td>Восстанавливаете 4d6 утраченной человечности. Человечность не может быть полностью восстановлена без удаления кибероборудования. Каждая установленная часть кибероборудования снижает вашу максимальную человечность на 2, каждая часть боргирования уменьшает человечность на 4. Импланты с 0 воздействием не уменьшают вашу человечность</td>
+<td>СЛ17 Материалов на 500eb (дорогое)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<img src="/data-pool/images/content/health/healing_therapy_implants/footer.png" alt="Healing Footer" class="footer-image" />
+        
+    </main>
+    <div id="gm-screen-mode"
+         class="gm-screen-mode hidden"
+         data-screen-url="/data-pool/gm-screen/screen/index.html">
+        <div id="gm-screen-content"></div>
+    </div>
+    <div id="enemies-mode"
+         class="enemies-mode hidden"
+         data-enemies-url="/data-pool/data/enemies/enemies-index.json">
+        <div class="enemies-root">
+            <aside class="enemies-sidebar">
+                <div id="enemy-tier-buttons"></div>
+                <div id="enemy-tier-description" class="enemy-tier-description"></div>
+            </aside>
+            <div id="enemy-type-buttons"></div>
+            <section id="enemy-details"></section>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+<script src="https://unpkg.com/lunr-languages/lunr.ru.js"></script>
+<script>window.__BASE_PATH__ = "/data-pool/";</script>
+<button id="scrollToTopBtn" title="Наверх" aria-label="Наверх"
+        style="display: none; position: fixed; bottom: 2em; right: 2em; z-index: 999; background: #ff0040; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; box-shadow: 0 0 10px rgba(255, 0, 64, 0.5);">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#000">
+        <path d="M12 4L4 12H9V20H15V12H20L12 4Z"/>
+    </svg>
+</button>
+<div id="toc-toggle" class="toc-button" title="Оглавление">☰</div>
+<div id="toc-popup" class="toc-popup hidden">
+    <div class="toc-popup-inner" id="toc-dynamic"></div>
+</div>
+
+<script src="/data-pool/app/app.js"></script>
+<script src="/data-pool/app/spa.js" defer></script>
+<script src="/data-pool/app/gm-panel.js" defer></script>
+<script src="/data-pool/data/enemies/dictionary.js" defer></script>
+<script src="/data-pool/app/enemies.js" defer></script>
+</body>
+</html>
+

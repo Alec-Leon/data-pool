@@ -1,0 +1,52 @@
+#charlist-mode {
+    display: none;
+}
+
+#charlist-mode.active {
+    display: block;
+}
+
+.character-sheet {
+    padding: 1rem;
+}
+
+.char-steps-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.char-step-btn {
+    padding: 6px 10px;
+    border: 1px solid #ff0040;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.char-step-btn.active {
+    background: #ff0040;
+    color: #000;
+}
+
+.char-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-group-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 14px;
+}
+
+.skill-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-field input {
+    width: 60px;
+}

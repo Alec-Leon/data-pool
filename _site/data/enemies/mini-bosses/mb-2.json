@@ -1,0 +1,147 @@
+{
+  "name": "Пиро",
+  "role": {
+    "name": "Боевое чутьё",
+    "level": 4
+  },
+  "stats": {
+    "hp": 35,
+    "wound": 18,
+    "save": 5,
+    "int": 5,
+    "ref": 8,
+    "dex": 6,
+    "tech": 7,
+    "char": 4,
+    "will": 4,
+    "luck": 0,
+    "spd": 6,
+    "body": 5,
+    "emp": 3
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Легкий Бронекостюм",
+      "value": 11
+    },
+    "armor": {
+      "name": "Легкий Бронекостюм",
+      "value": 11
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/flamethrower.png",
+        "name": "Огнемёт",
+        "dmg": "3d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Тяжелый Пистолет",
+        "dmg": "3d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Очень тяжелое ОББ",
+        "dmg": "3d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/shotgun-ammo.png",
+        "name": "Боеприпасы для огнемёта (Зажигательные боеприпасы для дробовика)",
+        "count": 8
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для тяжелого пистолета",
+        "count": 50
+      },
+      {
+        "icon": "images/content/enemies/item-icons/grenade.png",
+        "name": "Зажигательная граната",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/grenade.png",
+        "name": "Светошумовая граната",
+        "count": 1
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Комплект Кибераудио (Демпфер)"
+      },
+      {
+        "name": "Киберглаз x2 (Анти-ослепление x2)"
+      },
+      {
+        "name": "Назальные фильтры"
+      }
+    ]
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "melee-weapons": 13,
+      "brawling": 10,
+      "dodge": 13
+    },
+    "perception-skills": {
+      "attentiveness": 12,
+      "concentration": 8
+    },
+    "range-combat-skills": {
+      "heavy-weapons": 14,
+      "pistols": 14
+    },
+    "educational-skills": {
+      "area-knowledge": [
+        {
+          "name": "Твой дом",
+          "level": 7
+        }
+      ],
+      "science": [
+        {
+          "name": "Химия",
+          "level": 10
+        }
+      ],
+      "education": 7
+    },
+    "social-skills": {
+      "interrogation": 10,
+      "streetwise": 8,
+      "communication": 5,
+      "insight": 5,
+      "persuasion": 6,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 7
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 7
+        }
+      ]
+    },
+    "stage-skills": {},
+    "tech-skills": {
+      "tech-knowledge": 12,
+      "first-aid": 9,
+      "saboteur": 13,
+      "tactics": 8
+    },
+    "drive-skills": {
+      "driving": 10
+    },
+    "physical-skills": {
+      "athletics": 11,
+      "stealth": 10,
+      "resistance": 14
+    }
+  },
+  "description": [
+    ""
+  ]
+}

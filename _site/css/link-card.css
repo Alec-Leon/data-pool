@@ -1,0 +1,31 @@
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.link-card {
+    background: #1a1a1a;
+    border: 1px solid #ff0040;
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.link-card:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+.link-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.link-card p {
+    font-size: 0.9rem;
+    color: #bbb;
+}

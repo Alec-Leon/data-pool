@@ -1,0 +1,96 @@
+.version-log {
+    margin: 3rem auto;
+    padding: 0 1rem;
+    max-width: 1000px;
+}
+
+.version-title {
+    text-align: center;
+    color: #ff0040;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 6px rgba(255, 0, 64, 0.6);
+}
+
+.version-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.version-card {
+    background: #1a1a1a;
+    border: 2px solid #ff0040;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 0, 64, 0.2);
+    padding: 1rem 1.2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.version-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 16px rgba(255, 0, 64, 0.4);
+}
+
+.version-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ff0040;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+
+.version-number {
+    font-weight: bold;
+    color: #ff0040;
+}
+
+.version-date {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.version-body p {
+    margin: 0.3rem 0;
+    color: #ddd;
+}
+
+.version-body ul {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+    color: #bbb;
+    font-size: 0.95rem;
+    list-style: none;
+}
+
+.version-body li::before {
+    content: "→ ";
+    color: #ff0040;
+}
+
+.version-more-button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.version-more-button {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ff0040;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.version-more-button:hover,
+.version-more-button.active {
+    background-color: #ff0040;
+    color: #000;
+    transform: translateY(-2px);
+}

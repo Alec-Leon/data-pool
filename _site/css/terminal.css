@@ -1,0 +1,108 @@
+.terminal-ascii {
+    font-weight: bold;
+    margin-bottom: 0.01rem;
+}
+
+.terminal-links {
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1.8;
+}
+.terminal-links a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.terminal-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #ff0040;
+}
+.terminal-links .comment {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.terminal-links .comment a {
+    color: #f0f0f0;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.terminal-links .comment a:hover {
+    color: #ff0040;
+    text-decoration: none;
+}
+
+.terminal-block {
+    font-family: monospace;
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 6px;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+
+body[data-theme="green"] .terminal-block {
+    background: #000;
+    color: #33ff33;
+    border-color: #33ff33;
+    box-shadow: 0 0 8px #33ff33;
+}
+body[data-theme="green"] .terminal-links a {
+    color: #33ff33;
+}
+body[data-theme="green"] .terminal-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #33ff33;
+}
+body[data-theme="green"] .terminal-links .comment {
+    color: #33ff33;
+}
+
+body[data-theme="red"] .terminal-block {
+    background: #000;
+    color: #ff0040;
+    border-color: #ff0040;
+    box-shadow: 0 0 8px #ff0040;
+}
+body[data-theme="red"] .terminal-links a {
+    color: #ff0040;
+}
+body[data-theme="red"] .terminal-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #ff0040;
+}
+body[data-theme="red"] .terminal-links .comment {
+    color: #ff0040;
+}
+
+body[data-theme="blue"] .terminal-block {
+    background: #000;
+    color: #00ffff;
+    border-color: #00ffff;
+    box-shadow: 0 0 8px #00ffff;
+}
+body[data-theme="blue"] .terminal-links a {
+    color: #00ffff;
+}
+body[data-theme="blue"] .terminal-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #00ffff;
+}
+body[data-theme="blue"] .terminal-links .comment {
+    color: #00ffff;
+}
+
+.theme-switcher button {
+    margin: 0 0.5rem;
+    background: none;
+    border: 2px solid currentColor;
+    padding: 0.4rem 0.8rem;
+    color: inherit;
+    cursor: pointer;
+    font-family: monospace;
+    transition: 0.2s ease;
+}
+
+.theme-switcher button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

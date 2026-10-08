@@ -1,0 +1,181 @@
+{
+  "name": "Дорожный Бандит",
+  "stats": {
+    "hp": 25,
+    "wound": 13,
+    "save": 3,
+    "int": 4,
+    "ref": 6,
+    "dex": 4,
+    "tech": 4,
+    "char": 3,
+    "will": 3,
+    "luck": 0,
+    "spd": 3,
+    "body": 3 ,
+    "emp": 3
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Кожа",
+      "value": 4
+    },
+    "armor": {
+      "name": "Кожа",
+      "value": 4
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Оч.Тяжелый Пистолет",
+        "dmg": "4d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/bow.png",
+        "name": "Лук",
+        "dmg": "4d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Легкое ОББ",
+        "dmg": "1d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для оч.тяжелого пистолета",
+        "count": 20
+      },
+      {
+        "icon": "images/content/enemies/item-icons/bow-ammo.png",
+        "name": "Стрелы",
+        "count": 20
+      },
+      {
+        "icon": "images/content/enemies/item-icons/rope.png",
+        "name": "Веревка",
+        "count": 1
+      },
+      {
+        "icon": "images/content/enemies/item-icons/flashlight.png",
+        "name": "Фонарик",
+        "count": 1
+      }
+    ],
+    "cyberware": [
+      {
+        "name": "Нейролинк (Личный порт)"
+      }
+    ]
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "martial-arts": [
+        {
+          "name": "Каратэ",
+          "level": 0
+        }
+      ],
+      "melee-weapons": 11,
+      "brawling": 9,
+      "dodge": 7
+    },
+    "perception-skills": {
+      "attentiveness": 6,
+      "tracking": 0,
+      "concentration": 4,
+      "hide-reveal-object": 4,
+      "lip-reading": 0
+    },
+    "range-combat-skills": {
+      "autofire": 0,
+      "heavy-weapons": 0,
+      "pistols": 12,
+      "bows": 0,
+      "assault-weapons": 0
+    },
+    "educational-skills": {
+      "gambling": 0,
+      "business": 0,
+      "accounting": 0,
+      "bureaucracy": 0,
+      "desert-surviving": 0,
+      "deduction": 0,
+      "area-knowledge": [
+        {
+          "name": "Твой дом",
+          "level": 4
+        }
+      ],
+      "composition": 0,
+      "criminology": 0,
+      "cryptography": 0,
+      "science": 0,
+      "education": 4,
+      "animals-treatment": 0,
+      "info-search": 0,
+      "tactics": 0,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 4
+        },
+        {
+          "name": "Уличный сленг",
+          "level": 4
+        }
+      ]
+    },
+    "social-skills": {
+      "style": 0,
+      "interrogation": 6,
+      "streetwise": 0,
+      "communication": 5,
+      "bribe": 0,
+      "insight": 5,
+      "trading": 0,
+      "persuasion": 6,
+      "self-care": 0
+    },
+    "stage-skills": {
+      "acting": 0,
+      "music": 0
+    },
+    "tech-skills": {
+      "avia-tech": 0,
+      "car-tech": 0,
+      "lock-picking": 0,
+      "tech-knowledge": 0,
+      "pickpocketing": 0,
+      "cyber-tech": 0,
+      "photo-tech": 0,
+      "sea-tech": 0,
+      "gun-tech": 0,
+      "paramedic": 0,
+      "first-aid": 4,
+      "saboteur": 0,
+      "falsification": 0,
+      "art": 0,
+      "electronic-security": 0
+    },
+    "drive-skills": {
+      "horseback-riding": 0,
+      "driving": 10,
+      "piloting": 0,
+      "navigation": 0
+    },
+    "physical-skills": {
+      "athletics": 9,
+      "acrobatics": 0,
+      "endurance": 6,
+      "stealth": 7,
+      "resistance": 4,
+      "dance": 0
+    }
+  },
+  "description": [
+    "",
+    ""
+  ]
+}

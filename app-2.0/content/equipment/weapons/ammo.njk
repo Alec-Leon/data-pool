@@ -1,0 +1,28 @@
+---
+title: Боеприпасы
+permalink: /equipment/weapons/ammo/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Оружейный магазин</h1>
+
+<div class="tab-buttons">
+    <a class="tab-button" href="{{ '/equipment/weapons/range/' | url }}">Огнестрельное оружие →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/melee/' | url }}">Холодное оружие →</a>
+    <a class="tab-button active" href="{{ '/equipment/weapons/ammo/' | url }}">Боеприпасы</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/explosives/' | url }}">Взрывчатка и гранаты →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/upgrades/' | url }}">Модификации →</a>
+</div>
+
+<p class="shop-intro">Огнестрел приобрели? А чем его заряжать? Вам сюда!</p>
+
+{{ catalog(collections.weaponsAmmoCategories, collections.weaponsAmmo, {
+  searchPlaceholder: "Найти боеприпасы…",
+  filters: ["brand"],
+  cardFields: [
+    { key: "options", label: "Подходят к" }
+  ]
+}) }}

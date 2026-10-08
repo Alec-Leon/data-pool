@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} · {{ siteTitle or "Data Pool 2.0" }}</title>
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="icon" href="{{ '/images/favicon.png' | url }}" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__brand">
+        <a href="{{ '/' | url }}" class="brand-mark">DATA POOL</a>
+        <span class="brand-version">2.0</span>
+    </div>
+    <p class="site-header__tagline">Каталог · прототип новой структуры</p>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="{{ '/' | url }}" class="nav-link{% if page.url == '/' %} is-active{% endif %}">Главная</a>
+            <a href="{{ '/equipment/' | url }}" class="nav-link{% if page.url and '/equipment/' in page.url %} is-active{% endif %}">Снаряжение</a>
+            <div class="nav-sub">
+                <a href="{{ '/equipment/weapons/range/' | url }}" class="nav-link{% if page.url and '/equipment/weapons/range/' in page.url %} is-active{% endif %}">Оружие</a>
+                <a href="{{ '/equipment/armor/' | url }}" class="nav-link{% if page.url and '/equipment/armor/' in page.url %} is-active{% endif %}">Броня</a>
+                <a href="{{ '/equipment/items/' | url }}" class="nav-link{% if page.url and '/equipment/items/' in page.url %} is-active{% endif %}">Предметы</a>
+                <a href="{{ '/equipment/agents/' | url }}" class="nav-link{% if page.url and '/equipment/agents/' in page.url %} is-active{% endif %}">Агенты</a>
+                <a href="{{ '/equipment/soft/' | url }}" class="nav-link{% if page.url and '/equipment/soft/' in page.url %} is-active{% endif %}">Софт</a>
+                <a href="{{ '/equipment/clothes-style/' | url }}" class="nav-link{% if page.url and '/equipment/clothes-style/' in page.url %} is-active{% endif %}">Одежда и стиль</a>
+                <a href="{{ '/equipment/acpa/' | url }}" class="nav-link{% if page.url and '/equipment/acpa/' in page.url %} is-active{% endif %}">Силовая броня</a>
+            </div>
+        </nav>
+        <p class="sidebar-note">Параллельная сборка v2. Основной сайт не затронут.</p>
+    </aside>
+
+    <main class="content" id="main-content">
+        {{ content | safe }}
+    </main>
+</div>
+
+<dialog id="item-modal" class="weapon-modal" aria-labelledby="item-modal-title">
+    <div class="weapon-modal__shell">
+        <header class="weapon-modal__header">
+            <div>
+                <p class="weapon-modal__eyebrow" id="item-modal-category"></p>
+                <h2 id="item-modal-title"></h2>
+            </div>
+            <button type="button" class="weapon-modal__close" data-close-modal aria-label="Закрыть">×</button>
+        </header>
+        <div class="weapon-modal__stats" id="item-modal-stats"></div>
+        <div class="weapon-modal__body" id="item-modal-body"></div>
+    </div>
+</dialog>
+
+<script>window.__BASE_PATH__ = "{{ '/' | url }}";</script>
+<script src="{{ '/app/shop.js' | url }}" defer></script>
+</body>
+</html>

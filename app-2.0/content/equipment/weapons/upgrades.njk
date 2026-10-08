@@ -1,0 +1,27 @@
+---
+title: Модификации
+permalink: /equipment/weapons/upgrades/
+layout: base.njk
+---
+{% from "macros/catalog.njk" import catalog %}
+
+<a href="{{ '/equipment/' | url }}" class="return-link">← Снаряжение</a>
+
+<h1>Оружейный магазин</h1>
+
+<div class="tab-buttons">
+    <a class="tab-button" href="{{ '/equipment/weapons/range/' | url }}">Огнестрельное оружие →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/melee/' | url }}">Холодное оружие →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/ammo/' | url }}">Боеприпасы →</a>
+    <a class="tab-button" href="{{ '/equipment/weapons/explosives/' | url }}">Взрывчатка и гранаты →</a>
+    <a class="tab-button active" href="{{ '/equipment/weapons/upgrades/' | url }}">Модификации</a>
+</div>
+
+<p class="shop-intro">Некоторые стволы имеют дополнительные возможности. А твой?</p>
+
+{{ catalog(collections.weaponsUpgradesCategories, collections.weaponsUpgrades, {
+searchPlaceholder: "Найти апгрейд…",
+cardFields: [
+{ key: "fits", label: "Подходит для" }
+]
+}) }}

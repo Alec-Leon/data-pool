@@ -1,0 +1,237 @@
+@import "./shop.css";
+@import "./modal.css";
+@import "images.css";
+
+:root {
+  --bg: #0c0e12;
+  --bg-elevated: #151922;
+  --bg-card: #1a1f2a;
+  --bg-card-hover: #222938;
+  --text: #e8ecf4;
+  --text-muted: #8b93a7;
+  --accent: #ff2d55;
+  --accent-soft: rgba(255, 45, 85, 0.15);
+  --border: #2a3142;
+  --border-strong: #3d4660;
+  --price: #7dffb3;
+  --radius: 10px;
+  --font-display: "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Consolas", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(255, 45, 85, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(80, 120, 255, 0.08), transparent),
+    var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(12, 14, 18, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.brand-mark {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-mark:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.brand-version {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+}
+
+.site-header__tagline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: calc(100vh - 72px);
+}
+
+.sidebar {
+  padding: 1.5rem 1.25rem;
+  border-right: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  background: var(--accent-soft);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.sidebar-note {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.content {
+  padding: 2rem 2.25rem 4rem;
+  max-width: 1200px;
+}
+
+.content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0.5rem 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.content h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.content > p,
+.shop-intro {
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.content th,
+.content td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.content th {
+  background: var(--bg-card);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.content tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.return-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.return-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 1.25rem 1rem 3rem;
+  }
+}

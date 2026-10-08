@@ -1,0 +1,173 @@
+{
+  "id": "mook-0",
+  "name": "Пример",
+  "stats": {
+    "hp": 35,
+    "wound": 18,
+    "save": 8,
+    "int": 3,
+    "ref": 6,
+    "dex": 5,
+    "tech": 2,
+    "char": 4,
+    "will": 4,
+    "luck": 0,
+    "spd": 4,
+    "body": 6,
+    "emp": 3
+  },
+  "equipment": {
+    "helmet": {
+      "name": "Кевлар®",
+      "value": 7
+    },
+    "armor": {
+      "name": "Кевлар®",
+      "value": 7
+    },
+    "weapons": [
+      {
+        "icon": "images/content/enemies/weapon-icons/shotgun.png",
+        "name": "Дробовик пл.качества",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/bow.png",
+        "name": "Дробовик пл.качества",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/default-melee-weapon.png",
+        "name": "Дробовик пл.качества",
+        "dmg": "5d6"
+      },
+      {
+        "icon": "images/content/enemies/weapon-icons/pistol.png",
+        "name": "Оч.Тяжелый Пистолет",
+        "dmg": "4d6"
+      }
+    ],
+    "gear": [
+      {
+        "icon": "images/content/enemies/item-icons/shotgun-ammo.png",
+        "name": "Боеприпасы для дробовика",
+        "count": 25
+      },
+      {
+        "icon": "images/content/enemies/item-icons/ammo.png",
+        "name": "Боеприпасы для оч.тяжелого пистолета",
+        "count": 25
+      },
+      {
+        "icon": "images/content/enemies/item-icons/walkie-talkie.png",
+        "name": "Рация",
+        "count": 1
+      }
+    ],
+    "cyberware": []
+  },
+  "skills": {
+    "melee-combat-skills": {
+      "martial-arts": [
+        {
+          "name": "Каратэ",
+          "level": 1
+        },
+        {
+          "name": "Тест",
+          "level": 5
+        }
+      ],
+      "melee-weapons": 1,
+      "brawling": 0,
+      "dodge": 0
+    },
+    "perception-skills": {
+      "attentiveness": 1,
+      "tracking": 2,
+      "concentration": 3,
+      "hide-reveal-object": 30,
+      "lip-reading": 50
+    },
+    "range-combat-skills": {
+      "autofire": 10,
+      "heavy-weapons": 10,
+      "pistols": 10,
+      "bows": 10,
+      "assault-weapons": 10
+    },
+    "educational-skills": {
+      "gambling": 0,
+      "business": 0,
+      "accounting": 0,
+      "bureaucracy": 0,
+      "desert-surviving": 0,
+      "deduction": 0,
+      "area-knowledge": 0,
+      "composition": 10,
+      "criminology": 10,
+      "cryptography": 10,
+      "science": 10,
+      "education": 10,
+      "animals-treatment": 10,
+      "info-search": 0,
+      "tactics": 10,
+      "language": [
+        {
+          "name": "Родной",
+          "level": 0
+        }
+      ]
+    },
+    "social-skills": {
+      "style": 0,
+      "interrogation": 10,
+      "streetwise": 0,
+      "communication": 10,
+      "bribe": 10,
+      "insight": 10,
+      "trading": 10,
+      "persuasion": 10,
+      "self-care": 10
+    },
+    "stage-skills": {
+      "acting": 0,
+      "music": 0
+    },
+    "tech-skills": {
+      "avia-tech": 10,
+      "car-tech": 10,
+      "lock-picking": 10,
+      "tech-knowledge": 0,
+      "pickpocketing": 0,
+      "cyber-tech": 0,
+      "photo-tech": 0,
+      "sea-tech": 0,
+      "gun-tech": 0,
+      "paramedic": 0,
+      "first-aid": 0,
+      "saboteur": 0,
+      "falsification": 0,
+      "art": 0,
+      "electronic-security": 0
+    },
+    "drive-skills": {
+      "horseback-riding": 0,
+      "driving": 0,
+      "piloting": 0,
+      "navigation": 0
+    },
+    "physical-skills": {
+      "athletics": 0,
+      "acrobatics": 0,
+      "endurance": 0,
+      "stealth": 0,
+      "resistance": 0,
+      "dance": 0
+    }
+  },
+  "description": [
+    "",
+    ""
+  ]
+}

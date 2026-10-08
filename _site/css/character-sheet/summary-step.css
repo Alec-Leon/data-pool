@@ -1,0 +1,182 @@
+/* Итог: роль */
+.summary-role-card .column-name {
+    margin-bottom: 10px;
+}
+
+.summary-role-title {
+    font-size: 1.1rem;
+    color: #e6e6e6;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.summary-role-level {
+    color: #9a9a9a;
+    font-weight: 400;
+    font-size: 0.95em;
+}
+
+.summary-role-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px 32px;
+}
+
+.summary-role-column {
+    flex: 1 1 240px;
+    min-width: 0;
+}
+
+.summary-export-aside {
+    flex: 0 1 220px;
+    margin-left: auto;
+}
+
+.summary-export-title {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ff5566;
+}
+
+.summary-export-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.summary-export-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 12px;
+    border: 2px solid #ff0040;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.summary-export-btn:hover {
+    background: #ff0040;
+    color: #000;
+    box-shadow: 0 0 16px rgba(255, 0, 64, 0.35);
+}
+
+.summary-export-btn:focus-visible {
+    outline: 2px solid #ff3a4d;
+    outline-offset: 2px;
+}
+
+.summary-export-btn img {
+    flex-shrink: 0;
+}
+
+.summary-export-btn--foundry {
+    border-color: #555;
+    color: #bbb;
+}
+
+.summary-export-btn--foundry:hover {
+    background: #222;
+    color: #eee;
+    box-shadow: none;
+}
+
+.summary-export-only-card .summary-export-actions {
+    max-width: 280px;
+}
+
+.summary-role-info {
+    margin-top: 14px;
+}
+
+.summary-role-link {
+    margin-top: 4px;
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid #ff3a4d;
+    color: #ff3a4d;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    transition: all 0.15s ease;
+}
+
+.summary-role-link:hover {
+    background: #ff3a4d;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255, 60, 80, 0.6);
+}
+
+.summary-role-link:focus-visible {
+    outline: 2px solid #ff3a4d;
+    outline-offset: 2px;
+}
+
+/* Итог: статы — производные (как на шаге 2) */
+.summary-stats-card .column-name {
+    margin-bottom: 16px;
+}
+
+.summary-derived-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px 24px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 0, 64, 0.28);
+}
+
+.summary-stat-attr .label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.summary-stat-derived .label {
+    color: var(--accent-red, #ff0040);
+    letter-spacing: 0.14em;
+}
+
+.summary-stat-attr .value {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    font-variant-numeric: tabular-nums;
+}
+
+.summary-core-attrs {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .summary-export-aside {
+        flex: 1 1 100%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .summary-derived-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .summary-derived-strip {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Софт для Агента · Data Pool 2.0</title>
+    <link rel="stylesheet" href="/data-pool/app-2.0/css/main.css">
+    <link rel="icon" href="/data-pool/app-2.0/images/favicon.png" type="image/png">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__brand">
+        <a href="/data-pool/app-2.0/" class="brand-mark">DATA POOL</a>
+        <span class="brand-version">2.0</span>
+    </div>
+    <p class="site-header__tagline">Каталог · прототип новой структуры</p>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="/data-pool/app-2.0/" class="nav-link">Главная</a>
+            <a href="/data-pool/app-2.0/equipment/" class="nav-link is-active">Снаряжение</a>
+            <div class="nav-sub">
+                <a href="/data-pool/app-2.0/equipment/weapons/range/" class="nav-link">Оружие</a>
+                <a href="/data-pool/app-2.0/equipment/armor/" class="nav-link">Броня</a>
+                <a href="/data-pool/app-2.0/equipment/items/" class="nav-link">Предметы</a>
+                <a href="/data-pool/app-2.0/equipment/agents/" class="nav-link">Агенты</a>
+                <a href="/data-pool/app-2.0/equipment/soft/" class="nav-link is-active">Софт</a>
+                <a href="/data-pool/app-2.0/equipment/clothes-style/" class="nav-link">Одежда и стиль</a>
+                <a href="/data-pool/app-2.0/equipment/acpa/" class="nav-link">Силовая броня</a>
+            </div>
+        </nav>
+        <p class="sidebar-note">Параллельная сборка v2. Основной сайт не затронут.</p>
+    </aside>
+
+    <main class="content" id="main-content">
+        
+
+<a href="/data-pool/app-2.0/equipment/" class="return-link">← Снаряжение</a>
+
+<h1>Софт для Агента</h1>
+<p class="shop-intro">Приложения для вашего Агента. Карточка — название и цена, внутри — правила.</p>
+
+
+
+
+
+
+<div class="catalog" data-catalog>
+  <div class="shop-toolbar">
+    <label class="shop-search">
+      <span class="visually-hidden">Поиск</span>
+      <input type="search" placeholder="Найти приложение…" autocomplete="off" data-catalog-filter>
+    </label>
+    
+    <div class="shop-filter">
+      <button type="button" class="shop-filter__toggle" data-catalog-filters-toggle aria-expanded="false">
+        Фильтры
+        <span class="shop-filter__badge" data-catalog-filters-badge hidden>0</span>
+      </button>
+      <div class="shop-filter__panel" data-catalog-filters hidden>
+        
+        
+        
+        <fieldset class="shop-filter__group" data-filter-key="brand">
+          <legend>Бренд</legend>
+          <div class="shop-filter__options">
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="CDP S.A." data-filter-value>
+              <span>CDP S.A.</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="Eurobank" data-filter-value>
+              <span>Eurobank</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="N/A" data-filter-value>
+              <span>N/A</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="NCPD" data-filter-value>
+              <span>NCPD</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="No/Brainer (GunMart)" data-filter-value>
+              <span>No/Brainer (GunMart)</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="SecSystems" data-filter-value>
+              <span>SecSystems</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="Segotari" data-filter-value>
+              <span>Segotari</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="Trauma Team" data-filter-value>
+              <span>Trauma Team</span>
+            </label>
+            
+            <label class="shop-filter__option">
+              <input type="checkbox" value="Ziggurat" data-filter-value>
+              <span>Ziggurat</span>
+            </label>
+            
+          </div>
+        </fieldset>
+        
+        
+        <button type="button" class="shop-filter__reset" data-catalog-filters-reset>Сбросить</button>
+      </div>
+    </div>
+    
+    <p class="shop-count"><span data-catalog-count>25</span> / 25</p>
+  </div>
+
+  
+  <div class="shop-tabs" role="tablist" aria-label="Категории">
+    <button type="button" class="shop-tab is-active" role="tab" data-category="*" aria-selected="true">Все</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="free" aria-selected="false">Бесплатные</button>
+    
+    <button type="button" class="shop-tab" role="tab" data-category="paid" aria-selected="false">Платные</button>
+    
+  </div>
+  
+
+  <div class="weapon-grid" data-catalog-grid>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Ask-Alex-Anything"
+      data-title="Ask Alex Anything"
+      data-category="free"
+      data-category-label="Бесплатные"
+      data-f-brand="Ziggurat" 
+      data-search="ask alex anything самый популярный поисковик 0 бесплатно все об агентах ziggurat"
+    >
+      <span class="weapon-card__name">Ask Alex Anything</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Самый популярный поисковик</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">0 (Бесплатно)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="cbk"
+      data-title="CBK"
+      data-category="free"
+      data-category-label="Бесплатные"
+      data-f-brand="N/A" 
+      data-search="cbk приложение-компаньон ночного рынка 0 бесплатно черный хром n/a"
+    >
+      <span class="weapon-card__name">CBK</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">N/A</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Приложение-компаньон Ночного рынка</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">0 (Бесплатно)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Elflines-Online-Elftracker"
+      data-title="Elflines Online Elftracker"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="elflines online elftracker будте в игре даже не запуская ее 50eb ценное все об агентах segotari"
+    >
+      <span class="weapon-card__name">Elflines Online Elftracker</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Будте в игре даже не запуская ее</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="The-Garden"
+      data-title="The Garden"
+      data-category="free"
+      data-category-label="Бесплатные"
+      data-f-brand="Ziggurat" 
+      data-search="the garden приложение популярной соц.сети 0 бесплатно все об агентах ziggurat"
+    >
+      <span class="weapon-card__name">The Garden</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Приложение популярной соц.сети</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">0 (Бесплатно)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="ZPost"
+      data-title="ZPost"
+      data-category="free"
+      data-category-label="Бесплатные"
+      data-f-brand="Ziggurat" 
+      data-search="zpost приложение для управления электронной почтой 0 бесплатно cyberpunk red ziggurat"
+    >
+      <span class="weapon-card__name">ZPost</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Приложение для управления электронной почтой</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Cyberpunk RED</span>
+        
+        <span class="weapon-card__price">0 (Бесплатно)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="4Tify"
+      data-title="4Tify"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="SecSystems" 
+      data-search="4tify 4tify превращает ваш агент в сканер слабых мест в защите 100eb премиум черный хром secsystems"
+    >
+      <span class="weapon-card__name">4Tify</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">SecSystems</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">4Tify превращает ваш Агент в сканер слабых мест в защите</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Segotari-Agent-Game"
+      data-title="Игра для Segotari Agent"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="игра для segotari agent игра для segotari agent 20eb обычное segotari power segotari"
+    >
+      <span class="weapon-card__name">Игра для Segotari Agent</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Игра для Segotari Agent</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Segotari Power</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Segotari-RUSH-Game"
+      data-title="Игра для Segotari RUSH (Б/У)"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="игра для segotari rush (б/у) б/у копия игры для segotari rush 20eb обычное segotari power segotari"
+    >
+      <span class="weapon-card__name">Игра для Segotari RUSH (Б/У)</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Б/у копия игры для Segotari RUSH</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Segotari Power</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Segotari-RUSH-Revolution-Game"
+      data-title="Игра для Segotari RUSH Revolution"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="игра для segotari rush revolution копия игры для segotari rush revolution 50eb ценное segotari power segotari"
+    >
+      <span class="weapon-card__name">Игра для Segotari RUSH Revolution</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Копия игры для Segotari RUSH Revolution</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Segotari Power</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Handprint-Scanner"
+      data-title="Сканер Отпечатков Ладоней"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="N/A" 
+      data-search="сканер отпечатков ладоней поможет вскрыть биометрию по отпечатку ладони 20eb обычное затихая n/a"
+    >
+      <span class="weapon-card__name">Сканер Отпечатков Ладоней</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">N/A</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Поможет вскрыть биометрию по отпечатку ладони</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Затихая</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Retina-Scanner"
+      data-title="Сканер Сетчатки Глаза"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="N/A" 
+      data-search="сканер сетчатки глаза поможет вскрыть биометрию по сетчатке 50eb ценное затихая n/a"
+    >
+      <span class="weapon-card__name">Сканер Сетчатки Глаза</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">N/A</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Поможет вскрыть биометрию по сетчатке</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Затихая</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Roach-Race"
+      data-title="Шевелись, Плотва!"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="CDP S.A." 
+      data-search="шевелись, плотва! плотва, как ты залезла в мой агент?! 20eb обычное все об агентах cdp s.a."
+    >
+      <span class="weapon-card__name">Шевелись, Плотва!</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">CDP S.A.</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Плотва, как ты залезла в мой Агент?!</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Segotari-Mindgames-Chip"
+      data-title="Щепка для Segotari Mindgames"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="щепка для segotari mindgames щепка с игрой для segotari mindgames 50eb ценное segotari power segotari"
+    >
+      <span class="weapon-card__name">Щепка для Segotari Mindgames</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Щепка с игрой для Segotari Mindgames</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Segotari Power</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="BangMe"
+      data-title="BangMe!"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Eurobank" 
+      data-search="bangme! онлайн переводы денег и платежи 10eb дешевка все об агентах eurobank"
+    >
+      <span class="weapon-card__name">BangMe!</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Eurobank</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Онлайн переводы денег и платежи</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">10eb (Дешевка)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Big-SAAI"
+      data-title="Big SAAI"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Ziggurat" 
+      data-search="big saai улучшает саии в вашем агенте 100eb премиум все об агентах ziggurat"
+    >
+      <span class="weapon-card__name">Big SAAI</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Улучшает САИИ в вашем Агенте</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Brainwasher"
+      data-title="Brainwasher"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="No/Brainer (GunMart)" 
+      data-search="brainwasher ваш помощник при терапии 50eb ценное все об агентах no/brainer (gunmart)"
+    >
+      <span class="weapon-card__name">Brainwasher</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">No/Brainer (GunMart)</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Ваш помощник при терапии</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">50eb (Ценное) · в Месяц</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Digital-Gladiator"
+      data-title="Digital Gladiator"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="digital gladiator решаем все конфликты в игре 20eb обычное черный хром segotari"
+    >
+      <span class="weapon-card__name">Digital Gladiator</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Решаем все конфликты в игре</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Elflines-Online"
+      data-title="Elflines Online"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Segotari" 
+      data-search="elflines online цифровая копия легендарной ммо игры 50eb ценное elflines online segotari"
+    >
+      <span class="weapon-card__name">Elflines Online</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Segotari</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Цифровая копия легендарной ММО игры</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Elflines Online</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="HusTool"
+      data-title="HusTool"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="No/Brainer (GunMart)" 
+      data-search="hustool подработка еще никогда не была настолько доступной 20eb обычное все об агентах no/brainer (gunmart)"
+    >
+      <span class="weapon-card__name">HusTool</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">No/Brainer (GunMart)</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Подработка еще никогда не была настолько доступной</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="NCPD-Crime-Database"
+      data-title="NCPD Crime Database"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="NCPD" 
+      data-search="ncpd crime database доступ к базе данных полиции 500eb дорогое черный хром ncpd"
+    >
+      <span class="weapon-card__name">NCPD Crime Database</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">NCPD</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Доступ к базе данных полиции</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">500eb (Дорогое)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Shining-Finger"
+      data-title="Shining Finger"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="N/A" 
+      data-search="shining finger иногда всем нужно расслабиться 50eb ценное мешая напитки - верши судьбы n/a"
+    >
+      <span class="weapon-card__name">Shining Finger</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">N/A</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Иногда всем нужно расслабиться</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Мешая напитки - Верши судьбы</span>
+        
+        <span class="weapon-card__price">50eb (Ценное) · в Месяц</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Trauma-Team-MedScan"
+      data-title="Trauma Team МедСкан"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Trauma Team" 
+      data-search="trauma team медскан получи помощь в &quot;самостоятельных&quot; операциях на самом себе 20eb обычное черный хром trauma team"
+    >
+      <span class="weapon-card__name">Trauma Team МедСкан</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Trauma Team</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Получи помощь в &quot;самостоятельных&quot; операциях на самом себе</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">20eb (Обычное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="WatchBox"
+      data-title="WatchBox"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="No/Brainer (GunMart)" 
+      data-search="watchbox когда нет денег на нормальную сигнализацию 50eb ценное все об агентах no/brainer (gunmart)"
+    >
+      <span class="weapon-card__name">WatchBox</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">No/Brainer (GunMart)</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Когда нет денег на нормальную сигнализацию</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Все об Агентах</span>
+        
+        <span class="weapon-card__price">50eb (Ценное)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="Ziggurat-City-Database"
+      data-title="Ziggurat City Database"
+      data-category="paid"
+      data-category-label="Платные"
+      data-f-brand="Ziggurat" 
+      data-search="ziggurat city database справочник по городу 100eb премиум черный хром ziggurat"
+    >
+      <span class="weapon-card__name">Ziggurat City Database</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Справочник по городу</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">Черный Хром</span>
+        
+        <span class="weapon-card__price">100eb (Премиум)</span>
+        
+      </span>
+    </button>
+  
+    
+    <button
+      type="button"
+      class="weapon-card weapon-card--has-stats"
+      data-item-open
+      data-slug="BabelChat"
+      data-title="BabelChat"
+      data-category="free"
+      data-category-label="Бесплатные"
+      data-f-brand="Ziggurat" 
+      data-search="babelchat самый популярный мессенджер 0 бесплатно ziggurat"
+    >
+      <span class="weapon-card__name">BabelChat</span>
+
+      
+      <span class="weapon-card__meta">
+        
+          
+          <span class="stat"><em>Бренд</em><span class="stat__value">Ziggurat</span></span>
+          
+        
+      </span>
+      
+
+      <span class="weapon-card__summary">Самый популярный мессенджер</span>
+
+      <span class="weapon-card__footer">
+        <span class="weapon-card__source">—</span>
+        
+        <span class="weapon-card__price">0 (Бесплатно)</span>
+        
+      </span>
+    </button>
+  
+  </div>
+</div>
+
+<div class="item-templates" hidden>
+
+  
+  <template id="item-tpl-Ask-Alex-Anything">
+    <script type="application/json" class="item-stats">{"price":"0","availability":"Бесплатно","source":"Все об Агентах","summary":"Самый популярный поисковик","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>Самый популярный поисковик. Сразу Спроси Сашу устанавливается при первом подключении к CitiNet. Движок САИИ Агента напрямую подключается к Спроси Сашу, чтобы составлять свои отчетов и поиска информации.<br></p>
+<p>Приложение. Позволяет пользователю искать и отображать данные из CitiNet.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-cbk">
+    <script type="application/json" class="item-stats">{"price":"0","availability":"Бесплатно","source":"Черный Хром","summary":"Приложение-компаньон Ночного рынка","brand":"N/A"}</script>
+    <div class="weapon-detail">
+      
+      <p>CBK (произносится как Cee Book) — это приложение-компаньон Ночного рынка. Просто бесплатно загрузите его в свой Агент и используйте, чтобы улучшить свой опыт покупок на Ночном рынке. За пределами Ночного рынка CBK не приносит особой пользы, поскольку все, что вы получите, — это сообщение &quot;поиск базы данных&quot;. Однако, попав на Ночной рынок, вы мгновенно получите список доступных товаров, информацию о том, куда идти, и даже возможность купить предметы, не видя их, чтобы какой-нибудь балбес не успел проскочить и схватить понравившийся вам пистолет, прежде чем вы успеете дойти от входа до стенда на другом конце склада.</p>
+<p>Фиксер, отвечающий за Ночной рынок, использует приложение CBK-Фиксер для создания базы данных с объявлениями о товарах, вводя такую информацию, как название и описание товара, стоимость, местоположение на Ночном рынке и так далее. Фиксеры могут составлять свои собственные описания и добавлять свои изображения к объявлению о товаре или выбирать из тысяч уже существующих вариантов, регулярно обновляемых прекрасными людьми, создавшими это приложение. Кстати, именно так CBK зарабатывает деньги: Фиксеры платят 1eb за каждое объявление, чтобы использовать уже существующую информацию и фотографии (минимум 50eb). Многие считают, что сэкономленное время компенсирует понесенные затраты.
+После того, как база данных полностью сформирована, Фиксер нажимает кнопку “Запустить в Эфир” и настраивает свой Агент на трансляцию Ночного рынка. Многие Фиксеры покупают специальный Агент только для этой цели, так как закрытие приложения также отключает трансляцию базы данных.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Elflines-Online-Elftracker">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Все об Агентах","summary":"Будте в игре даже не запуская ее","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>Одержимые игроки подключают свой ELO-аккаунт к приложению, чтобы мониторить состояние своего эльфа, организовывать рейды, торговать предметами, следить за чатом и выслеживать долбоебов PK-шников (ради мести естественно).<br></p>
+<p>Приложение.<br>
+Пользователи с учетной записью Elflines Online могут просматривать статистику своего эльфа, организовывать сделки и общаться в чате.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-The-Garden">
+    <script type="application/json" class="item-stats">{"price":"0","availability":"Бесплатно","source":"Все об Агентах","summary":"Приложение популярной соц.сети","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>Самое популярное приложение Ziggurat после Сразу Спроси Сашу.
+Garden позволяет пользователям просматривать и делиться контентом через Дата Пул. Почти у каждого, кто хочет социальной видимости, есть личный Garden Patch, и большинство жителей Найт-Сити используют Garden, чтобы быть в курсе событий и тенденций.<br></p>
+<p>Приложение. Предоставляет доступ к содержимому
+Garden. Зарегистрированные пользователи могут комментировать, публиковать и редактировать контент.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-ZPost">
+    <script type="application/json" class="item-stats">{"price":"0","availability":"Бесплатно","source":"Cyberpunk RED","summary":"Приложение для управления электронной почтой","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>Приложение для управления электронной почтой. Имеет достойные возможности и (вероятно) не подвергается удаленному мониторингу.
+Приложение. Позволяет Агенту пользователя отправлять, получать, читать и организовывать электронную почту и вложенные файлы.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-4Tify">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Черный Хром","summary":"4Tify превращает ваш Агент в сканер слабых мест в защите","brand":"SecSystems"}</script>
+    <div class="weapon-detail">
+      
+      <p>Давайте будем честны. Мир небезопасен. Банды бродят по улицам, и, если случится худшее, полицейские слишком перегружены работой, чтобы прийти к вам на
+помощь, если только у вас нет внушительной суммы eb. Вы должны защитить себя!<br></p>
+<p>4Тифай превращает ваш Агент в сканер для определения самых слабых мест в
+ваших дверях, стенах и окнах. Просто просканируйте структурные поверхности, и
+вы будете точно знать, где нужно укрепить ваш дом, чтобы превратить его в
+крепость!<br></p>
+<p>Приложение. Абсолютно бесполезно по своему прямому назначению, но если
+пользователь потратит 5 минут на сканирование участка укрытия с помощью
+приложения, он получит +1d6 к следующему урону, нанесенному по нему с
+использованием этой информации. Чтобы выполнить правильное сканирование,
+пользователь со своим Агентом должен находиться в пределах 1м от укрытия в
+течение всех 5 минут.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Segotari-Agent-Game">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Segotari Power","summary":"Игра для Segotari Agent","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>Копия игры для консоли Segotari Agent.<br></p>
+<p>В 2019 году началась революция агентов. Люди открыли для себя новый уровень мобильных коммуникационных технологий — и игры оказались в самом центре этого взрыва. Кто-то ругает Agent за использование технологий SAAI для генерации уровней, NPC и сюжетных линий, но истинные фанаты Segotari знают — именно тогда родились настоящие жемчужины эпохи мобильного гейминга.<br></p>
+<p>Сегодня Segotari Agent — это уже не консоль, а бренд! Игры под маркой Segotari Agent доступны на любом Агентe, независимо от производителя.<br></p>
+<h3 id="топ-20-игр-segotari-agent" tabindex="-1">Топ-20 игр Segotari Agent</h3>
+<details class="sidebar-group" open>
+    <summary>🕹 Arctic Oil Rig Defender</summary>
+<p>Ты — гордый работник нефтяной платформы, служащий на благо общества в Арктическом круге.
+Работа почётная и престижная, но крайне опасная. Классовые враги и фашисты финансируют атаки на твою буровую.
+Подави их с рацией и боеприпасами в руках!<br></p>
+<p>Игра выпускается под брендами Petrochem или SovOil — в зависимости от региона продаж.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Crossword King</summary>
+<p>Какое девятибуквенное слово описывает игру, где слова переплетаются в сетке?
+Ответ: совершенство! Недаром одиннадцать из двенадцати терапевтов
+советуют отменить антидепрессанты и заменить их на Crossword King!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Detective Perfect: Logical Conclusion</summary>
+<p>Когда из музейной коллекции похищают легендарно проклятый Лунный Рубин, всё зависит от Детектива Совершенства!
+Сумеет ли он найти вора, пока проклятие не унесло ещё одну жизнь? У тебя есть
+три дня до полнолуния — докажи, что ты идеальный следователь!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Digital Gladiator</summary>
+<p>Реши свои конфликты в дуэли один на один — в виртуальном шутере с последствиями, способными уничтожить агент!
+Только в Digital Gladiator победы ощущаются настолько реально и грубо, что ими можно хвастаться даже на Улице.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Double Life</summary>
+<p>Весь день ты работаешь, а домой возвращаешься в унылое болото. Хватит терпеть — сбегай!
+В Double Life ты можешь быть кем угодно: посещай живые события, болтай с другими Doublelifer’ами, живи другую
+жизнь — онлайн! Наше комьюнити яркое, игривое и приветливое. Начни новую жизнь уже сегодня — в Double Life!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Elflines Explosion Fantasy</summary>
+<p>Испытай заново хит от Net54 — The Elflines Online! Chronicles — теперь в виде головоломки «три в ряд»!
+Собирай кадры из самых горячих эпизодов, решай сложные задачи и открывай уникальные ролики:
+интервью с актёрами, записи проб и даже ляпы со съёмок!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Elflines Online Elftracker</summary>
+<p>Реальность не позволит тебе жить в Эльфоландии круглосуточно — но с Elftracker ты можешь оставаться на связи!
+Следи за новостями серверов, чатом, торгуй, отслеживай характеристики своего эльфа
+и не пропускай ни одного апдейта. Держи Elftracker под рукой — и ты никогда не останешься один!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Elflines Online: The TCG Online</summary>
+<p>Едва рабочая цифровая адаптация Elflines Online: The Trading Card Game, которая когда-то была доступна
+только при сканировании лимитированной серии коробок из-под хлопьев. Хотя официальная поддержка давно
+прекращена, моддеры расковыряли код и превратили ELOTCGOL в потрясающий игровой опыт на базе AltLink!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Meteor Blocks: Revenge!</summary>
+<p>Когда блоки впервые упали с неба, мы бежали в укрытия. Но теперь всё иначе — мы готовы дать отпор
+цветной угрозе, стреляя в пришельцев такими же яркими снарядами! Эти инопланетяне скоро узнают, что Земля
+— не свалка для их цветастого космического мусора!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  My Biotechnica Greenhouse</summary>
+<p>Даже если климат превратился ад, ухаживай за своей цифровой теплицей!
+С технологией Biotechnica выращивай любые растения, какие только пожелаешь.
+Они живые, любопытные и хотят узнать тебя получше!
+Если окружить их вниманием и любовью, твоя оранжерея будет цвести круглый год.<br></p>
+<p>(Вымирающие виды продаются отдельно.)</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  My Mini Village: Welcome Home!</summary>
+<p>Переезжай в домик в крошечном, далёком городке — познакомься с соседями и стань частью
+их очаровательного сообщества! Украшай свой дом как хочешь,
+а потом обменивайся дизайнами с друзьями через AltLink или Garden Patch. Создай свой собственный уютный уголок.
+Добро пожаловать домой!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Playerz’s Club Connect</summary>
+<p>Ты не непривлекателен — ты просто не знаешь, как играть в эту игру. В Playerz’s Club ты освоишь
+все приёмы, чтобы прокачать отношения с горячими красавицами.
+Используй встроенную карту и чат, чтобы встречаться с другими Playerz в дикой природе
+— или избегать пересечения охотничьих территорий в жаркую субботнюю ночь.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Pocket Chess & Calculator</summary>
+<p>Древняя игра в твоём кармане! Сразись с виртуальными противниками любого уровня — от новичка до гроссмейстера.
+Что может быть лучше? Ах да, мы слышали, ты хочешь сказать: «А если добавить полноценный финансовый калькулятор?»
+Чёрт возьми, да!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Roach Race</summary>
+<p>Промчись по просторам деревни верхом на любимой телепортирующейся лошади всех времён!
+Избегай препятствий, скача через уровни, созданные SAAI, и набирай очки!
+Займи место в таблице лидеров и завоюй вечное право на хвастовство!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Sword of Victory: A Texting Adventure</summary>
+<p>Получай сообщения из другого мира — их шлёт молодой Актаэй Виктус,
+подросток и сын весьма любвеобильного авантюриста. Бедняга узнал, что его отец
+не умерший деревенский кузнец, как говорила мать, а... щупальцевый монстр! Его тело меняется, и он не знает,
+что делать. Прятать чудовищные признаки взросления
+от деревенских — или просить помощи? Только ты сможешь провести Актаэя к счастливому будущему!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Symphonic Pinball: Second Movement</summary>
+<p>Попади в ритм шара и пройди музыкальный замок, где звенят гиперреактивные кристальные колокольчики!
+Вставь свою любимую музыку на каждом из шестнадцати столов и смотри, как они начинают «танцевать».
+А с AltLink играй в мультибол с друзьями!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Tactics: Boots on the Ground</summary>
+<p>Туман войны густ, но твоя тактика рассечёт его, как моноклинок.
+Игра оптимизирована под мобильный формат — сражения в CitiNet длятся всего пять минут.
+Твои войска выйдут победителями… или туман проглотит их целиком, вместе с сапогами?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Triple Seven Lucky Casino</summary>
+<p>Играй в азартные игры где угодно и когда угодно с Triple Seven Lucky Casino! Азарт во время обеда?
+Конечно! На совещании? Абсолютно! На судебном процессе по разводу? Да!
+Я прямо сейчас играю, пока пишу это! Так что — чего ждёшь? Самое горячее
+казино в городе открыто 24/7!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Victory of the Villainess</summary>
+<p>Новенькая простолюдинка может использовать редкую магию света и теперь два самых красивых
+парня в классе (включая твоего тупого брата!) сохнут по ней.
+Пусть ты и не ревнуешь к этой деревенской магичке-отбросу, но она должна быть уничтожена!
+Переворот всех штампов жанра симуляторов свиданий — начинается!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Your Play</summary>
+<p>Новый тип игры — созданный тобой! Your Play — это платформа пользовательского контента:
+игр, приложений и других полезных программ, созданных пользователями для пользователей!
+Покажи нам свою игру — и мы покажем тебе нашу! Хотя весь контент оценивается и фильтруется сообществом,
+мы всё же рекомендуем участие взрослых при просмотре творений.</p>
+</details>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Segotari-RUSH-Game">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Segotari Power","summary":"Б/у копия игры для Segotari RUSH","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>Громоздкая, но вполне удобная при правильной подушке под шею — консоль RUSH стала первой, позволившей играть в виртуальность прямо у себя дома. Она стала коммерческим хитом в 2018 году и дала старт множеству любимых серий, вроде Compass Rose и Chateau Frankenberg (Томас Эдвард Акерман был буквально моей первой цифровой влюблённостью!). Эта консоль прожила 22 года — вплоть до выхода RUSH Revolution в 2040-м! Дольше, чем живёт большинство моих подписчиков в Garden Patch!<br></p>
+<details class="sidebar-group" open>
+    <summary>🕹 Вор и Рыцарь</summary>
+<p>Виртуальные симуляторы свиданий сталкиваются со стелс-экшеном в этом захватывающем приключении!
+Пробирайся в постоянно меняющийся замок под светом луны, чтобы украсть сердце капитана королевской гвардии — ночь за
+ночью.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Adventure Once in a Lifetime</summary>
+<p>Классическое JRPG-приключение режиссёра Тэруко Ивамото рассказывает историю сосуда божественной силы — Чаши Чёрных Вод,
+проходящей сквозь века. Более ста часов интриг и предательств — этот эпос лучше всего пережить без спойлеров,
+так что убери подальше свои гайдики!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Alhambra</summary>
+<p>В роли плиточного мастера легендарного дворца Альгамбра тебе предстоит радовать эмира замысловатыми мозаиками,
+украшая огромные залы.
+Но не всё идёт по плану — завистливый джинн насылает зло в глину, и теперь она восстаёт против тебя!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Bodyweight™ Segotariflex</summary>
+<p>Используй максимум возможностей своего Inteflex Prime™ Home Gym вместе с главным секретом домашнего фитнеса!
+Внутри программы тебя ждёт персональный виртуальный тренер и диетолог, доступные 24/7,
+чтобы держать тебя в форме и воплотить тело мечты в реальность.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Bull Market: Making a Killing</summary>
+<p>Фондовый рынок — это арена, и ты её чемпион!
+Каждый понедельник появляется новый соперник.
+К закрытию торгов в пятницу побеждает тот, кто заработает больше всех. Есть ли у тебя сила, чтобы усмирить Быка?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Chateau Frankenberg</summary>
+<p>Томас Эдвард Акерман оказывается в мире стимпанка, полном приключений и сказаний,
+и вынужден искать аудиенции у Ауберона — Верховного Лорда Двора Сиили, чтобы вернуться домой.
+Но, столкнувшись с мифическим Chateau Frankenberg,
+он оказывается по-настоящему очарован. Сможет ли Томас выбрать жизнь, полную действий,
+или вернётся в скучную старую Южную Калифорнию?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Compass Rose and the Map of Fate</summary>
+<p>Карта Судьбы зовёт — её позолоченные обрывки разлетелись по дальним уголкам мира.
+Тот, кто соберёт их и откроет сокровище, будет провозглашён величайшим исследователем современности — титулом,
+который надменная мадам Compass Rose просто не потерпит у кого-то другого!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Dice Stacker</summary>
+<p>Что зовёт нас складывать кости в башни? Этот щёлкающий звук пластика о пластик?
+Или азарт шаткого равновесия? А может, возвышающееся величие башни, растущей всё выше и выше?
+Тайна остаётся неразгаданной, но мы продолжаем строить. Ведь в душе мы все — Dice Stackers.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Elflines</summary>
+<p>Герой восстаёт, чтобы вернуть Эльфоландии свободу, изгнав миазматическую порчу Чернокнижника.
+На своём пути он встретит настоящих друзей, готовых присоединиться к нему в бесчисленных (и правда бесчисленных)
+случайных сражениях.
+Испытай начало легендарной серии Elflines так, как она и была задумана!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Elflines ii (Director’s Cut)</summary>
+<p>Герой пал — но всё ещё жив. Его тело медленно отравлено смертельной дозой миазмы после битвы с Чернокнижником.
+Сердце мира расколото. Амберина мертва! Время уходит,
+и Герой должен подготовиться к последнему сражению со своим заклятым врагом. Встанешь ли ты рядом с ним?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Glove tha Dawg</summary>
+<p>Коты, держитесь крепче — после происшествия с клеем на фабрике бейсбольных перчаток в городе появился новый пёс,
+и он готов надрать задницу роботам! Швыряй своих металлических противников при помощи перчатки!
+Сожми кулак — и разруши мир!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Gluey Adventures of Glub-Glob</summary>
+<p>Мы залипли на Glub-Glob — пухлого героя с сердцем из клея и простым управлением в одно нажатие!
+Идеально для детей, но обожаемо взрослыми — липкий Glub-Glob не дождётся, чтобы поиграть с тобой!
+(Рекомендуется присмотр взрослых перед запуском пользовательских уровней.)</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Hackman Trilogy</summary>
+<p>Три в одном! Эта коллекция объединяет первые три игры серии Hackman: Access Protocol, System Override
+и Total Control в одном великолепном наборе.
+Испытай все три классических части по цене двух — и используй одно сохранение на всю трилогию!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Kung Fu Fighter I–VI</summary>
+<p>Классический файтинг 2020-х — Kung Fu Fighter, теперь в полном издании с шестью годами загружаемого контента,
+уже предустановленного и готового к разблокировке по нажатию кнопки (после подтверждения оплаты, конечно).
+Раздавай удары и лови лоу-кики со всем ростером серии Kung Fu Fighter — в одном пакете!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Ronin</summary>
+<p>Самурай без хозяина находит покой среди колышущихся тростников.
+Чтобы перековать сломанный меч своего отца, он должен подняться в горы к кузнецу,
+сражаясь с бандитами и демонами собственного прошлого.
+Использует ли он перекованный клинок, чтобы перерезать последнюю нить, связывающую его с воспоминаниями?
+И если да — какой демон займёт место этой алой нити?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Scholar™ Home Learning</summary>
+<p>Базовая программа для домашнего обучения, ставшая самой распространённой системой образования в Северной Америке.
+В знак признания её «достоинств» многие города используют Scholar™ для урезания школьных бюджетов (а порой — и целых
+школ)!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Stephanie the Seductive Stenographer</summary>
+<p>Неотразимая красавица из зала суда, Стефи Черри Редд, обожает парней с ловкими пальцами, что молниеносно бегают по
+клавиатуре.
+Сможешь ли ты завоевать её внимание своей скоропечатной ловкостью?<br>
+Осторожно: этот ночной тренажёр набора текста слишком горяч для учебного класса!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Ultra Robowrestler</summary>
+<p>Классика VRIcade возвращается домой — и сразу с приёмом с верхнего каната!
+Самая безжалостная игра про боевых роботов теперь доступна только на Segotari RUSH!
+Проводи ультра-дропкики всем претендентам на трон рестлинга — не выходя из гостиной!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Virtual Villains</summary>
+<p>Вечеринка в прошлом!
+Собери до девяти друзей и защищай фотореалистичный средневековый замок от самых мерзких злодеев в истории — кого
+выберешь:
+Аттилу, Харольда Харрисона Ханта или Чингисхана?
+Используй любое оружие — древнее или современное — и покажи, кто здесь настоящий герой!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Wrecca</summary>
+<p>Ты не можешь вернуться в королевство Фару — теперь тебе предстоит выживать в изгнании любыми средствами.
+Тебе больше нечего терять. Куда ты пойдёшь? Что сделаешь? Зима близко, и они уверены, что ты умрёшь с голоду.
+Докажи, что они ошибаются.<br>
+Выживи… а потом отомсти.</p>
+</details>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Segotari-RUSH-Revolution-Game">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Segotari Power","summary":"Копия игры для Segotari RUSH Revolution","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>Красное Время выдалось тяжёлым для геймеров… да и для всех остальных тоже.<br>
+Прошло больше 20 лет, прежде чем Segotari смогла оправиться и подарить нам то, чего мы так ждали — новую консоль!
+Совершенствуя технологию интерактивного брейнданса и добавляя в игры ощущения касания и запаха, RUSH Revolution
+закрепила за собой титул величайшей игровой консоли всех времён! Лично я больше люблю интерактивные брейндансы, чем
+классические.<br>
+Конечно, ты не получаешь весь поток эндорфинов, адреналина и эмоций — зато и не ощущаешь сильной боли,
+когда тебя царапает дракон! Только нужные ощущения для полного погружения — ведь игры должны быть играми, а не
+кошмарами!<br></p>
+<h3 id="топ-20-segotari-rush-revolution" tabindex="-1">Топ-20 Segotari RUSH Revolution</h3>
+<details class="sidebar-group" open>
+    <summary>🕹 Boot n’ Glove: Worlds Collide</summary>
+<p>Кот Бут встречает Пса Глова. Глов встречает Бута. Линии фронта определены! Кто кого выбьет из игры?
+Отправит ли Бут Глова в клейкий мусор, или Глов запустит Бута обратно туда же? Как бы там ни было, когда
+роботы ворвутся, чтобы сорвать схватку, придётся объединиться, чтобы отбиться от механической угрозы.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Compass Rose and the Valley of Fire</summary>
+<p>Самопровозглашённая величайшая исследовательница мира, Компасс Роуз,
+отправляется в Южную Америку на поиски Долины Огня и древнего клада золота ольмеков, скрытого в её недрах.
+Но соперники уже на хвосте — успеет ли она добраться до долины живой?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Cyborg Anarchist 2099</summary>
+<p>Жёсткий криминальный боевик в мрачных городских джунглях будущего,
+чья научно-фантастическая атмосфера предсказывает будущее с поразительной точностью — почти как вечерние новости.
+Эта отмеченная наградами игра с открытым миром основана на НРИ, созданной каким-то там автором из Найт-Сити.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Dinosaw: Violent Fossils</summary>
+<p>Динозавры вырвались на свободу, и всё, что у тебя есть, — это бензопила. Руби и разноси этих древних
+тварей на куски в кровавом безумии, чтобы остановить их чудовищный разгул раз и навсегда.
+Эта история о «окаменевшем насилии» не для слабонервных…<br>
+и не для слабых желудков</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Elflines Online</summary>
+<p>В самой популярной MMO в мире ты играешь эльфом, путешествуя по Эльфландии, сражаясь с монстрами,
+исследуя подземелья и останавливая миазму, захватывающую мир. На пути к максимальному уровню
+ты вступишь в гильдию эльфов, сольёшься с магическим Камнем Заклинаний и сразишься в PvP. Если можешь
+позволить себе только одну игру — бери эту!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Fists of Los Angeles</summary>
+<p>Защищай улицы от байкеров, мародёров и протестующих в роли охранника корпорации Akasahara.
+Твоя задача — защищать имущество законопослушных граждан на опасных улицах родного города.
+Североамериканская версия была «адаптирована под местный менталитет», из-за чего Лос-Анджелес внезапно стал
+подозрительно похож на японский мегаполис.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Flying with Phoenixes</summary>
+<p>Лучшая игра с виртуальным питомцем всех времён!
+Ничто не сравнится с чувством полёта — особенно если ты летишь на спине величественного феникса.
+Устал от высоты? Можешь наклониться вперёд, прижаться
+к тёплым перьям своей огненной птицы и вздремнуть.
+Вот это я понимаю — инновации!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Glubworld</summary>
+<p>Дебютная игра с брейндансом про Глуб-Глоба стала настоящим хитом! Этот бестселлер довёл фирменный
+однокнопочный геймплей серии до совершенства, превратив его в первый в мире платформер без кнопок.
+Наш клейкий герой движется вперёд автоматически. Чтобы прыгнуть — просто перестань думать, и Глуб-Глоб взмоет в небо!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Mekton Mechanic: Wrench of Love</summary>
+<p>Слушай, не каждый на Алголе — пилот. Кто-то ведь должен чинить Мектоны. И этот кто-то — ты.
+Крутя гайки, у тебя будет масса времени, чтобы поближе узнать пилотов (очень поближе), но не позволяй романтике
+отвлечь тебя от ремонта — иначе любовь может внезапно оборваться.
+Дополнение включает новые кампании Каргана и Элэрана для повторных прохождений!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Meteor Blocks over Alhambra</summary>
+<p>Безумный гибрид головоломок, использующий все возможности брейнданса. Тебя ждёт гигантская мозаика Альгамбры,
+но сверху на неё обрушиваются яркие блоки из Meteor Blocks! Используй цветную пушку,
+чтобы перехватывать их и выиграть время для восстановления узора, пока не стало слишком поздно!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 My School is a Ghost School!</summary>
+<p>В твоей школе завелись призраки — и только ты, школьный консультант, способен их видеть. Стань
+светлым примером для своих учеников, изгоняя злых духов, что вселились в них, и помогая юным умам
+найти путь к успеху с помощью мудрых советов и правильного наставления.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 NCPD Quest</summary>
+<p>Настоящие истории о преступлениях, рассказанные настоящими копами — теперь в интерактивном
+брейндансе. Почувствуй, каково это — реагировать на реальные вызовы на реальных улицах самого
+настоящего Найт-Сити!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Return of Nebulax</summary>
+<p>Когда контракт на съёмки на курортной планете Парадиз срывается,
+Небулас вынужден спасти местных секс-работников от беды от имени Intergalactic Brands и разоблачить подпольный заговор
+против
+корпорации, начатый профсоюзным агитатором, скрывающимся среди сотрудников.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Shadowstar</summary>
+<p>Стелс-экшен о ниндзя из агентства Shadowstar.
+Присоединись к ним и проберись сквозь мультивселенную миров, сражаясь с коварными ёкаями.
+Некоторые игроки жалуются на тошноту после взгляда в бездну между измерениями — но ведь ради настоящего ниндзя это
+мелочь, верно?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Shotgun Snails: Garden Guerreros</summary>
+<p>PvP-арена, где улитки стреляют в улиток! Поскольку их панцири непробиваемы, придётся идти в лоб —
+как настоящий badass! Используй левое щупальце с крюком, чтобы ускоряться, а правое — конечно же,
+для дробовика. Сражайся честно, слизь против слизи!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Springtime of Youth: School Festival</summary>
+<p>Цифровая сакура расцветает на Древе Жизни в конце ежегодного школьного фестиваля,
+и признание в любви под её ветвями обещает вечное счастье. Кого из своих одноклассников из Arasaka High School
+ты пригласишь под роскошное розовое дерево?</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Taihen</summary>
+<p>Все знают: страдания закаляют характер. Так зачем ждать, пока жизнь научит тебя болью, если
+можно пройти это интерактивно?<br></p>
+<p>Taihen — симулятор страданий, где тебя ждут уровни вроде «Накричали при всех» и «Неожиданные
+бумаги о разводе». Прокачай ментальную стойкость — быстро и эффективно!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Virtual Barbecue</summary>
+<p>Любишь жарить мясо? Конечно любишь! Единственная проблема — у тебя пока нет ни гриля, ни заднего
+дворика. Но ничего, заработаешь эдди со временем!<br></p>
+<p>Virtual Barbecue позволит тебе потренироваться стать настоящим мастером огня:
+проходи виртуальные курсы, жарь, болтай с другими энтузиастами
+гриля и набирайся опыта для своей будущей жизни с дымком!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Wives of Valhalla: Mead and Marriage</summary>
+<p>Пал в битве в самом расцвете лет? Добро пожаловать в Вальгаллу! Здесь ты снова бармен — теперь
+для валькирий, утопающих в мёде и печали. Слушай их истории, смешивай напитки и, может, сам найдёшь
+свою вечную любовь среди бессмертных красавиц.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Zombie Kiss: Lips of Life!</summary>
+<p>Ты — единственный сын легендарного Мико и оказался в эпицентре зомби-девичьего нашествия в Рио-де-Жанейро!
+Выжить можно только одним способом — целуясь! Но будь осторожен: короткий поцелуй
+не спасёт — только долгий контакт губами к губам не даст тебе быть разорванным толпой!</p>
+</details>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Handprint-Scanner">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Затихая","summary":"Поможет вскрыть биометрию по отпечатку ладони","brand":"N/A"}</script>
+    <div class="weapon-detail">
+      
+      <p>Чтобы сделать Перчатку с Отпечатком руки, вам понадобится запись чьего-то отпечатка. С вашим Агентом это проще простого. Это значит, всё просто, малыш. Вы можете отсканировать саму руку или распылить немного мелкой пыли на отпечатки, оставленные на гладкой поверхности, и отсканировать их.<br></p>
+<p><strong>Приложение.</strong> Чтобы напрямую записать чей-то отпечаток руки, пользователь должен быть в досягаемости Ближнего Боя и ничего не делать, кроме сканирования открытой руки цели (со стороны ладони) с помощью приложения в течение 9 секунд (3 раунда). Это время не обязательно должно быть последовательным. Сканирование цели в течение раунда является Действием и требует от пользователя успешного прохождения проверки Драки Сл13. Если цель без сознания, связана или по какой-либо причине не может шевелиться, пользователь автоматически проходит эту проверку.<br></p>
+<p>Пользователь также может сканировать отпечатки, оставленные на гладких поверхностях. Если отпечаток полный (вся рука отпечаталась на поверхности), для этого потребуется только одно сканирование. В противном случае пользователь должен собрать отпечаток руки Цели как минимум из пяти разных отпечатков. Каждый раз, когда пользователь сканирует отпечаток, он должен пройти проверку Криминологии DV13, чтобы получить его для использования.<br></p>
+<p><a href="/data-pool/app-2.0/equipment/items/">Перчатки, совместимые с программой купить здесь</a></p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Retina-Scanner">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Затихая","summary":"Поможет вскрыть биометрию по сетчатке","brand":"N/A"}</script>
+    <div class="weapon-detail">
+      
+      <p>Конечно, для создания Линзыс Сетчаткой глаза сначала нужен рисунок сетчатки. Раньше для сканирования глаза требовалось дорогостоящее специализированное устройство. Теперь же достаточно приложения и Агента.<br></p>
+<p><strong>Приложение.</strong> Чтобы записать рисунок сетчатки глаза, пользователь должен находиться в досягаемости Ближнего Боя и сканировать открытый глаз цели с помощью приложения в течение 15 секунд (5 раундов). Это время не обязательно должно быть непрерывным. Сканирование цели в течение раунда является Действием и требует от пользователя успешного прохождения проверки Драки Сл13. Если цель без сознания, связана или по какой-либо причине не может шевелиться, пользователь автоматически проходит эту проверку. Пользователи с Интегрированным Агентом могут записывать рисунок сетчатки глаза, если у них также установлено МикроВидео в киберглазу или умных очках.<br></p>
+<p><a href="/data-pool/app-2.0/equipment/items/">Линзы, совместимые с программой купить здесь</a></p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Roach-Race">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Все об Агентах","summary":"Плотва, как ты залезла в мой Агент?!","brand":"CDP S.A."}</script>
+    <div class="weapon-detail">
+      
+      <p>Сайдскроллинговый аркадный хит переходит на ваш Агент! Играйте за глючную цифровую лошадь, которая мчится по фантастическим пейзажам, убегая от своего беловолосого наездника, уклоняясь от монстров, перепрыгивая препятствия и поедая морковку. Игроки могут доплатить за различные скины для главного героя, в том числе за уморительное чучело единорога.
+Приложение. Пиксель-Арт видеоигра из Польши.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Segotari-Mindgames-Chip">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Segotari Power","summary":"Щепка с игрой для Segotari Mindgames","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>В 2020 году Segotari выпустила серию Mindgames — линейку щепок, превращавших твой нейролинк в мобильную консоль. Важно пробовать новое и идти на инновации, особенно в искусстве. А ведь игры — это тоже искусство, так что Mindgames я не могу назвать провалом… но продавалась серия откровенно слабо — ещё до того, как Четвёртая Корпоративная Война окончательно «убила босса» цепочек поставок. Впрочем, недавно интерес к Mindgames снова вспыхнул — благодаря поддельным щепкам, появившимся на прилавках дневных рынков. Говорят, это дело рук какой-то банды — может, триады, может, картеля…
+Но мне, если честно, всё равно — лишь бы поиграть!<br></p>
+<h3 id="топ-20-mindgames" tabindex="-1">Топ-20 Mindgames</h3>
+<details class="sidebar-group" open>
+    <summary>🕹  Alone in the Alps</summary>
+<p>Сколько раз в день ты пьёшь воду? А если бы оказался в ситуации выживания?
+Эта игра помогает развивать здоровые привычки, накладывая на твой обзор индивидуальные сценарии выживания.
+Чтобы продержаться в суровых условиях игры — тебе придётся заботиться о себе и в реальной жизни.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Cybermutant Ninja Deathrace</summary>
+<p>Твой сенсей заперт в проекции гонки насмерть с лидером враждебного кибермутантского клана.
+Чтобы спасти его, тебе нужно проникнуть в подпольные гоночные круги Германии и собрать легендарные Speed Gems,
+прежде чем враг доберётся до них своими кибермутировавшими когтями.<br>
+Готовься, гонщик — это Аутобан!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 The Funk is Within You</summary>
+<p>Фанк не останавливается! Эта постоянно активная игра слушает музыку вокруг тебя, и, как только ловит
+танцевальный ритм, заставляет тебя двигаться под него, чтобы зарабатывать очки.
+Не выполни дневную норму танцев — и сам Фанк прочитает тебе суровую лекцию!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Guildmaster</summary>
+<p>Проверяй заявки на вступление, управляй финансами гильдии,
+выдавай квесты и назначай награды — обычный день для нового Гильдмастера Империи Фару!
+Эта управленческая игра накладывается на твои реальные рабочие процессы, превращая скучную рутину в удивительное
+веселье!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Hammer of God</summary>
+<p>Злишься? Выпусти ярость, моделируя разрушение мира вокруг себя с помощью Молота Бога!
+Когда вся злость выйдет из системы, игра пригласит тебя к дыхательному упражнению с поддержкой, чтобы
+вернуть спокойствие и собраться с мыслями.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Kibble Kitchen: World Chef</summary>
+<p>Научись готовить с Kibble в своём собственном ритме и по своему вкусу!Более ста вегетарианских
+рецептов со всего мира, созданных с использованием продуктов
+Good Earth Foods — порой в самых неожиданных комбинациях, которые точно удивят тебя!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Learn to Scuba with Monika North</summary>
+<p>Зачем записываться на дорогое погружение у искусственного рифа, если можно испытать то же самое в игре?
+Очаровательная инструктор Моника Норт с радостью обучит тебя дайвингу — и всё это,
+пока она демонстрирует один из 24 разблокируемых нарядов!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Let’s Fold Origami!</summary>
+<p>Сделай вдох и научись складывать прекрасных журавлей, звёзды, черепах и самолётики.
+Благодаря цифровому наложению следующего шага прямо на твой реальный взгляд, ты можешь учиться в своём
+ритме. Искусство оригами никогда не было таким доступным!<br>
+Победитель премии Arasaka Harmony in Technology 2020 года.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Logically Yours</summary>
+<p>Одинокий ботаник? Тогда эта игра для тебя.
+Приготовь себе ужин и начни уровень, где к тебе присоединится виртуальная спутница.
+Эти романтические компаньонки, правда, не из простых — они обожают
+логические задачи и головоломки. Чтобы вечер прошёл идеально, тебе придётся изрядно поработать мозгами!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Mind Football</summary>
+<p>Вызывай полностью физически симулированные и разрушаемые футбольные мячи где угодно — прямо
+у себя в поле зрения. Тренируй дриблинг, жонглирование или удары по воротам — даже в помещении!
+Только не увлекайся: если вызовешь слишком много мячей сразу, система может перегрузиться, зависнуть и ударить тебя
+током в мозг.
+Так что будь осторожен!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Mr. Query’s Trivia Dungeon</summary>
+<p>Игра, которая всегда с тобой. В случайные моменты дня очаровательный мистер Квери появляется прямо
+у тебя перед глазами и задаёт вопрос из своей волшебной шляпы.
+Ответишь неправильно — или попытаешься «убить» программу — и получишь небольшой
+(и, правда, безвредный!) разряд тока.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Object Imposter</summary>
+<p>Тренажёр внимательности: игра прячет виртуальный объект в твоём поле зрения и заставляет искать
+его среди окружающих вещей. Насколько хорошо ты знаешь привычные места? Уже через пару дней
+волшебство этой игры заставит тебя замечать мелочи, на которые раньше не обращал внимания.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Sando’s Moldable Sandbox</summary>
+<p>Все любят играть с формуемым песком — а теперь его у тебя хоть тонна! Сандо Песочный Человек иногда
+появляется, чтобы оценить твои постройки и дать мудрый совет по жизни. Когда Сандо не наведывается, игра
+способна без труда симулировать до двух тонн песка.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Solar Hoops</summary>
+<p>Возглавь крошечную инопланетную баскетбольную команду и приведи её к галактической славе! Находи
+новых игроков в реальном мире и подписывай с ними долгосрочные контракты, пока это не сделали другие
+команды. Побеждай — и твоя команда сможет получить спонсорство симулированных реальных брендов!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Stormchasers</summary>
+<p>С Stormchasers погода превращается в контактный спорт! Выполняй еженедельные задания,
+фиксируя самые жестокие штормы, и поднимайся в таблице лидеров как лучший охотник за бурями
+в своём городе. Только будь готов оседлать молнию — без этого не победить!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Target Shooter</summary>
+<p>Без цели сложно тренировать меткость, верно? Тогда тебе нужен Target Shooter!
+Размещай мишени в своём окружении где угодно — или настрой, чтобы они появлялись случайно в течение дня.
+Делись любимыми мишенями с друзьями и преврати весь мир в свой личный тир!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Virtual Photography Studio</summary>
+<p>Если твой взгляд — это камера, то эта студия создана для тебя. Снимай, редактируй и делись фотографиями!
+Эта игра также служит микрочипом памяти для хранения снимков — их можно вставить в твой
+Агент или другое устройство. Начни уже сегодня — и больше никогда не упусти идеальный кадр!</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 Virtual Vixens Puzzle Attack</summary>
+<p>Горячие нетраннерши в обтягивающих костюмах Бодивейт, с кибердечами и минимумом остального,
+мчатся по неоновым аллеям на кибербайках с полыми колёсами, уворачиваются от пуль и скользят между
+лазерными сетками…<br>
+Я играю ради головоломок. Честно. Только ради них.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹  Volcano Divers: Let’s Get Sweaty!</summary>
+<p>Эти гавайские учёные, изучающие вулканы, — жаркие парни во всех смыслах, и им срочно нужно
+немного… разрядки. В роли единственного лаборанта в мужской команде твоя задача — аккуратно
+стирать пот с их виртуальных торсов и помогать им расслабиться.<br></p>
+<p>«Наконец-то игра для образованных дам», — пишет Informed Gamer.</p>
+</details>
+<details class="sidebar-group" open>
+    <summary>🕹 The World is Your Core</summary>
+<p>Ответвление серии Defend the Core, в котором ты используешь реальные здания вокруг себя, чтобы
+строить уровни. Пусть здесь и нет древнего королевства, как в основной серии, но The World is Your Core
+предлагает свежий взгляд на классическую формулу защиты ядра.</p>
+</details>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-BangMe">
+    <script type="application/json" class="item-stats">{"price":"10eb","availability":"Дешевка","source":"Все об Агентах","summary":"Онлайн переводы денег и платежи","brand":"Eurobank"}</script>
+    <div class="weapon-detail">
+      
+      <p>Все еще платите за вещи настоящими купюрами? КиньМне! доступен во всех магазинах Oasis.
+Достаньте Агент, договоритесь о сумме, а затем переведите деньги одним касанием!<br></p>
+<p>Приложение. КиньМне! осуществляет денежные переводы либо в пункт оплаты, либо между двумя Агентами с установленным приложением.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Big-SAAI">
+    <script type="application/json" class="item-stats">{"features":"+3 к навыку Поиск Информации","price":"100eb","availability":"Премиум","source":"Все об Агентах","summary":"Улучшает САИИ в вашем Агенте","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>Эта надстройка улучшает САИИ вашего Агента, улучшая результаты и скорость.
+Она также отслеживает использование вашего Агента и незаметно отправляет о вас отчеты в Ziggurat.<br></p>
+<p>Приложение. Пока она установлена, ваш Агент дает вам +3 к броскам на Поиск Информации вместо +2.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Brainwasher">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","priceNote":"в Месяц","source":"Все об Агентах","summary":"Ваш помощник при терапии","brand":"No/Brainer (GunMart)"}</script>
+    <div class="weapon-detail">
+      
+      <p>Это терапевтическое приложение на базе САИИ, работающее лучше любого специалиста по утверждениям разработчиков.
+Мозгоправ обеспечивает элементарную разговорную терапию, но не может назначать лекарства от Биотехники или проводить операции с БрейнДансами, которые делают современную терапию такой эффективной.</p>
+<p>Его пользовательское соглашение крайне сомнительно и не содержит раздела о конфиденциальности данных пользователя.<br></p>
+<p>Приложение. Если пользователь проводит за приложением не менее часа непосредственно за неделю до терапии (см. CP:R 229), бросьте 1d10.
+При четном результате пользователь завершает терапию на день раньше, из-за более ясного понимания своего психического здоровья.
+При нечетном терапия требует доп.дня, поскольку «инсайт» препятствует прогрессу.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Digital-Gladiator">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Черный Хром","summary":"Решаем все конфликты в игре","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>У вас есть обида на соперника? Не решаетесь устроить перестрелку на
+улице? Хотите ударить его по самому больному месту (кошельку)? Обратите
+внимание на приложение Цифровой Гладиатор от Сеготари! Разработанное
+для игры &quot;лицом к лицу&quot;, приложение связывает два Агента, позволяя пользователям сразиться на виртуальной арене. Приз?<br></p>
+<p>Агент победителя остается в безопасности, а агент проигравшего получает
+скачок напряжения, уничтожающий его. Если проигравший играл с помощью
+Внутреннего Агента, его мозг также будет поджарен. Стоимость замены
+агента делает Цифрового Гладиатора дорогим хобби, поощряя широко
+распространенную тенденцию играть на деньги. Но все же это дешевле, чем
+умереть на улице! Не тратьте боеприпасы на глупую обиду — вместо этого
+потратьте своего агента на Цифрового Гладиатора!<br></p>
+<p>Приложение. Чтобы играть, игроки должны сначала создать Цифрового
+Гладиатора: Соло 4 ранга, созданного методом &quot;Полный Пакет&quot; (СМ. CP:R
+СТР. 78), с 62 очками СТАТов, 86 очками навыков и 2 550eb, которые
+можно потратить на все, что угодно, кроме взрывчатки. Чтобы получить возможность сражаться, Гладиаторы должны иметь Человечность выше 0. Во
+время игры Цифровых Гладиаторов все купленные боеприпасы восстанавливаются в конце матча, после чего Гладиатор победителя сбрасывается до
+предматчевого состояния.<br></p>
+<p>Игровой процесс представляет собой смертельную схватку между Соло,
+которая не может быть остановлена, как только она началась, кроме как по
+взаимному решению игроков, и происходит на арене, спроектированной
+ГМом.<br></p>
+<p>Агент проигравшего поджаривается, уничтожая его безвозвратно. Если
+проигравший использовал Внутренний Агент, он получает критическое
+повреждение от Черепно-мозговой Травмы в дополнение к тому, что его
+Агент будет безвозвратно уничтожен.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Elflines-Online">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Elflines Online","summary":"Цифровая копия легендарной ММО игры","brand":"Segotari"}</script>
+    <div class="weapon-detail">
+      
+      <p>Подписка на Elflines Online стоит 20 eb в месяц за персонажа и включена во все уровни образа жизни,
+начиная с &quot;Дешёвые полуфабрикаты&quot;. На уровне
+Хороший полуфабрикат и выше ты можешь создавать
+сколько угодно персонажей в Elflines Online, чтобы
+удовлетворить свою одержимость, и почти всегда оплачивать снятие болезни возрождения, не задумываясь
+о расходах. Для игры тебе также понадобится брейнданс-шлем Segotari RUSH REVOLUTION® (500 eb,
+Дорогое) и копия Elflines Online (50 eb, Ценное).<br></p>
+<p>Elflines Online — это многопользовательская онлайн-игра,
+созданная компанией Segotari
+в качестве стартового проекта
+для их интерактивного брейнданс-шлема RUSH REVOLUTION.
+Игроки сражаются с силами тьмы
+и другими игроками на серверах Citinet, стремясь заполучить
+лучшее снаряжение и первыми
+победить боссов на сервере.<br></p>
+<p>После выхода игра превратилась
+в полноценный франчайз: появилась телепередача на Network
+55 под названием The Elflines
+Online! Chronicles, разнообразные плюшевые игрушки, а также
+ограниченная серия киббла «Священные травы» от Continental
+Brands, продающаяся с коллекционной упаковкой. Это MMO вдохновила новое поколение жителей
+Найт-Сити заново представить себя... но уже в образе эльфов.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-HusTool">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Все об Агентах","summary":"Подработка еще никогда не была настолько доступной","brand":"No/Brainer (GunMart)"}</script>
+    <div class="weapon-detail">
+      
+      <p>Всем нужны дополнительные деньги. HusTool позволяет вам выполнять случайные работы, когда у вас есть свободный час.<br>
+Просто нажмите большую кнопку ЗАПЛАТИ МНЕ, чтобы получить поручение: доставить еду на вынос, перетащить диван по лестнице, подвезти кого-нибудь (если есть машина).<br></p>
+<p>Приложение. Каждое поручение занимает полчаса плюс время на дорогу и оплачивается в 10 eb. Бросьте 1d10.
+Если выпала 1, задание проваливается (Клиента нет на месте, ресторан закрыт и т.д.), пользователь тратит время, но не получает денег. При 10 пользователь заканчивает задание, но сталкивается с неприятностями (чтобы определить неприятность обратите внимание на соответствующию таблицу «Встречи в Найт-Сити» (стр. CP:R 417)).
+Легкие деньги!</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-NCPD-Crime-Database">
+    <script type="application/json" class="item-stats">{"price":"500eb","availability":"Дорогое","source":"Черный Хром","summary":"Доступ к базе данных полиции","brand":"NCPD"}</script>
+    <div class="weapon-detail">
+      
+      <p>База данных преступлений NCPD связывает камеру вашего агента с городскими записями о преступлениях. Приложение позволяет пользователю
+загружать цифровые фотографии в базу данных, а затем предупреждает
+пользователя, если люди на фотографии разыскиваются за какие-либо
+преступления, если за них объявлена награда или если у них есть судимость.<br></p>
+<p>Этот процесс, который приложение называет запросом на получение
+информации, занимает один час. Информация, которую он выдает, ограничивается тем, что есть в открытом доступе в NCPD. NCPD имеет полный
+доступ к фотографии и любым встроенным метаданным.<br></p>
+<p>После того, как NCPD выпустил свое приложение, многие другие крупные
+города выпустили аналогичные приложения, используя свои собственные
+базы данных.<br></p>
+<p>Приложение. Требуется доступ к Городской Сети Найт Сити. Приложению
+требуется 1 час для получения результатов.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Shining-Finger">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","priceNote":"в Месяц","source":"Мешая напитки - Верши судьбы","summary":"Иногда всем нужно расслабиться","brand":"N/A"}</script>
+    <div class="weapon-detail">
+      
+      <p>Зачем рисковать потенциальным разочарованием от секса в реальном мире, когда вы можете заплатить нам за лучшее порно в Дата Пуле, идеально подобранное под ваши точные предпочтения. Просматривайте наше множество предложений по старинке, на плоском экране, или проецируйте его прямо на очки виртуальности, чтобы взаимодействовать с виртуальными аватарами ваших любимых звезд! Сияющий Палец даже подключается к вашему Мр. Перчику, Полуночнице или секс-игрушке по выбору, чтобы вывести ваш порнографический опыт на новый уровень!<br></p>
+<p>Приложение. Это порно-приложение. Используйте свое воображение.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Trauma-Team-MedScan">
+    <script type="application/json" class="item-stats">{"price":"20eb","availability":"Обычное","source":"Черный Хром","summary":"Получи помощь в \"самостоятельных\" операциях на самом себе","brand":"Trauma Team"}</script>
+    <div class="weapon-detail">
+      
+      <p>Получи помощь в &quot;самостоятельных&quot; операциях на самом себе. Вызвать бригаду Trauma Team, чтобы они прилетели и спасли вашу задницу, может быть заманчиво, но это стоит денег, и не каждый может позволить себе страховку. Так зачем тратить с трудом заработанные деньги, если можно просто скачать Trauma Team МедСкан, чтобы подлатать себя удаленно? Просто сфотографируйте вашу травму, и вас свяжут со специалистом Trauma Team, который проведет вас через простые медицинские процедуры и обеспечит высококачественный уход на дому. Trauma Team не несет ответственности за халатность, которую вы можете допустить при использовании приложения.</p>
+<p>Приложение. Требуется доступ к Городской Сети. МедСкан соединяет вас с удаленным специалистом Trauma Team, но его фактический инструктаж оплачивается дополнительно. За 100eb специалист будет оставаться на связи в течение 1 часа после оплаты и предоставит бонус +1 к любой проверке навыков Первой Помощи или Хирургии для стабилизации состояния пациента или Быстрой Помощи. За 500eb можно заплатить удаленному специалисту Trauma Team через приложение, чтобы он руководил всем процессом одного 4-часового лечения, установки, бодискульпта или операции, предоставляя бонус +1 к проверке навыков Медицинской Технологии или Хирургии. Подписчик “Trauma Team Корпоративный Клиент” может использовать это приложение без дополнительной оплаты после покупки, но доступ к услуге может быть прекращен в случае злоупотребления.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-WatchBox">
+    <script type="application/json" class="item-stats">{"price":"50eb","availability":"Ценное","source":"Все об Агентах","summary":"Когда нет денег на нормальную сигнализацию","brand":"No/Brainer (GunMart)"}</script>
+    <div class="weapon-detail">
+      
+      <p>Охранный Бокс использует существующие датчики вашего Агента, чтобы дешево обезопасить любую комнату, в которой Агент находится в данный момент. Его легко обойти, но это лучше, чем ничего.<br></p>
+<p>Приложение. Когда пользователь устанавливает Агент в центре комнаты и активирует Охранную Коробку, он тратит 5 минут на оценку помещения, размер которого не должен превышать 20 м/ярдов на 20 м/ярдов (10 квадратов на 10 квадратов). После этого, пока Агент не перемещается, любой громкий шум, вспышка яркого света или движение людей, не находящихся в помещении во время оценки, вызывают громкий звуковой сигнал. Охранная Коробка не работает с внутренними агентами. Злоумышленники, успешно прошедшие проверку на скрытность СЛ13, не вызывают тревогу.</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-Ziggurat-City-Database">
+    <script type="application/json" class="item-stats">{"price":"100eb","availability":"Премиум","source":"Черный Хром","summary":"Справочник по городу","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>“Ваш агент — великолепный инструмент, но если вы
+не загружаете в него приложения, вы используете
+только половину его возможностей! Чтобы жить полной жизнью, вам понадобятся приложения, которые сделают жизнь проще, быстрее и удобнее. Конечно, я лично рекомендую Приложения Зиккурат, потому что в глубине души я знаю, что мы создали каждое из них так, чтобы оно было лучшим. Я говорю правду, чумбы. Я обещаю.”
+**
+Приложение Владение Городской Базой Данных для определенного города дает пользователю бонус +1 ко всем проверкам навыков Знания Местности, связанным с общинами и районами, составляющими этот город.**</p>
+
+    </div>
+  </template>
+
+  
+  <template id="item-tpl-BabelChat">
+    <script type="application/json" class="item-stats">{"price":"0","availability":"Бесплатно","summary":"Самый популярный мессенджер","brand":"Ziggurat"}</script>
+    <div class="weapon-detail">
+      
+      <p>Самый популярный мессенджер, отчасти потому, что оно предустановлен на всех Агентах. Пользователи могут тратить деньги на дополнительные темы, эмоции и эффекты камеры.<br></p>
+<p>Приложение. Позволяет отправлять текстовые сообщения и вести видеочаты.</p>
+
+    </div>
+  </template>
+
+</div>
+
+
+    </main>
+</div>
+
+<dialog id="item-modal" class="weapon-modal" aria-labelledby="item-modal-title">
+    <div class="weapon-modal__shell">
+        <header class="weapon-modal__header">
+            <div>
+                <p class="weapon-modal__eyebrow" id="item-modal-category"></p>
+                <h2 id="item-modal-title"></h2>
+            </div>
+            <button type="button" class="weapon-modal__close" data-close-modal aria-label="Закрыть">×</button>
+        </header>
+        <div class="weapon-modal__stats" id="item-modal-stats"></div>
+        <div class="weapon-modal__body" id="item-modal-body"></div>
+    </div>
+</dialog>
+
+<script>window.__BASE_PATH__ = "/data-pool/app-2.0/";</script>
+<script src="/data-pool/app-2.0/app/shop.js" defer></script>
+</body>
+</html>
